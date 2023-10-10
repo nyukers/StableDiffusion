@@ -1,0 +1,26 @@
+Generation Settings
+Total Frames: 30
+Frames Per Wave: 20
+Wave Offset: 0.0
+Base Denoising Strength: 0.75
+Max Additional Denoise: 0.6
+Initial Image Number: 0.0
+
+Video Encoding Settings
+Save Video: True
+Framerate: 25
+Quality: 50
+Encoding: VP9 (webm)
+Create Segmented Video: False
+
+Prompt Details
+Initial Prompt:award winner photo of beautiful (1woman), polka dot hat, makeup in Barbie style, outdoor summer background,ultra realistic,intricate details,8K,HDR,no doll
+
+Negative Prompt:(doll),text,naked,nu, FastNegativeV2
+
+Frame change prompts:
+0::award winner photo of beautiful (1woman), polka dot hat, makeup in Barbie style, dress in Margot Robbie`s style, outdoor summer  background,ultra realistic,intricate details,8K,HDR,no doll
+5::award winner photo of beautiful (1woman), polka dot hat, dress in Margot Robbie`s style, outdoor summer background,ultra realistic,intricate details,8K,HDR
+15::award winner photo of beautiful (1woman), polka dot hat, makeup in Barbie style, outdoor summer background,ultra realistic,intricate details,8K,HDR
+20::award winner photo of beautiful (1woman), polka dot hat, makeup in Barbie style, dress in Margot Robbie`s style, outdoor summer 
+ background,ultra realistic,intricate details,8K,HDR,no doll

@@ -1,0 +1,27 @@
+Generation Settings
+Total Frames: 190
+Frames Per Wave: 20
+Wave Offset: 0.0
+Base Denoising Strength: 0.7
+Max Additional Denoise: 0.1
+Initial Image Number: 0.0
+
+Video Encoding Settings
+Save Video: False
+
+Prompt Details
+Initial Prompt:a dancing young 1woman, (fit body), Red Hat fairy tale style, eye contact, summer forest background, intricate details,4K
+
+Negative Prompt:extra legs, nsfw, nude, text, (deformed, distorted, disfigured:1.3), poorly drawn, bad anatomy, wrong anatomy, extra limb, missing limb, floating limbs, (mutated hands and fingers:1.4), disconnected limbs, mutation, mutated, ugly, disgusting, blurry, amputation
+
+Frame change prompts:
+0::a  dancing young 1woman, (fit body), Red Hat fairy tale style, eye contact, summer forest background, intricate details,4K 
+20::a  dancing young 1woman, (fit body), Alice in wonderland style,  eye contact, summer forest background, intricate details,4K 
+40::a  dancing young 1woman, (fit body), Alice in wonderland style,  eye contact, fantasy forest background, intricate details,4K 
+60::a  dancing young 1woman, (fit body), Mary Poppins style, eye contact, fantasy forest background, intricate details,4K 
+80::a  dancing young 1woman, (fit body),  Mary Poppins style, eye contact, city background, intricate details,4K 
+100::a  dancing young 1woman, (fit body).  Snowmaiden style, eye contact, city background, intricate details,4K
+110::a  dancing young 1woman, (fit body).  Snowmaiden style, eye contact, winter city background, intricate details,4K
+130::a  dancing young 1woman, (fit body).  Alice in wonderland style, eye contact, winter city background, intricate details,4K 
+150::a  dancing young 1woman, (fit body).  Alice in wonderland style, eye contact, winter forest background, intricate details,4K 
+160::a  dancing young 1woman, (fit body). Red Hat fairy tale style, eye contact, summer forest background, intricate details,4K
