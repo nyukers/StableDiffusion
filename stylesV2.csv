@@ -1,3 +1,4 @@
+name,prompt,negative_prompt
 >>>>>> 1 Generic Styles 
 Generic: Enhance,"breathtaking {prompt} . award-winning, professional, highly detailed","ugly, deformed, noisy, blurry, distorted, grainy"
 Generic: Anime,"anime artwork {prompt} . anime style, key visual, vibrant, studio anime, highly detailed","photo, deformed, black and white, realism, disfigured, low contrast"
