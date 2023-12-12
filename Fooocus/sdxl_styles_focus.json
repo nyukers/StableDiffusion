@@ -1,0 +1,77 @@
+[
+    {
+        "name": "10% Focus Area",
+        "prompt": "(10% of the image in sharp focus) (10% of image) {prompt}",
+        "negative_prompt": "90% focus area"
+    },
+    {
+        "name": "20% Focus Area",
+        "prompt": "(20% of the image in sharp focus) (20% of image) {prompt}",
+        "negative_prompt": "80% focus area"
+    },
+    {
+        "name": "30% Focus Area",
+        "prompt": "(30% of the image in sharp focus) (30% of image) {prompt}",
+        "negative_prompt": "70% focus area"
+    },
+    {
+        "name": "40% Focus Area",
+        "prompt": "(40% of the image in sharp focus) (40% of image) {prompt}",
+        "negative_prompt": "60% focus area"
+    },
+    {
+        "name": "50% Focus Area",
+        "prompt": "(50% of the image in sharp focus) (50% of image) {prompt}",
+        "negative_prompt": "50% focus area"
+    },
+    {
+        "name": "60% Focus Area",
+        "prompt": "(60% of the image in sharp focus) (60% of image) {prompt}",
+        "negative_prompt": "40% focus area"
+    },
+    {
+        "name": "70% Focus Area",
+        "prompt": "(70% of the image in sharp focus) (70% of image) {prompt}",
+        "negative_prompt": "30% focus area"
+    },
+    {
+        "name": "80% Focus Area",
+        "prompt": "(80% of the image in sharp focus) (80% of image) {prompt}",
+        "negative_prompt": "20% focus area"
+    },
+    {
+        "name": "90% Focus Area",
+        "prompt": "(90% of the image in sharp focus) (90% of image) {prompt}",
+        "negative_prompt": "10% focus area"
+    },
+    {
+        "name": "100% Focus Area",
+        "prompt": "(100% of the image in sharp focus) (100% of image) {prompt}",
+        "negative_prompt": "0% focus area"
+    },
+    {
+        "name": "Manual Focus",
+        "prompt": "(Using manual focus) (manual focus technique) {prompt}",
+        "negative_prompt": "Using other than manual focus"
+    },
+    {
+        "name": "Autofocus",
+        "prompt": "(Using autofocus) (autofocus technique) {prompt}",
+        "negative_prompt": "Using other than autofocus"
+    },
+    {
+        "name": "Deep Focus",
+        "prompt": "(Deep Focus) {prompt} / (f_stop 16.0), (focal_length 24.0)",
+        "negative_prompt": "(Deep Focus) / (f_stop 1.8), (focal_length 85)"
+    },
+    {
+        "name": "Soft Focus",
+        "prompt": "(Soft Focus) {prompt} / (f_stop 1.8), (focal_length 85.0)",
+        "negative_prompt": "(Soft Focus) / (f_stop 16), (focal_length 24)"
+    },
+    {
+        "name": "Macro Focus",
+        "prompt": "(Macro Focus) {prompt}",
+        "negative_prompt": "(Macro Focus)"
+    }
+]
