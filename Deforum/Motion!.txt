@@ -1,0 +1,42 @@
+"0": "epic realistic, hyperdetailed, cycles render, artstation, intricate details, muted colors, cinematic, dramatic light, complex background, rutkowski,
+ a girl in a white clothes is jumping against the backdrop of a castle with green gardens and pools",
+
+"20": "epic realistic, hyperdetailed, cycles render, artstation, intricate details, muted colors, cinematic, dramatic light, complex background, rutkowski, 
+the gate to the big beautiful epic castle opens",
+
+"40": "epic realistic, hyperdetailed, cycles render, artstation, intricate details, muted colors, cinematic, dramatic light, complex background, rutkowski,
+(wide angle:1.4), interiors of a large epic castle with a spiral staircase and stucco on the walls, the walls are decorated with (gardens:1.3), a (large dragon crawls:1.2) across the floor",
+
+"60": "epic realistic, hyperdetailed, cycles render, artstation, intricate details, muted colors, cinematic, dramatic light, complex background, rutkowski,
+(wide angle:1.4), interior, (a dragon climbs:1.3) (a spiral staircase:0.7) in an ancient, epic, beautiful castle with large windows and gardens on the walls",
+
+"80": "epic realistic, hyperdetailed, cycles render, artstation, intricate details, muted colors, cinematic, dramatic light, complex background, rutkowski,
+a huge dragon flies over the ancient castle and spews flames, day, clouds, sun"
+
+---------------------------
+Start: 0,50,100,150,200
+---------------------------
+Choice01: 0,20,40,60,80
+---------------------------
+
+"strength_schedule": 
+0:(0.7), 15:(0.6), 
+20:(0.5), 35:(0.6), 
+40:(0.5), 55:(0.6),
+60:(0.5), 75:(0.6),
+80:(0.5), 100:(0.6)
+
+Zoom: 
+0:(1.0025+0.002*sin(1.25*3.14*t/30))
+
+Translation_z: 
+"0:(0), 25:(1.5), 
+50:(3), 
+100:(0), 125:(0), 
+150:(3), 
+200:(6), 
+250:(-3.5), 275:(-7), 
+350:(1)",
+
+Seed schedule:
+0:(s), 1:(-1), "max_f-2":(-1), "max_f-1":(s)
