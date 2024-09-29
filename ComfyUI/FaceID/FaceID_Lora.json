@@ -1,0 +1,799 @@
+{
+  "last_node_id": 61,
+  "last_link_id": 125,
+  "nodes": [
+    {
+      "id": 23,
+      "type": "KSampler",
+      "pos": [
+        466,
+        900
+      ],
+      "size": [
+        300.6078796386719,
+        446
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 55
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 114
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 115
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": null
+        },
+        {
+          "name": "seed",
+          "type": "INT",
+          "link": 85,
+          "widget": {
+            "name": "seed"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            48
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "KSampler"
+      },
+      "widgets_values": [
+        4,
+        "fixed",
+        35,
+        6,
+        "ddpm",
+        "exponential",
+        1
+      ]
+    },
+    {
+      "id": 55,
+      "type": "Anything Everywhere3",
+      "pos": [
+        -231,
+        370
+      ],
+      "size": {
+        "0": 210,
+        "1": 66
+      },
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "LATENT",
+          "type": "*",
+          "link": 116,
+          "color_on": "#FF9CF9"
+        },
+        {
+          "name": "VAE",
+          "type": "*",
+          "link": 117,
+          "color_on": "#FF6E6E"
+        },
+        {
+          "name": "CLIP",
+          "type": "*",
+          "link": 118,
+          "color_on": "#FFD500"
+        }
+      ],
+      "properties": {
+        "group_restricted": false,
+        "color_restricted": false,
+        "Node name for S&R": "Anything Everywhere3"
+      }
+    },
+    {
+      "id": 46,
+      "type": "RescaleCFG",
+      "pos": [
+        -345,
+        237
+      ],
+      "size": {
+        "0": 340,
+        "1": 70
+      },
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 102
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            103
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "RescaleCFG"
+      },
+      "widgets_values": [
+        0.7
+      ]
+    },
+    {
+      "id": 28,
+      "type": "SaveImage",
+      "pos": [
+        836,
+        565
+      ],
+      "size": {
+        "0": 400,
+        "1": 450
+      },
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 47
+        }
+      ],
+      "properties": {},
+      "widgets_values": [
+        "FaceID"
+      ]
+    },
+    {
+      "id": 21,
+      "type": "IPAdapterApply",
+      "pos": [
+        595,
+        179
+      ],
+      "size": {
+        "0": 210,
+        "1": 278
+      },
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "ipadapter",
+          "type": "IPADAPTER",
+          "link": 120,
+          "slot_index": 0
+        },
+        {
+          "name": "clip_vision",
+          "type": "CLIP_VISION",
+          "link": 124,
+          "slot_index": 1
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 80
+        },
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 103
+        },
+        {
+          "name": "attn_mask",
+          "type": "MASK",
+          "link": null,
+          "slot_index": 4
+        },
+        {
+          "name": "insightface",
+          "type": "INSIGHTFACE",
+          "link": 125,
+          "slot_index": 5
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            55
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "IPAdapterApply"
+      },
+      "widgets_values": [
+        0.9500000000000001,
+        0.33,
+        "original",
+        0,
+        1,
+        false
+      ]
+    },
+    {
+      "id": 61,
+      "type": "InsightFaceLoader",
+      "pos": [
+        94,
+        310
+      ],
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "INSIGHTFACE",
+          "type": "INSIGHTFACE",
+          "links": [
+            125
+          ],
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "InsightFaceLoader"
+      },
+      "widgets_values": [
+        "CUDA"
+      ]
+    },
+    {
+      "id": 60,
+      "type": "CLIPVisionLoader",
+      "pos": [
+        81,
+        156
+      ],
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "CLIP_VISION",
+          "type": "CLIP_VISION",
+          "links": [
+            124
+          ],
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPVisionLoader"
+      },
+      "widgets_values": [
+        "SD1.5\\pytorch_model.bin"
+      ]
+    },
+    {
+      "id": 24,
+      "type": "IPAdapterModelLoader",
+      "pos": [
+        84,
+        43
+      ],
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {
+        "collapsed": false
+      },
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IPADAPTER",
+          "type": "IPADAPTER",
+          "links": [
+            120
+          ],
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "IPAdapterModelLoader"
+      },
+      "widgets_values": [
+        "ip-adapter-faceid_sd15.bin"
+      ]
+    },
+    {
+      "id": 27,
+      "type": "VAEDecode",
+      "pos": [
+        637,
+        621
+      ],
+      "size": {
+        "0": 140,
+        "1": 50
+      },
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 48
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            47
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAEDecode"
+      }
+    },
+    {
+      "id": 38,
+      "type": "PrepImageForInsightFace",
+      "pos": [
+        184,
+        639
+      ],
+      "size": {
+        "0": 256.31488037109375,
+        "1": 106
+      },
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 78
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            80
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PrepImageForInsightFace"
+      },
+      "widgets_values": [
+        "top",
+        0,
+        false
+      ]
+    },
+    {
+      "id": 40,
+      "type": "PrimitiveNode",
+      "pos": [
+        132,
+        1012
+      ],
+      "size": {
+        "0": 210,
+        "1": 82
+      },
+      "flags": {
+        "collapsed": false
+      },
+      "order": 3,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            85
+          ],
+          "widget": {
+            "name": "seed"
+          },
+          "slot_index": 0
+        }
+      ],
+      "title": "seed",
+      "properties": {
+        "Run widget replace on values": false
+      },
+      "widgets_values": [
+        4,
+        "fixed"
+      ]
+    },
+    {
+      "id": 6,
+      "type": "LoadImage",
+      "pos": [
+        -393,
+        736
+      ],
+      "size": {
+        "0": 400,
+        "1": 450
+      },
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            78
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "foxy09.jpg",
+        "image"
+      ]
+    },
+    {
+      "id": 48,
+      "type": "Efficient Loader",
+      "pos": [
+        -853,
+        303
+      ],
+      "size": {
+        "0": 400,
+        "1": 610
+      },
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "lora_stack",
+          "type": "LORA_STACK",
+          "link": null
+        },
+        {
+          "name": "cnet_stack",
+          "type": "CONTROL_NET_STACK",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            109
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "CONDITIONING+",
+          "type": "CONDITIONING",
+          "links": [
+            114
+          ],
+          "shape": 3,
+          "slot_index": 1
+        },
+        {
+          "name": "CONDITIONING-",
+          "type": "CONDITIONING",
+          "links": [
+            115
+          ],
+          "shape": 3,
+          "slot_index": 2
+        },
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            116
+          ],
+          "shape": 3,
+          "slot_index": 3
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            117
+          ],
+          "shape": 3,
+          "slot_index": 4
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            118
+          ],
+          "shape": 3,
+          "slot_index": 5
+        },
+        {
+          "name": "DEPENDENCIES",
+          "type": "DEPENDENCIES",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Efficient Loader"
+      },
+      "widgets_values": [
+        "BASIC\\epicphotogasm_lastUnicorn.safetensors",
+        "Baked VAE",
+        -1,
+        "None",
+        1,
+        1,
+        "Close-up photo of a 25-year-old girl in a white spring dress in the park, highly detailed, diffuse light, professional photography, 4k",
+        "blurry, horror, distorted, malformed, naked, hands, illustration",
+        "none",
+        "comfy",
+        768,
+        768,
+        1
+      ],
+      "color": "#222233",
+      "bgcolor": "#333355",
+      "shape": 1
+    },
+    {
+      "id": 26,
+      "type": "LoraLoaderModelOnly",
+      "pos": [
+        -447,
+        76
+      ],
+      "size": {
+        "0": 350,
+        "1": 82
+      },
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 109
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            102
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoraLoaderModelOnly"
+      },
+      "widgets_values": [
+        "ip-adapter-faceid_sd15_lora.safetensors",
+        0.65
+      ]
+    }
+  ],
+  "links": [
+    [
+      47,
+      27,
+      0,
+      28,
+      0,
+      "IMAGE"
+    ],
+    [
+      48,
+      23,
+      0,
+      27,
+      0,
+      "LATENT"
+    ],
+    [
+      55,
+      21,
+      0,
+      23,
+      0,
+      "MODEL"
+    ],
+    [
+      78,
+      6,
+      0,
+      38,
+      0,
+      "IMAGE"
+    ],
+    [
+      80,
+      38,
+      0,
+      21,
+      2,
+      "IMAGE"
+    ],
+    [
+      85,
+      40,
+      0,
+      23,
+      4,
+      "INT"
+    ],
+    [
+      102,
+      26,
+      0,
+      46,
+      0,
+      "MODEL"
+    ],
+    [
+      103,
+      46,
+      0,
+      21,
+      3,
+      "MODEL"
+    ],
+    [
+      109,
+      48,
+      0,
+      26,
+      0,
+      "MODEL"
+    ],
+    [
+      114,
+      48,
+      1,
+      23,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      115,
+      48,
+      2,
+      23,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      116,
+      48,
+      3,
+      55,
+      0,
+      "*"
+    ],
+    [
+      117,
+      48,
+      4,
+      55,
+      1,
+      "*"
+    ],
+    [
+      118,
+      48,
+      5,
+      55,
+      2,
+      "*"
+    ],
+    [
+      120,
+      24,
+      0,
+      21,
+      0,
+      "IPADAPTER"
+    ],
+    [
+      124,
+      60,
+      0,
+      21,
+      1,
+      "CLIP_VISION"
+    ],
+    [
+      125,
+      61,
+      0,
+      21,
+      5,
+      "INSIGHTFACE"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {},
+  "version": 0.4
+}
