@@ -1,0 +1,1393 @@
+{
+  "last_node_id": 52,
+  "last_link_id": 114,
+  "nodes": [
+    {
+      "id": 13,
+      "type": "CLIPTextEncode",
+      "pos": [
+        -5,
+        -729
+      ],
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 92
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            77
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "CLIP Text Encode #2",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "(masterpiece),(best quality),(spring),beautiful landscape,forest, flowers\n\n"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 17,
+      "type": "CLIPTextEncode",
+      "pos": [
+        1,
+        -465
+      ],
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 91
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            78
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "CLIP Text Encode #3",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "(best quality),(summer:1.2), flowers are blooming, sunny\n"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 33,
+      "type": "CLIPTextEncode",
+      "pos": [
+        0,
+        -219
+      ],
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 90,
+          "slot_index": 0
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            76
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "CLIP Text Encode #4",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "(best quality),(autumn:1.4),sky cloudly,(colorful) HDR, forest, (fallen leaves), orange leaves"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 35,
+      "type": "ConditioningCombine",
+      "pos": [
+        819,
+        -811
+      ],
+      "size": {
+        "0": 342.5999755859375,
+        "1": 46
+      },
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "conditioning_1",
+          "type": "CONDITIONING",
+          "link": 61
+        },
+        {
+          "name": "conditioning_2",
+          "type": "CONDITIONING",
+          "link": 62
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            63
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ConditioningCombine"
+      }
+    },
+    {
+      "id": 12,
+      "type": "ConditioningCombine",
+      "pos": [
+        881,
+        -530
+      ],
+      "size": {
+        "0": 342.5999755859375,
+        "1": 46
+      },
+      "flags": {
+        "collapsed": false
+      },
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "conditioning_1",
+          "type": "CONDITIONING",
+          "link": 63
+        },
+        {
+          "name": "conditioning_2",
+          "type": "CONDITIONING",
+          "link": 57
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            102
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ConditioningCombine"
+      }
+    },
+    {
+      "id": 11,
+      "type": "ConditioningSetArea",
+      "pos": [
+        465,
+        -454
+      ],
+      "size": {
+        "0": 314,
+        "1": 154
+      },
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "conditioning",
+          "type": "CONDITIONING",
+          "link": 78
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            57
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ConditioningSetArea"
+      },
+      "widgets_values": [
+        384,
+        576,
+        512,
+        0,
+        1
+      ]
+    },
+    {
+      "id": 38,
+      "type": "CLIPTextEncode",
+      "pos": [
+        -1009,
+        -175
+      ],
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 98
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            84
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "CLIP Text Encode (Object inPaint)",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "(Face portrait with shoulders) flat chest (Supermodel:1.2) with blonde long hair, blue eyes, beautiful landscape background"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 14,
+      "type": "CLIPTextEncode",
+      "pos": [
+        -4,
+        -994
+      ],
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 93
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            75
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "CLIP Text Encode #1",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "(best quality),(winter:1.3),(snowing),(white) forest is frozen, (clowds:1.2)"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 50,
+      "type": "CLIPTextEncode",
+      "pos": [
+        5,
+        56
+      ],
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 105
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            106
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "CLIP Text Encode #Extra",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "(best quality),(winter:1.3),(snowing),white forest is frozen, (clowds:1.2)"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 10,
+      "type": "ConditioningCombine",
+      "pos": [
+        1070,
+        -276
+      ],
+      "size": {
+        "0": 342.5999755859375,
+        "1": 46
+      },
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "conditioning_1",
+          "type": "CONDITIONING",
+          "link": 102
+        },
+        {
+          "name": "conditioning_2",
+          "type": "CONDITIONING",
+          "link": 104
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            107
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ConditioningCombine"
+      }
+    },
+    {
+      "id": 7,
+      "type": "CLIPTextEncode",
+      "pos": [
+        -23,
+        642
+      ],
+      "size": {
+        "0": 425.27801513671875,
+        "1": 180.6060791015625
+      },
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 89
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            6
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "CLIP Text Encode (Total Negative)",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "(hands), text, error, cropped, (worst quality:1.2), (low quality:1.2), normal quality, (jpeg artifacts:1.3), signature, watermark, username, blurry, artist name, monochrome, sketch, censorship, censor, (copyright:1.2), extra legs, (forehead mark) (depth of field) (emotionless)"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 20,
+      "type": "VAELoader",
+      "pos": [
+        1612,
+        -69
+      ],
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            36
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAELoader"
+      },
+      "widgets_values": [
+        "vae-ft-mse-840000-ema-pruned.safetensors"
+      ]
+    },
+    {
+      "id": 8,
+      "type": "VAEDecode",
+      "pos": [
+        1975,
+        -61
+      ],
+      "size": {
+        "0": 210,
+        "1": 46
+      },
+      "flags": {},
+      "order": 25,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 7
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 36
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            49
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAEDecode"
+      }
+    },
+    {
+      "id": 34,
+      "type": "ConditioningSetArea",
+      "pos": [
+        448,
+        -984
+      ],
+      "size": {
+        "0": 312,
+        "1": 154
+      },
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "conditioning",
+          "type": "CONDITIONING",
+          "link": 75
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            61
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ConditioningSetArea"
+      },
+      "widgets_values": [
+        320,
+        576,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": 51,
+      "type": "ConditioningSetArea",
+      "pos": [
+        468,
+        59
+      ],
+      "size": {
+        "0": 299,
+        "1": 154
+      },
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "conditioning",
+          "type": "CONDITIONING",
+          "link": 106
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            108
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ConditioningSetArea"
+      },
+      "widgets_values": [
+        320,
+        576,
+        1304,
+        0,
+        1
+      ]
+    },
+    {
+      "id": 15,
+      "type": "ConditioningSetArea",
+      "pos": [
+        476,
+        -209
+      ],
+      "size": {
+        "0": 299,
+        "1": 154
+      },
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "conditioning",
+          "type": "CONDITIONING",
+          "link": 76
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            104
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ConditioningSetArea"
+      },
+      "widgets_values": [
+        400,
+        576,
+        832,
+        0,
+        1
+      ]
+    },
+    {
+      "id": 18,
+      "type": "ConditioningSetArea",
+      "pos": [
+        458,
+        -726
+      ],
+      "size": {
+        "0": 312,
+        "1": 154
+      },
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "conditioning",
+          "type": "CONDITIONING",
+          "link": 77
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            62
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ConditioningSetArea"
+      },
+      "widgets_values": [
+        400,
+        576,
+        320,
+        0,
+        1
+      ]
+    },
+    {
+      "id": 5,
+      "type": "EmptyLatentImage",
+      "pos": [
+        1134,
+        276
+      ],
+      "size": {
+        "0": 315,
+        "1": 106
+      },
+      "flags": {
+        "collapsed": false
+      },
+      "order": 1,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            2
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "EmptyLatentImage"
+      },
+      "widgets_values": [
+        1600,
+        576,
+        1
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 19,
+      "type": "ConditioningCombine",
+      "pos": [
+        1101,
+        94
+      ],
+      "size": {
+        "0": 342.5999755859375,
+        "1": 46
+      },
+      "flags": {},
+      "order": 23,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "conditioning_1",
+          "type": "CONDITIONING",
+          "link": 113
+        },
+        {
+          "name": "conditioning_2",
+          "type": "CONDITIONING",
+          "link": 114
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            112
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ConditioningCombine"
+      }
+    },
+    {
+      "id": 52,
+      "type": "ConditioningCombine",
+      "pos": [
+        1161,
+        -93
+      ],
+      "size": {
+        "0": 342.5999755859375,
+        "1": 46
+      },
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "conditioning_1",
+          "type": "CONDITIONING",
+          "link": 107
+        },
+        {
+          "name": "conditioning_2",
+          "type": "CONDITIONING",
+          "link": 108
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            113
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ConditioningCombine"
+      }
+    },
+    {
+      "id": 6,
+      "type": "CLIPTextEncode",
+      "pos": [
+        -305,
+        407
+      ],
+      "size": {
+        "0": 422.84503173828125,
+        "1": 164.31304931640625
+      },
+      "flags": {
+        "collapsed": false
+      },
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 88
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            81
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "CLIP Text Encode (Total  Positive)",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "(masterpiece) (best quality) beautiful landscape breathtaking amazing view nature photograph, beautiful ancient 1castle,\n(Face portrait with shoulders) flat chest (Supermodel:1.2) with blonde long hair, blue eyes"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 40,
+      "type": "ConditioningCombine",
+      "pos": [
+        321,
+        386
+      ],
+      "size": {
+        "0": 342.5999755859375,
+        "1": 46
+      },
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "conditioning_1",
+          "type": "CONDITIONING",
+          "link": 83
+        },
+        {
+          "name": "conditioning_2",
+          "type": "CONDITIONING",
+          "link": 81
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            114
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ConditioningCombine"
+      }
+    },
+    {
+      "id": 44,
+      "type": "CLIPSetLastLayer",
+      "pos": [
+        -959,
+        277
+      ],
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 100,
+          "slot_index": 0
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            98,
+            105
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPSetLastLayer"
+      },
+      "widgets_values": [
+        -2
+      ]
+    },
+    {
+      "id": 39,
+      "type": "ConditioningSetArea",
+      "pos": [
+        -486,
+        -157
+      ],
+      "size": {
+        "0": 317.4000244140625,
+        "1": 154
+      },
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "conditioning",
+          "type": "CONDITIONING",
+          "link": 84
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            83
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "Conditioning (Set Area for Object)",
+      "properties": {
+        "Node name for S&R": "ConditioningSetArea"
+      },
+      "widgets_values": [
+        512,
+        384,
+        512,
+        128,
+        1
+      ]
+    },
+    {
+      "id": 47,
+      "type": "CheckpointLoaderSimple",
+      "pos": [
+        -999,
+        499
+      ],
+      "size": {
+        "0": 315,
+        "1": 98
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            99
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            100
+          ],
+          "slot_index": 1
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CheckpointLoaderSimple"
+      },
+      "widgets_values": [
+        "photon_v1.safetensors"
+      ]
+    },
+    {
+      "id": 9,
+      "type": "SaveImage",
+      "pos": [
+        1991,
+        94
+      ],
+      "size": [
+        1052.9157825816746,
+        632.2821624062273
+      ],
+      "flags": {},
+      "order": 26,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 49
+        }
+      ],
+      "properties": {},
+      "widgets_values": [
+        "Panoramic"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "KSampler",
+      "pos": [
+        1610,
+        156
+      ],
+      "size": {
+        "0": 315,
+        "1": 474
+      },
+      "flags": {},
+      "order": 24,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 99
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 112
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 6
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 2
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            7
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "KSampler"
+      },
+      "widgets_values": [
+        984792276087818,
+        "randomize",
+        13,
+        8,
+        "dpmpp_sde",
+        "normal",
+        1
+      ]
+    }
+  ],
+  "links": [
+    [
+      2,
+      5,
+      0,
+      3,
+      3,
+      "LATENT"
+    ],
+    [
+      6,
+      7,
+      0,
+      3,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      7,
+      3,
+      0,
+      8,
+      0,
+      "LATENT"
+    ],
+    [
+      36,
+      20,
+      0,
+      8,
+      1,
+      "VAE"
+    ],
+    [
+      49,
+      8,
+      0,
+      9,
+      0,
+      "IMAGE"
+    ],
+    [
+      57,
+      11,
+      0,
+      12,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      61,
+      34,
+      0,
+      35,
+      0,
+      "CONDITIONING"
+    ],
+    [
+      62,
+      18,
+      0,
+      35,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      63,
+      35,
+      0,
+      12,
+      0,
+      "CONDITIONING"
+    ],
+    [
+      75,
+      14,
+      0,
+      34,
+      0,
+      "CONDITIONING"
+    ],
+    [
+      76,
+      33,
+      0,
+      15,
+      0,
+      "CONDITIONING"
+    ],
+    [
+      77,
+      13,
+      0,
+      18,
+      0,
+      "CONDITIONING"
+    ],
+    [
+      78,
+      17,
+      0,
+      11,
+      0,
+      "CONDITIONING"
+    ],
+    [
+      81,
+      6,
+      0,
+      40,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      83,
+      39,
+      0,
+      40,
+      0,
+      "CONDITIONING"
+    ],
+    [
+      84,
+      38,
+      0,
+      39,
+      0,
+      "CONDITIONING"
+    ],
+    [
+      88,
+      44,
+      0,
+      6,
+      0,
+      "CLIP"
+    ],
+    [
+      89,
+      44,
+      0,
+      7,
+      0,
+      "CLIP"
+    ],
+    [
+      90,
+      44,
+      0,
+      33,
+      0,
+      "CLIP"
+    ],
+    [
+      91,
+      44,
+      0,
+      17,
+      0,
+      "CLIP"
+    ],
+    [
+      92,
+      44,
+      0,
+      13,
+      0,
+      "CLIP"
+    ],
+    [
+      93,
+      44,
+      0,
+      14,
+      0,
+      "CLIP"
+    ],
+    [
+      98,
+      44,
+      0,
+      38,
+      0,
+      "CLIP"
+    ],
+    [
+      99,
+      47,
+      0,
+      3,
+      0,
+      "MODEL"
+    ],
+    [
+      100,
+      47,
+      1,
+      44,
+      0,
+      "CLIP"
+    ],
+    [
+      102,
+      12,
+      0,
+      10,
+      0,
+      "CONDITIONING"
+    ],
+    [
+      104,
+      15,
+      0,
+      10,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      105,
+      44,
+      0,
+      50,
+      0,
+      "CLIP"
+    ],
+    [
+      106,
+      50,
+      0,
+      51,
+      0,
+      "CONDITIONING"
+    ],
+    [
+      107,
+      10,
+      0,
+      52,
+      0,
+      "CONDITIONING"
+    ],
+    [
+      108,
+      51,
+      0,
+      52,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      112,
+      19,
+      0,
+      3,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      113,
+      52,
+      0,
+      19,
+      0,
+      "CONDITIONING"
+    ],
+    [
+      114,
+      40,
+      0,
+      19,
+      1,
+      "CONDITIONING"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {},
+  "version": 0.4
+}
