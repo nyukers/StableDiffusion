@@ -1,2 +1,3 @@
 # Stable Diffusion, 2022..2025 years
-Stable Diffusion configs and scripts for Automatic1111, ComfyUI, Fooocus, Forge, Stability Matrix etc.
+GenAI: ComfyUI, Automatic1111, SDFX, SwarmUI, Forge, SVD, LCM, ControlNet, FaceID, AnimateDiff, Flux, Omost, Kolors.
+Stable Diffusion configs and scripts.
