@@ -1,4 +1,12 @@
 del comfyui.old /Q
 rename comfyui.log comfyui.old
-.\python_embeded\python.exe -s ComfyUI\main.py --windows-standalone-build
-pause
+::set path
+
+nvidia-smi
+:.\python_embeded\Scripts\comfycli.exe --version
+
+.\python_embeded\python.exe -s ComfyUI\main.py --windows-standalone-build --force-fp16
+
+:: default port 8188, you can change this by param as "--port 8189"
+:: --force-fp16 for GPU RAM optimal usage 
+:pause
