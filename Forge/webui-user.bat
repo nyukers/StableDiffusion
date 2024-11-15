@@ -1,26 +1,18 @@
 @echo off
-nvidia-smi
 
 set PYTHON=
 set GIT=
 set VENV_DIR=
-set A1111_HOME=D:/SDPortable
-set VENV_DIR=%A1111_HOME%/venv
-set COMMANDLINE_ARGS=--xformers --theme=dark --forge-ref-a1111-home %A1111_HOME% 
-::1) --reinstall-torch
-::2) --reinstall-xformers
+set COMMANDLINE_ARGS=--theme=dark
 
-goto 123
 @REM Uncomment following code to reference an existing A1111 checkout.
-@REM or use parameter --forge-ref-a1111-home %A1111_HOME%
-
-set COMMANDLINE_ARGS=%COMMANDLINE_ARGS% ^
---ckpt-dir %A1111_HOME%/models/Stable-diffusion ^
---hypernetwork-dir %A1111_HOME%/models/hypernetworks ^
---embeddings-dir %A1111_HOME%/embeddings ^
---lora-dir %A1111_HOME%/models/Lora
-
-:123
-echo # %COMMANDLINE_ARGS%
+@REM set A1111_HOME=Your A1111 checkout dir
+@REM
+@REM set VENV_DIR=%A1111_HOME%/venv
+@REM set COMMANDLINE_ARGS=%COMMANDLINE_ARGS%^
+@REM  --ckpt-dir %A1111_HOME%/models/Stable-diffusion^
+@REM  --hypernetwork-dir %A1111_HOME%/models/hypernetworks^
+@REM  --embeddings-dir %A1111_HOME%/models/embeddings^
+@REM  --lora-dir %A1111_HOME%/models/Lora
 
 call webui.bat
