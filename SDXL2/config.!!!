@@ -1,0 +1,35 @@
+{
+    "path_models_root": "D:\\FooocusSDXL2\\SimpleModels",
+    "path_checkpoints": [
+        "D:\\FooocusSDXL2\\SimpleModels\\checkpoints"
+    ],
+    "path_loras": [
+        "D:\\FooocusSDXL2\\SimpleModels\\loras"
+    ],
+    "path_embeddings": "D:\\FooocusSDXL2\\SimpleModels\\embeddings",
+    "path_vae_approx": "D:\\FooocusSDXL2\\SimpleModels\\vae_approx",
+    "path_vae": "D:\\FooocusSDXL2\\SimpleModels\\vae",
+    "path_upscale_models": "D:\\FooocusSDXL2\\SimpleModels\\upscale_models",
+    "path_inpaint": [
+        "D:\\FooocusSDXL2\\SimpleModels\\inpaint"
+    ],
+    "path_controlnet": [
+        "D:\\FooocusSDXL2\\SimpleModels\\controlnet"
+    ],
+    "path_clip": "D:\\FooocusSDXL2\\SimpleModels\\clip",
+    "path_clip_vision": "D:\\FooocusSDXL2\\SimpleModels\\clip_vision",
+    "path_fooocus_expansion": "D:\\FooocusSDXL2\\SimpleModels\\prompt_expansion\\fooocus_expansion",
+    "path_llms": [
+        "D:\\FooocusSDXL2\\SimpleModels\\llms"
+    ],
+    "path_wildcards": "D:\\FooocusSDXL2\\SimpleSDXL2_win_0820\\SimpleSDXL\\wildcards",
+    "path_safety_checker": "D:\\FooocusSDXL2\\SimpleModels\\safety_checker",
+    "path_outputs": "D:\\FooocusSDXL2\\outputs",
+    "path_unet": "D:\\FooocusSDXL2\\SimpleModels\\unet",
+    "path_rembg": "D:\\FooocusSDXL2\\SimpleModels\\rembg",
+    "path_layer_model": "D:\\FooocusSDXL2\\SimpleModels\\layer_model",
+    "path_diffusers": [
+        "D:\\FooocusSDXL2\\SimpleModels\\diffusers"
+    ],
+    "default_image_number": 1
+}
