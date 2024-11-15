@@ -1,0 +1,13 @@
+{
+    "path_checkpoints": "D:\\DeFooocus\\DeFooocus\\models\\checkpoints",
+    "path_loras": "D:\\DeFooocus\\DeFooocus\\models\\loras",
+    "path_embeddings": "D:\\DeFooocus\\DeFooocus\\models\\embeddings",
+    "path_vae_approx": "D:\\DeFooocus\\DeFooocus\\models\\vae_approx",
+    "path_upscale_models": "D:\\DeFooocus\\DeFooocus\\models\\upscale_models",
+    "path_inpaint": "D:\\DeFooocus\\DeFooocus\\models\\inpaint",
+    "path_controlnet": "D:\\DeFooocus\\DeFooocus\\models\\controlnet",
+    "path_clip_vision": "D:\\DeFooocus\\DeFooocus\\models\\clip_vision",
+    "path_fooocus_expansion": "D:\\DeFooocus\\DeFooocus\\models\\prompt_expansion\\fooocus_expansion",
+    "path_safety_checker_models": "D:\\DeFooocus\\DeFooocus\\models\\safety_checker_models",
+    "path_outputs": "D:\\DeFooocus\\DeFooocus\\outputs"
+}
