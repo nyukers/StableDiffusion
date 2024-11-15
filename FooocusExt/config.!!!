@@ -1,0 +1,20 @@
+{
+    "path_checkpoints": [
+        "D:\\FooocusExt\\Fooocus\\models\\checkpoints"
+    ],
+    "path_loras": [
+        "D:\\FooocusExt\\Fooocus\\models\\loras"
+    ],
+    "path_embeddings": "D:\\FooocusExt\\Fooocus\\models\\embeddings",
+    "path_vae_approx": "D:\\FooocusExt\\Fooocus\\models\\vae_approx",
+    "path_vae": "D:\\FooocusExt\\Fooocus\\models\\vae",
+    "path_upscale_models": "D:\\FooocusExt\\Fooocus\\models\\upscale_models",
+    "path_inpaint": "D:\\FooocusExt\\Fooocus\\models\\inpaint",
+    "path_controlnet": "D:\\FooocusExt\\Fooocus\\models\\controlnet",
+    "path_clip_vision": "D:\\FooocusExt\\Fooocus\\models\\clip_vision",
+    "path_fooocus_expansion": "D:\\FooocusExt\\Fooocus\\models\\prompt_expansion\\fooocus_expansion",
+    "path_wildcards": "D:\\FooocusExt\\Fooocus\\wildcards",
+    "path_safety_checker": "D:\\FooocusExt\\Fooocus\\models\\safety_checker",
+    "path_sam": "D:\\FooocusExt\\Fooocus\\models\\sam",
+    "path_outputs": "D:\\FooocusExt\\Fooocus\\outputs"
+}
