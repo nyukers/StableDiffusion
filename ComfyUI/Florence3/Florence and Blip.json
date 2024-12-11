@@ -1,0 +1,398 @@
+{
+  "last_node_id": 118,
+  "last_link_id": 161,
+  "nodes": [
+    {
+      "id": 99,
+      "type": "BLIP Model Loader",
+      "pos": {
+        "0": -594,
+        "1": -328
+      },
+      "size": {
+        "0": 391.49285888671875,
+        "1": 106
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "BLIP_MODEL",
+          "type": "BLIP_MODEL",
+          "links": [
+            143
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BLIP Model Loader"
+      },
+      "widgets_values": [
+        "Salesforce/blip-image-captioning-base",
+        "Salesforce/blip-vqa-base",
+        "cuda"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 102,
+      "type": "easy showAnything",
+      "pos": {
+        "0": -117,
+        "1": -121
+      },
+      "size": {
+        "0": 383.379150390625,
+        "1": 156.4203643798828
+      },
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "anything",
+          "type": "*",
+          "link": 146
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "*",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "easy showAnything"
+      },
+      "widgets_values": [
+        "a woman in a white dress standing in the middle of a field of dai dais with a blue sky and white clouds behind her\n\n"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 113,
+      "type": "LoadImage",
+      "pos": {
+        "0": -962,
+        "1": -215
+      },
+      "size": [
+        315,
+        314
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            157,
+            161
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "BDDg6QqyZdc (1).jpg",
+        "image"
+      ]
+    },
+    {
+      "id": 117,
+      "type": "ShowText|pysssss",
+      "pos": {
+        "0": -144,
+        "1": 104
+      },
+      "size": [
+        449.0283508300781,
+        289.01654052734375
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 160,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "The image is a portrait of a young woman standing in a field of daisies. She is wearing a white dress with ruffles on the shoulders and a flowy skirt. Her long blonde hair is styled in loose curls and she is smiling at the camera. The background is a beautiful blue sky with the sun setting in the distance. The overall mood of the image is peaceful and serene."
+      ]
+    },
+    {
+      "id": 98,
+      "type": "BLIP Analyze Image",
+      "pos": {
+        "0": -587,
+        "1": -163
+      },
+      "size": {
+        "0": 400,
+        "1": 245
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 157
+        },
+        {
+          "name": "blip_model",
+          "type": "BLIP_MODEL",
+          "link": 143,
+          "slot_index": 1
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            146
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BLIP Analyze Image"
+      },
+      "widgets_values": [
+        "caption",
+        "describe woman hands",
+        24,
+        128,
+        2,
+        2,
+        false,
+        true
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 114,
+      "type": "Florence2Run",
+      "pos": {
+        "0": -600,
+        "1": 165
+      },
+      "size": {
+        "0": 400,
+        "1": 352.00006103515625
+      },
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 161,
+          "slot_index": 0
+        },
+        {
+          "name": "florence2_model",
+          "type": "FL2MODEL",
+          "link": 159,
+          "slot_index": 1
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "caption",
+          "type": "STRING",
+          "links": [
+            160
+          ],
+          "slot_index": 2,
+          "shape": 3
+        },
+        {
+          "name": "data",
+          "type": "JSON",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Florence2Run"
+      },
+      "widgets_values": [
+        "",
+        "more_detailed_caption",
+        true,
+        false,
+        2056,
+        4,
+        false,
+        "",
+        398381169667937,
+        "randomize",
+        true
+      ]
+    },
+    {
+      "id": 116,
+      "type": "DownloadAndLoadFlorence2Model",
+      "pos": {
+        "0": -955,
+        "1": 185
+      },
+      "size": {
+        "0": 315,
+        "1": 106
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "lora",
+          "type": "PEFTLORA",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "florence2_model",
+          "type": "FL2MODEL",
+          "links": [
+            159
+          ],
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "DownloadAndLoadFlorence2Model"
+      },
+      "widgets_values": [
+        "microsoft/Florence-2-large",
+        "fp16",
+        "sdpa"
+      ]
+    }
+  ],
+  "links": [
+    [
+      143,
+      99,
+      0,
+      98,
+      1,
+      "BLIP_MODEL"
+    ],
+    [
+      146,
+      98,
+      0,
+      102,
+      0,
+      "*"
+    ],
+    [
+      157,
+      113,
+      0,
+      98,
+      0,
+      "IMAGE"
+    ],
+    [
+      159,
+      116,
+      0,
+      114,
+      1,
+      "FL2MODEL"
+    ],
+    [
+      160,
+      114,
+      2,
+      117,
+      0,
+      "STRING"
+    ],
+    [
+      161,
+      113,
+      0,
+      114,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 1.1,
+      "offset": [
+        1302.4540847736544,
+        399.1304261012514
+      ]
+    }
+  },
+  "version": 0.4
+}
