@@ -1,0 +1,246 @@
+{
+  "last_node_id": 111,
+  "last_link_id": 248,
+  "nodes": [
+    {
+      "id": 68,
+      "type": "ReActorFaceSwap",
+      "pos": [
+        647.3479939144254,
+        302.4852151286886
+      ],
+      "size": {
+        "0": 315,
+        "1": 338
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "input_image",
+          "type": "IMAGE",
+          "link": 173
+        },
+        {
+          "name": "source_image",
+          "type": "IMAGE",
+          "link": 167
+        },
+        {
+          "name": "face_model",
+          "type": "FACE_MODEL",
+          "link": null,
+          "slot_index": 2
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            246
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "FACE_MODEL",
+          "type": "FACE_MODEL",
+          "links": [
+            177
+          ],
+          "shape": 3,
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ReActorFaceSwap"
+      },
+      "widgets_values": [
+        true,
+        "inswapper_128_fp16.onnx",
+        "retinaface_resnet50",
+        "codeformer-v0.1.0.pth",
+        1,
+        0,
+        "no",
+        "no",
+        "0",
+        "0",
+        1
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 72,
+      "type": "ReActorSaveFaceModel",
+      "pos": [
+        1022.3123957222867,
+        301.2451240115009
+      ],
+      "size": {
+        "0": 315,
+        "1": 126
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 246
+        },
+        {
+          "name": "face_model",
+          "type": "FACE_MODEL",
+          "link": 177
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ReActorSaveFaceModel"
+      },
+      "widgets_values": [
+        true,
+        "Satoka Ray",
+        1
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 10,
+      "type": "LoadImage",
+      "pos": [
+        19.347993914425654,
+        -51.514784871311264
+      ],
+      "size": {
+        "0": 487.3631286621094,
+        "1": 567.4212646484375
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            173
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "00043-3065874931 (8).png",
+        "image"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 63,
+      "type": "LoadImage",
+      "pos": [
+        22.34799391442565,
+        563.485215128688
+      ],
+      "size": {
+        "0": 487.07403564453125,
+        "1": 566.7973022460938
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            167
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "faceswapped_00103_.png",
+        "image"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    }
+  ],
+  "links": [
+    [
+      167,
+      63,
+      0,
+      68,
+      1,
+      "IMAGE"
+    ],
+    [
+      173,
+      10,
+      0,
+      68,
+      0,
+      "IMAGE"
+    ],
+    [
+      177,
+      68,
+      1,
+      72,
+      1,
+      "FACE_MODEL"
+    ],
+    [
+      246,
+      68,
+      0,
+      72,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [
+    {
+      "title": "ReActor_Model_Creation",
+      "bounding": [
+        3,
+        -122,
+        1392,
+        1264
+      ],
+      "color": "#3f789e",
+      "font_size": 24
+    }
+  ],
+  "config": {},
+  "extra": {},
+  "version": 0.4
+}
