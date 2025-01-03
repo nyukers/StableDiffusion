@@ -1,0 +1,345 @@
+{
+  "Version": 1,
+  "FirstLaunchSetupComplete": false,
+  "Theme": "Dark",
+  "Language": "en-US",
+  "NumberFormatMode": 1,
+  "InstalledPackages": [
+    {
+      "Id": "59576b30-5e0a-47ed-8979-a5b8815261c4",
+      "DisplayName": "ComfyUI",
+      "PackageName": "ComfyUI",
+      "Version": {
+        "InstalledBranch": "master",
+        "InstalledCommitSha": "67758f50f3d6ba9e275cdbcd62d1c7785b2bf27e",
+        "IsPrerelease": false
+      },
+      "LibraryPath": "Packages\\ComfyUI",
+      "LaunchCommand": "main.py",
+      "LaunchArgs": [
+        {
+          "Name": "--listen",
+          "Type": "String",
+          "OptionValue": ""
+        },
+        {
+          "Name": "--port",
+          "Type": "String",
+          "OptionValue": "8189"
+        },
+        {
+          "Name": "--preview-method auto",
+          "Type": "Bool",
+          "OptionValue": true
+        },
+        {
+          "Name": "--directml",
+          "Type": "Bool",
+          "OptionValue": false
+        },
+        {
+          "Name": "--cpu",
+          "Type": "Bool",
+          "OptionValue": false
+        },
+        {
+          "Name": "--disable-xformers",
+          "Type": "Bool",
+          "OptionValue": false
+        },
+        {
+          "Name": "",
+          "Type": "String",
+          "OptionValue": ""
+        }
+      ],
+      "LastUpdateCheck": "2024-12-31T20:23:14.1890246+02:00",
+      "UpdateAvailable": false,
+      "DontCheckForUpdates": false,
+      "PreferredTorchIndex": "Cuda",
+      "PreferredTorchVersion": "Cuda",
+      "PreferredSharedFolderMethod": "Configuration",
+      "UseSharedOutputFolder": true
+    },
+    {
+      "Id": "2b32aad0-8940-4efe-ab4f-a73d3e6c06b5",
+      "DisplayName": "SwarmUI",
+      "PackageName": "StableSwarmUI",
+      "Version": {
+        "InstalledBranch": "master",
+        "InstalledCommitSha": "227a1c0873341a80a18f78865fc1b080f4526aa7",
+        "IsPrerelease": false
+      },
+      "LibraryPath": "Packages\\SwarmUI",
+      "LaunchCommand": "",
+      "LaunchArgs": [],
+      "LastUpdateCheck": "2024-12-31T20:23:14.8446662+02:00",
+      "UpdateAvailable": true,
+      "DontCheckForUpdates": false,
+      "PreferredTorchIndex": "Cuda",
+      "PreferredTorchVersion": "Cuda",
+      "PreferredSharedFolderMethod": "Configuration",
+      "UseSharedOutputFolder": true
+    },
+    {
+      "Id": "76628cfb-78d5-4f4f-911d-77236e0307c2",
+      "DisplayName": "Fooocus",
+      "PackageName": "Fooocus",
+      "Version": {
+        "InstalledBranch": "main",
+        "InstalledCommitSha": "d7439b2d6004d50a0fda19108603a8d1941a185e",
+        "IsPrerelease": false
+      },
+      "LibraryPath": "Packages\\Fooocus",
+      "LaunchCommand": "launch.py",
+      "LaunchArgs": [
+        {
+          "Name": "--port",
+          "Type": "String",
+          "OptionValue": ""
+        },
+        {
+          "Name": "--listen",
+          "Type": "String",
+          "OptionValue": ""
+        },
+        {
+          "Name": "--output-path",
+          "Type": "String",
+          "OptionValue": ""
+        },
+        {
+          "Name": "--language",
+          "Type": "String",
+          "OptionValue": ""
+        },
+        {
+          "Name": "--directml",
+          "Type": "Bool",
+          "OptionValue": false
+        },
+        {
+          "Name": "--disable-xformers",
+          "Type": "Bool",
+          "OptionValue": false
+        },
+        {
+          "Name": "",
+          "Type": "String",
+          "OptionValue": "--theme=dark"
+        }
+      ],
+      "LastUpdateCheck": "2024-12-31T20:23:14.548081+02:00",
+      "UpdateAvailable": false,
+      "DontCheckForUpdates": false,
+      "PreferredTorchIndex": "Cuda",
+      "PreferredTorchVersion": "Cuda",
+      "PreferredSharedFolderMethod": "Configuration",
+      "UseSharedOutputFolder": false
+    },
+    {
+      "Id": "f856f440-55a3-4638-8da9-9658e153da16",
+      "DisplayName": "SD.Next",
+      "PackageName": "automatic",
+      "Version": {
+        "InstalledBranch": "master",
+        "InstalledCommitSha": "65ddc61161474cc956422cd71efa6b6095d365d3",
+        "IsPrerelease": false
+      },
+      "LibraryPath": "Packages\\SD.Next",
+      "LaunchCommand": "launch.py",
+      "LaunchArgs": [
+        {
+          "Name": "--use-directml",
+          "Type": "Bool",
+          "OptionValue": false
+        },
+        {
+          "Name": "--use-cuda",
+          "Type": "Bool",
+          "OptionValue": true
+        },
+        {
+          "Name": "--use-rocm",
+          "Type": "Bool",
+          "OptionValue": false
+        },
+        {
+          "Name": "--use-zluda",
+          "Type": "Bool",
+          "OptionValue": false
+        }
+      ],
+      "LastUpdateCheck": "2024-12-31T20:23:14.5476131+02:00",
+      "UpdateAvailable": true,
+      "DontCheckForUpdates": false,
+      "PreferredTorchIndex": "Cuda",
+      "PreferredTorchVersion": "Cuda",
+      "PreferredSharedFolderMethod": "Symlink",
+      "UseSharedOutputFolder": true
+    },
+    {
+      "Id": "af2c3995-a98a-4dfb-880a-4b386f13bb98",
+      "DisplayName": "SDFX",
+      "PackageName": "sdfx",
+      "Version": {
+        "InstalledBranch": "main",
+        "InstalledCommitSha": "9083da819eee127043f08a3a8bce7c0d3c532f4d",
+        "IsPrerelease": false
+      },
+      "LibraryPath": "Packages\\SDFX",
+      "LaunchCommand": "setup.py",
+      "LaunchArgs": [],
+      "LastUpdateCheck": "2024-12-31T20:23:14.5461607+02:00",
+      "UpdateAvailable": false,
+      "DontCheckForUpdates": false,
+      "PreferredTorchIndex": "Cuda",
+      "PreferredTorchVersion": "Cuda",
+      "PreferredSharedFolderMethod": "Configuration",
+      "UseSharedOutputFolder": true
+    },
+    {
+      "Id": "9cc95ffb-e972-4e93-bc14-d751a38d28ee",
+      "DisplayName": "FluxGym",
+      "PackageName": "FluxGym",
+      "Version": {
+        "InstalledBranch": "main",
+        "InstalledCommitSha": "eda201b61816c33365c12223f27e8c3e5fee6d0d",
+        "IsPrerelease": false
+      },
+      "LibraryPath": "Packages\\FluxGym",
+      "LaunchCommand": "app.py",
+      "LaunchArgs": [],
+      "LastUpdateCheck": "2024-12-31T20:23:14.1922268+02:00",
+      "UpdateAvailable": false,
+      "DontCheckForUpdates": false,
+      "PreferredTorchIndex": "Cuda",
+      "PreferredSharedFolderMethod": "Symlink",
+      "UseSharedOutputFolder": true
+    },
+    {
+      "Id": "561245b3-66e8-4911-8974-9cf733fcde96",
+      "DisplayName": "Cogstudio",
+      "PackageName": "Cogstudio",
+      "Version": {
+        "InstalledBranch": "main",
+        "InstalledCommitSha": "a6e611e3542e87695cf5f77b3209ef5164da4357",
+        "IsPrerelease": false
+      },
+      "LibraryPath": "Packages\\Cogstudio",
+      "LaunchCommand": "inference/gradio_composite_demo/cogstudio.py",
+      "LaunchArgs": [],
+      "LastUpdateCheck": "2024-12-31T20:23:14.5485155+02:00",
+      "UpdateAvailable": false,
+      "DontCheckForUpdates": false,
+      "PreferredTorchIndex": "Cuda",
+      "PreferredSharedFolderMethod": "None",
+      "UseSharedOutputFolder": true
+    }
+  ],
+  "ActiveInstalledPackage": "561245b3-66e8-4911-8974-9cf733fcde96",
+  "HasSeenWelcomeNotification": false,
+  "PreferredUpdateChannel": "Stable",
+  "CheckForUpdates": true,
+  "LastSeenUpdateVersion": "2.13.0",
+  "ModelBrowserNsfwEnabled": false,
+  "IsNavExpanded": false,
+  "IsImportAsConnected": false,
+  "ShowConnectedModelImages": false,
+  "SharedFolderVisibleCategories": "StableDiffusion, Lora, LyCORIS",
+  "WindowSettings": {
+    "Width": 1600,
+    "Height": 860,
+    "X": 0,
+    "Y": 0,
+    "IsMaximized": true
+  },
+  "ModelSearchOptions": {
+    "SelectedPeriod": "AllTime",
+    "SortMode": "HighestRated",
+    "SelectedModelType": "Checkpoint",
+    "SelectedBaseModelType": "All"
+  },
+  "IsPromptCompletionEnabled": true,
+  "TagCompletionCsv": "danbooru.csv",
+  "IsCompletionRemoveUnderscoresEnabled": true,
+  "IsImageViewerPixelGridEnabled": true,
+  "IsInferenceImageBrowserUseRecycleBinForDelete": true,
+  "RemoveFolderLinksOnShutdown": false,
+  "IsDiscordRichPresenceEnabled": false,
+  "EnvironmentVariables": {
+    "PIP_CACHE_DIR": "D:\\tmp\\cache",
+    "XDG_CACHE_HOME": "D:\\tmp\\cache"
+  },
+  "AnimationScale": 1,
+  "AutoScrollLaunchConsoleToEnd": true,
+  "ConsoleLogHistorySize": 9001,
+  "FavoriteModels": [],
+  "SeenTeachingTips": [
+    "InferencePromptHelpButtonTip",
+    "WebUiButtonMovedTip",
+    "PackageExtensionsInstallNotice"
+  ],
+  "NotificationOptions": {},
+  "SelectedBaseModels": [
+    "PixArt a",
+    "PixArt E",
+    "Pony",
+    "SD 1.5",
+    "SD 1.5 LCM",
+    "SD 2.1",
+    "SD 3",
+    "SDXL 0.9",
+    "SDXL 1.0",
+    "SDXL 1.0 LCM",
+    "SDXL Distilled",
+    "SDXL Hyper",
+    "SDXL Lightning",
+    "SDXL Turbo",
+    "SVD",
+    "Stable Cascade",
+    "Other"
+  ],
+  "InferenceImageSize": {
+    "Width": 150,
+    "Height": 190
+  },
+  "OutputsImageSize": {
+    "Width": 300,
+    "Height": 300
+  },
+  "HolidayModeSetting": "Automatic",
+  "IsWorkflowInfiniteScrollEnabled": true,
+  "IsOutputsTreeViewEnabled": true,
+  "CheckpointSortMode": 3,
+  "CheckpointSortDirection": 1,
+  "ShowModelsInSubfolders": true,
+  "SortConnectedModelsFirst": true,
+  "ConsoleFontSize": 14,
+  "AutoLoadCivitModels": true,
+  "MoveFilesOnImport": true,
+  "DragMovesAllSelected": true,
+  "HideEmptyRootCategories": false,
+  "HideInstalledModelsInModelBrowser": false,
+  "ShowNsfwInCheckpointsPage": false,
+  "Analytics": {
+    "LastSeenConsentVersion": "2.12.0\u002B144778175da4675a060c31f74bfd8af10ce9e80b",
+    "LastSeenConsentAccepted": true,
+    "IsUsageDataEnabled": false,
+    "LaunchDataLastSentAt": "2024-12-27T16:50:54.9793528+00:00"
+  },
+  "CheckpointsPageResizeFactor": 1,
+  "OutputsPageResizeFactor": 1,
+  "CivitBrowserResizeFactor": 1,
+  "HideEarlyAccessModels": false,
+  "PreferredGpu": {
+    "Index": 0,
+    "Name": "NVIDIA GeForce GTX 1080 Ti",
+    "MemoryBytes": 11811160064,
+    "MemoryLevel": 3,
+    "IsNvidia": true,
+    "IsAmd": false,
+    "IsIntel": false
+  },
+  "MaxConcurrentDownloads": 0
+}
