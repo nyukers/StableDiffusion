@@ -1,0 +1,964 @@
+{
+  "last_node_id": 32,
+  "last_link_id": 53,
+  "nodes": [
+    {
+      "id": 24,
+      "type": "ExpressionEditor",
+      "pos": [
+        1361.8638916015625,
+        379.8155212402344
+      ],
+      "size": [
+        315,
+        690
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "src_image",
+          "type": "IMAGE",
+          "link": 31,
+          "shape": 7
+        },
+        {
+          "name": "motion_link",
+          "type": "EDITOR_LINK",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "sample_image",
+          "type": "IMAGE",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "add_exp",
+          "type": "EXP_DATA",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "crop_factor",
+          "type": "FLOAT",
+          "link": 52,
+          "widget": {
+            "name": "crop_factor"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "name": "motion_link",
+          "type": "EDITOR_LINK",
+          "links": [
+            33
+          ]
+        },
+        {
+          "name": "save_exp",
+          "type": "EXP_DATA",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ExpressionEditor"
+      },
+      "widgets_values": [
+        0,
+        0,
+        0,
+        -20,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        "OnlyExpression",
+        1.5
+      ]
+    },
+    {
+      "id": 2,
+      "type": "LoadImage",
+      "pos": [
+        986.3050537109375,
+        379.8155212402344
+      ],
+      "size": [
+        342.4129333496094,
+        689.0596313476562
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            31
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "00134-2414998186.png",
+        "image"
+      ]
+    },
+    {
+      "id": 25,
+      "type": "ExpressionEditor",
+      "pos": [
+        1711.5572509765625,
+        379.8155212402344
+      ],
+      "size": [
+        315,
+        690
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "src_image",
+          "type": "IMAGE",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "motion_link",
+          "type": "EDITOR_LINK",
+          "link": 33,
+          "shape": 7
+        },
+        {
+          "name": "sample_image",
+          "type": "IMAGE",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "add_exp",
+          "type": "EXP_DATA",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "crop_factor",
+          "type": "FLOAT",
+          "link": 51,
+          "widget": {
+            "name": "crop_factor"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "name": "motion_link",
+          "type": "EDITOR_LINK",
+          "links": [
+            35
+          ]
+        },
+        {
+          "name": "save_exp",
+          "type": "EXP_DATA",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ExpressionEditor"
+      },
+      "widgets_values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0.87,
+        1,
+        1,
+        "OnlyExpression",
+        1.5
+      ]
+    },
+    {
+      "id": 26,
+      "type": "ExpressionEditor",
+      "pos": [
+        2057.548583984375,
+        379.8155212402344
+      ],
+      "size": [
+        315,
+        690
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "src_image",
+          "type": "IMAGE",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "motion_link",
+          "type": "EDITOR_LINK",
+          "link": 35,
+          "shape": 7
+        },
+        {
+          "name": "sample_image",
+          "type": "IMAGE",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "add_exp",
+          "type": "EXP_DATA",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "crop_factor",
+          "type": "FLOAT",
+          "link": 50,
+          "widget": {
+            "name": "crop_factor"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "name": "motion_link",
+          "type": "EDITOR_LINK",
+          "links": [
+            37
+          ]
+        },
+        {
+          "name": "save_exp",
+          "type": "EXP_DATA",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ExpressionEditor"
+      },
+      "widgets_values": [
+        0,
+        0,
+        -3.4000000000000004,
+        0,
+        0,
+        25,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        "OnlyExpression",
+        1.5
+      ]
+    },
+    {
+      "id": 27,
+      "type": "ExpressionEditor",
+      "pos": [
+        2402.050048828125,
+        379.8155212402344
+      ],
+      "size": [
+        315,
+        690
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "src_image",
+          "type": "IMAGE",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "motion_link",
+          "type": "EDITOR_LINK",
+          "link": 37,
+          "shape": 7
+        },
+        {
+          "name": "sample_image",
+          "type": "IMAGE",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "add_exp",
+          "type": "EXP_DATA",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "crop_factor",
+          "type": "FLOAT",
+          "link": 49,
+          "widget": {
+            "name": "crop_factor"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "name": "motion_link",
+          "type": "EDITOR_LINK",
+          "links": [
+            39
+          ]
+        },
+        {
+          "name": "save_exp",
+          "type": "EXP_DATA",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ExpressionEditor"
+      },
+      "widgets_values": [
+        -5.1000000000000005,
+        0,
+        0,
+        -20,
+        -6.9,
+        0,
+        0,
+        0,
+        0,
+        -11.4,
+        10.700000000000001,
+        -0.3,
+        1,
+        1,
+        "OnlyExpression",
+        1.5
+      ]
+    },
+    {
+      "id": 28,
+      "type": "ExpressionEditor",
+      "pos": [
+        2747.159423828125,
+        378.8595886230469
+      ],
+      "size": [
+        315,
+        690
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "src_image",
+          "type": "IMAGE",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "motion_link",
+          "type": "EDITOR_LINK",
+          "link": 39,
+          "shape": 7
+        },
+        {
+          "name": "sample_image",
+          "type": "IMAGE",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "add_exp",
+          "type": "EXP_DATA",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "crop_factor",
+          "type": "FLOAT",
+          "link": 48,
+          "widget": {
+            "name": "crop_factor"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "name": "motion_link",
+          "type": "EDITOR_LINK",
+          "links": [
+            40
+          ]
+        },
+        {
+          "name": "save_exp",
+          "type": "EXP_DATA",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ExpressionEditor"
+      },
+      "widgets_values": [
+        0,
+        -2.7,
+        6.800000000000001,
+        0,
+        -10,
+        0,
+        -15,
+        0,
+        -6,
+        4.4,
+        0,
+        -0.3,
+        1,
+        1,
+        "OnlyExpression",
+        1.5
+      ]
+    },
+    {
+      "id": 9,
+      "type": "Note",
+      "pos": [
+        1063.451904296875,
+        1116.53564453125
+      ],
+      "size": [
+        210,
+        58
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "движение 0 (исходное)"
+      ]
+    },
+    {
+      "id": 10,
+      "type": "Note",
+      "pos": [
+        1428.767822265625,
+        1118.7491455078125
+      ],
+      "size": [
+        210,
+        58
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "движение 1 мигание"
+      ]
+    },
+    {
+      "id": 11,
+      "type": "Note",
+      "pos": [
+        1763.1259765625,
+        1118.7491455078125
+      ],
+      "size": [
+        210,
+        58
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "движение 2 улыбка"
+      ]
+    },
+    {
+      "id": 15,
+      "type": "Note",
+      "pos": [
+        2115.072998046875,
+        1118.7491455078125
+      ],
+      "size": [
+        210,
+        58
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "движение 3 подмигивание"
+      ]
+    },
+    {
+      "id": 32,
+      "type": "Note",
+      "pos": [
+        3559.906005859375,
+        1111.81689453125
+      ],
+      "size": [
+        413.26507568359375,
+        94.1949462890625
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "Crop factor\n\nчем меньше индекс, тем меньше область которая будет анимирована\n\n"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 1,
+      "type": "VHS_VideoCombine",
+      "pos": [
+        3563.172607421875,
+        381.1014099121094
+      ],
+      "size": [
+        406.7245788574219,
+        523.9157104492188
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 7
+        },
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "meta_batch",
+          "type": "VHS_BatchManager",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": null,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Filenames",
+          "type": "VHS_FILENAMES",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VHS_VideoCombine"
+      },
+      "widgets_values": {
+        "frame_rate": 24,
+        "loop_count": 0,
+        "filename_prefix": "Portrait",
+        "format": "image/gif",
+        "pingpong": false,
+        "save_output": true,
+        "videopreview": {
+          "hidden": false,
+          "paused": false,
+          "params": {
+            "filename": "Portrait_00120.gif",
+            "subfolder": "",
+            "type": "output",
+            "format": "image/gif",
+            "frame_rate": 24,
+            "workflow": "Portrait_00120.png",
+            "fullpath": "G:\\AI\\ComfyUI\\ComfyUI\\output\\Portrait_00120.gif"
+          },
+          "muted": false
+        }
+      }
+    },
+    {
+      "id": 16,
+      "type": "Note",
+      "pos": [
+        2443.939697265625,
+        1118.7491455078125
+      ],
+      "size": [
+        210,
+        58
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "движение 4 поцелуй"
+      ]
+    },
+    {
+      "id": 23,
+      "type": "Note",
+      "pos": [
+        2787.97412109375,
+        1122.5184326171875
+      ],
+      "size": [
+        210,
+        58
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "движение 5 отвести взгляд"
+      ]
+    },
+    {
+      "id": 12,
+      "type": "Note",
+      "pos": [
+        3100.9755859375,
+        1110.5556640625
+      ],
+      "size": [
+        413.26507568359375,
+        94.1949462890625
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "комбинированное движение\n\n[Индекс движения] = [Изменение длины кадра]: [Длина кадров, ожидающих следующего движения]\n\n\n"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 6,
+      "type": "AdvancedLivePortrait",
+      "pos": [
+        3100,
+        380
+      ],
+      "size": [
+        414.1519775390625,
+        687.9735717773438
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "src_images",
+          "type": "IMAGE",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "motion_link",
+          "type": "EDITOR_LINK",
+          "link": 40,
+          "shape": 7
+        },
+        {
+          "name": "driving_images",
+          "type": "IMAGE",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "crop_factor",
+          "type": "FLOAT",
+          "link": 53,
+          "widget": {
+            "name": "crop_factor"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": [
+            7
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "AdvancedLivePortrait"
+      },
+      "widgets_values": [
+        0,
+        0,
+        1.5,
+        true,
+        false,
+        true,
+        "1 = 5:0\n0 = 10:0\n1 = 3:0\n0 = 10:0\n2 = 5:0\n3 = 10:5\n2 = 3:0\n4 = 25:0\n2 = 5:0\n5 = 20:10\n0 = 5:0",
+        [
+          false,
+          true
+        ]
+      ]
+    },
+    {
+      "id": 30,
+      "type": "PrimitiveNode",
+      "pos": [
+        3561.100830078125,
+        988.079345703125
+      ],
+      "size": [
+        409.8695068359375,
+        82
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "FLOAT",
+          "type": "FLOAT",
+          "links": [
+            48,
+            49,
+            50,
+            51,
+            52,
+            53
+          ],
+          "slot_index": 0,
+          "widget": {
+            "name": "crop_factor"
+          }
+        }
+      ],
+      "title": "Обрезка области анимации",
+      "properties": {
+        "Run widget replace on values": false
+      },
+      "widgets_values": [
+        1.5,
+        "randomize"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    }
+  ],
+  "links": [
+    [
+      7,
+      6,
+      0,
+      1,
+      0,
+      "IMAGE"
+    ],
+    [
+      31,
+      2,
+      0,
+      24,
+      0,
+      "IMAGE"
+    ],
+    [
+      33,
+      24,
+      1,
+      25,
+      1,
+      "EDITOR_LINK"
+    ],
+    [
+      35,
+      25,
+      1,
+      26,
+      1,
+      "EDITOR_LINK"
+    ],
+    [
+      37,
+      26,
+      1,
+      27,
+      1,
+      "EDITOR_LINK"
+    ],
+    [
+      39,
+      27,
+      1,
+      28,
+      1,
+      "EDITOR_LINK"
+    ],
+    [
+      40,
+      28,
+      1,
+      6,
+      1,
+      "EDITOR_LINK"
+    ],
+    [
+      48,
+      30,
+      0,
+      28,
+      4,
+      "FLOAT"
+    ],
+    [
+      49,
+      30,
+      0,
+      27,
+      4,
+      "FLOAT"
+    ],
+    [
+      50,
+      30,
+      0,
+      26,
+      4,
+      "FLOAT"
+    ],
+    [
+      51,
+      30,
+      0,
+      25,
+      4,
+      "FLOAT"
+    ],
+    [
+      52,
+      30,
+      0,
+      24,
+      4,
+      "FLOAT"
+    ],
+    [
+      53,
+      30,
+      0,
+      6,
+      3,
+      "FLOAT"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.8954302432553372,
+      "offset": [
+        -2460.8585194280886,
+        -307.38667525962944
+      ]
+    },
+    "ue_links": []
+  },
+  "version": 0.4
+}
