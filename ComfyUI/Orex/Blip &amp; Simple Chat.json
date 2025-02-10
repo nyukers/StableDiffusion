@@ -1,0 +1,3479 @@
+{
+  "last_node_id": 129,
+  "last_link_id": 206,
+  "nodes": [
+    {
+      "id": 71,
+      "type": "Pipe from any [Crystools]",
+      "pos": [
+        1400,
+        1140
+      ],
+      "size": {
+        "0": 216.59999084472656,
+        "1": 146
+      },
+      "flags": {},
+      "order": 29,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "CPipeAny",
+          "type": "CPipeAny",
+          "link": 131
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CPipeAny",
+          "type": "CPipeAny",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "any_1",
+          "type": "*",
+          "links": [
+            108
+          ],
+          "shape": 3,
+          "label": "MODEL",
+          "slot_index": 1
+        },
+        {
+          "name": "any_2",
+          "type": "*",
+          "links": [
+            122,
+            134
+          ],
+          "shape": 3,
+          "label": "CLIP",
+          "slot_index": 2
+        },
+        {
+          "name": "any_3",
+          "type": "*",
+          "links": [
+            112
+          ],
+          "shape": 3,
+          "label": "VAE",
+          "slot_index": 3
+        },
+        {
+          "name": "any_4",
+          "type": "*",
+          "links": [],
+          "shape": 3,
+          "label": "POS",
+          "slot_index": 4
+        },
+        {
+          "name": "any_5",
+          "type": "*",
+          "links": [],
+          "shape": 3,
+          "label": "NEG",
+          "slot_index": 5
+        },
+        {
+          "name": "any_6",
+          "type": "*",
+          "links": [
+            111
+          ],
+          "shape": 3,
+          "label": "Latent",
+          "slot_index": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Pipe from any [Crystools]"
+      },
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 2,
+      "type": "LoadImage",
+      "pos": [
+        308,
+        1236
+      ],
+      "size": {
+        "0": 297.68634033203125,
+        "1": 336.1735534667969
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 4,
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            1
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "ComfyUI_temp_eritt_00001_ (4).png",
+        "image"
+      ]
+    },
+    {
+      "id": 58,
+      "type": "GoogleTranslateTextNode",
+      "pos": [
+        668,
+        1753
+      ],
+      "size": {
+        "0": 220,
+        "1": 142
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 22,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 94,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            81
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GoogleTranslateTextNode"
+      },
+      "widgets_values": [
+        "en",
+        "ru",
+        false,
+        "Manual Trasnlate",
+        "женщина на мотоцикле"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 60,
+      "type": "ShowText|pysssss",
+      "pos": [
+        655,
+        1800
+      ],
+      "size": {
+        "0": 460.8156433105469,
+        "1": 227.04019165039062
+      },
+      "flags": {},
+      "order": 33,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 81,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "На изображении женщина стоит на переднем плане, в красной рубашке и черных шортах.Она, кажется, улыбается и является основным направлением сцены.На фоне оснащена стена красного кирпича, которая добавляет яркий и контрастный цвет к изображению.Общий художественный стиль и освещение создают живую и привлекательную атмосферу, привлекая внимание зрителя, женщина в красной рубашке и шортах стоит перед зданием.Она улыбается и, кажется, является основным направлением изображения.Женщина носит белую рубашку под своей красной рубашкой, и у нее есть руки в карманах.Сцена установлена ​​на фоне здания, что добавляет к общей композиции изображения,"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 18,
+      "type": "CLIPTextEncode",
+      "pos": [
+        1154,
+        1518
+      ],
+      "size": {
+        "0": 210,
+        "1": 54.30058288574219
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 37,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 122,
+          "slot_index": 0
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 132,
+          "widget": {
+            "name": "text"
+          },
+          "slot_index": 1
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            126
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "Женщина на мотоцикле"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 16,
+      "type": "CLIPTextEncode",
+      "pos": [
+        1151,
+        1573
+      ],
+      "size": {
+        "0": 210,
+        "1": 54
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 38,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 134,
+          "slot_index": 0
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 133,
+          "widget": {
+            "name": "text"
+          },
+          "slot_index": 1
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            127
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        ""
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 72,
+      "type": "CheckpointLoader|pysssss",
+      "pos": [
+        311.61103980152694,
+        674.4247025393383
+      ],
+      "size": {
+        "0": 417.98138427734375,
+        "1": 122
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            136
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            137
+          ],
+          "shape": 3,
+          "slot_index": 1
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            120
+          ],
+          "shape": 3,
+          "slot_index": 2
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CheckpointLoader|pysssss"
+      },
+      "widgets_values": [
+        {
+          "content": "SDXL\\realvisxlV40_v40Bakedvae.safetensors",
+          "image": null
+        },
+        "[none]"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 83,
+      "type": "Power Lora Loader (rgthree)",
+      "pos": {
+        "0": 788,
+        "1": 679,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "size": {
+        "0": 226.8000030517578,
+        "1": 142
+      },
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 136,
+          "dir": 3
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 137,
+          "dir": 3
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            138
+          ],
+          "shape": 3,
+          "dir": 4,
+          "slot_index": 0
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            139
+          ],
+          "shape": 3,
+          "dir": 4,
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Show Strengths": "Single Strength"
+      },
+      "widgets_values": [
+        null,
+        {
+          "type": "PowerLoraLoaderHeaderWidget"
+        },
+        {
+          "on": true,
+          "lora": "SDXL\\xl_more_art-full_v1.safetensors",
+          "strength": 0.9,
+          "strengthTwo": null
+        },
+        null,
+        ""
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 80,
+      "type": "GoogleTranslateTextNode",
+      "pos": [
+        306,
+        1627
+      ],
+      "size": {
+        "0": 323.7868347167969,
+        "1": 299.46234130859375
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 4,
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            135
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GoogleTranslateTextNode"
+      },
+      "widgets_values": [
+        "auto",
+        "en",
+        false,
+        "Manual Trasnlate",
+        "Опиши основной объект и его положение в сцене.\nОпиши эмоции.\nОпиши освещение и художественные стиль.\nОпиши фон.\nИсключи нумерацию."
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 76,
+      "type": "SDXL Empty Latent Image (rgthree)",
+      "pos": [
+        322,
+        851
+      ],
+      "size": {
+        "0": 300.1403503417969,
+        "1": 146
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            115
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "CLIP_WIDTH",
+          "type": "INT",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "CLIP_HEIGHT",
+          "type": "INT",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SDXL Empty Latent Image (rgthree)"
+      },
+      "widgets_values": [
+        "1024 x 1024  (square)",
+        2,
+        1
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 89,
+      "type": "CLIPTextEncode",
+      "pos": [
+        1128.1823552313954,
+        2630.408826253253
+      ],
+      "size": {
+        "0": 210,
+        "1": 54
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 39,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 144,
+          "slot_index": 0
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 145,
+          "widget": {
+            "name": "text"
+          },
+          "slot_index": 1
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            153
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        ""
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 90,
+      "type": "CLIPTextEncode",
+      "pos": [
+        1138.1823552313954,
+        2580.408826253253
+      ],
+      "size": {
+        "0": 210,
+        "1": 54.30058288574219
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 40,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 146,
+          "slot_index": 0
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 147,
+          "widget": {
+            "name": "text"
+          },
+          "slot_index": 1
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            152
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "Женщина на мотоцикле"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 95,
+      "type": "Pipe from any [Crystools]",
+      "pos": [
+        1378.1823552313954,
+        2200.408826253253
+      ],
+      "size": {
+        "0": 216.59999084472656,
+        "1": 146
+      },
+      "flags": {},
+      "order": 30,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "CPipeAny",
+          "type": "CPipeAny",
+          "link": 159
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CPipeAny",
+          "type": "CPipeAny",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "any_1",
+          "type": "*",
+          "links": [
+            151
+          ],
+          "shape": 3,
+          "label": "MODEL",
+          "slot_index": 1
+        },
+        {
+          "name": "any_2",
+          "type": "*",
+          "links": [
+            144,
+            146
+          ],
+          "shape": 3,
+          "label": "CLIP",
+          "slot_index": 2
+        },
+        {
+          "name": "any_3",
+          "type": "*",
+          "links": [
+            155
+          ],
+          "shape": 3,
+          "label": "VAE",
+          "slot_index": 3
+        },
+        {
+          "name": "any_4",
+          "type": "*",
+          "links": [],
+          "shape": 3,
+          "label": "POS",
+          "slot_index": 4
+        },
+        {
+          "name": "any_5",
+          "type": "*",
+          "links": [],
+          "shape": 3,
+          "label": "NEG",
+          "slot_index": 5
+        },
+        {
+          "name": "any_6",
+          "type": "*",
+          "links": [
+            154
+          ],
+          "shape": 3,
+          "label": "Latent",
+          "slot_index": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Pipe from any [Crystools]"
+      },
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 97,
+      "type": "Seed (rgthree)",
+      "pos": {
+        "0": 1138.182373046875,
+        "1": 2700.40869140625,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "size": {
+        "0": 210,
+        "1": 130
+      },
+      "flags": {},
+      "order": 4,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "SEED",
+          "type": "INT",
+          "links": [
+            156
+          ],
+          "shape": 3,
+          "dir": 4,
+          "slot_index": 0
+        }
+      ],
+      "properties": {},
+      "widgets_values": [
+        307124744925130,
+        null,
+        null,
+        null
+      ],
+      "color": "#332922",
+      "bgcolor": "#593930"
+    },
+    {
+      "id": 92,
+      "type": "GoogleTranslateTextNode",
+      "pos": [
+        658.1823552313953,
+        2690.408826253253
+      ],
+      "size": {
+        "0": 220,
+        "1": 142
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 23,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 157,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            150
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GoogleTranslateTextNode"
+      },
+      "widgets_values": [
+        "en",
+        "ru",
+        false,
+        "Manual Trasnlate",
+        "женщина на мотоцикле"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 88,
+      "type": "LoadImage",
+      "pos": [
+        288.1823552313956,
+        2300.408826253253
+      ],
+      "size": {
+        "0": 297.68634033203125,
+        "1": 336.1735534667969
+      },
+      "flags": {},
+      "order": 5,
+      "mode": 4,
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            160
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "ComfyUI_temp_eritt_00001_ (5).png",
+        "image"
+      ]
+    },
+    {
+      "id": 20,
+      "type": "SDXLPromptStyler",
+      "pos": [
+        1056,
+        1238
+      ],
+      "size": {
+        "0": 311.4126281738281,
+        "1": 235.03724670410156
+      },
+      "flags": {},
+      "order": 21,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "text_positive",
+          "type": "STRING",
+          "link": 40,
+          "widget": {
+            "name": "text_positive"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text_positive",
+          "type": "STRING",
+          "links": [
+            132
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "text_negative",
+          "type": "STRING",
+          "links": [
+            133
+          ],
+          "shape": 3,
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SDXLPromptStyler"
+      },
+      "widgets_values": [
+        "",
+        "",
+        "base",
+        true,
+        true,
+        true
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 93,
+      "type": "ShowText|pysssss",
+      "pos": [
+        644.1823552313953,
+        2745.408826253253
+      ],
+      "size": {
+        "0": 460.8156433105469,
+        "1": 227.04019165039062
+      },
+      "flags": {},
+      "order": 34,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 150,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "1girl, Solo, Looking_at_viewer, Smile, Short_hair, Bangs, Brown_hair, рубашка, Long_sleeves, Brown_eyes, Stand, White_Shirt, Cowboy_shot, Шорты, зубы, коллауд, красавица, свитер, губы, parted_bangs, short_shorts, black_shorts, границы, границы, Freckles, Realistics, Realistics, Realistics, Realistics, Realistics, Realistics, Realitistнос, hands_in_pockets, red_sweater, parted_hair, red_border"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 91,
+      "type": "SDXLPromptStyler",
+      "pos": [
+        1038.1823552313954,
+        2300.408826253253
+      ],
+      "size": {
+        "0": 311.4126281738281,
+        "1": 235.03724670410156
+      },
+      "flags": {},
+      "order": 24,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "text_positive",
+          "type": "STRING",
+          "link": 158,
+          "widget": {
+            "name": "text_positive"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text_positive",
+          "type": "STRING",
+          "links": [
+            147
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "text_negative",
+          "type": "STRING",
+          "links": [
+            145
+          ],
+          "shape": 3,
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SDXLPromptStyler"
+      },
+      "widgets_values": [
+        "",
+        "",
+        "base",
+        true,
+        true,
+        true
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 1,
+      "type": "img2txt BLIP/Llava Multimodel Tagger",
+      "pos": [
+        660,
+        1240
+      ],
+      "size": {
+        "0": 360,
+        "1": 440
+      },
+      "flags": {},
+      "order": 16,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "input_image",
+          "type": "IMAGE",
+          "link": 1,
+          "slot_index": 0
+        },
+        {
+          "name": "prompt_questions",
+          "type": "STRING",
+          "link": 135,
+          "widget": {
+            "name": "prompt_questions"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "caption",
+          "type": "STRING",
+          "links": [
+            40,
+            94
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "img2txt BLIP/Llava Multimodel Tagger"
+      },
+      "widgets_values": [
+        false,
+        true,
+        false,
+        false,
+        "",
+        "Describe the style of this image.\nDescribe the main object.\nEliminate bullets, numbering and tags.",
+        0.8,
+        1.8800000000000001,
+        24,
+        100,
+        5,
+        "watermark, text, writing, </s>,-:",
+        "In the image, a woman is standing in the foreground, wearing a red shirt and black shorts. She appears to be smiling and is the main focus of the scene. The background features a red brick wall, which adds a vibrant and contrasting color to the image. The overall artistic style and lighting create a lively and engaging atmosphere, capturing the viewer's attention,    A woman wearing a red shirt and shorts is standing in front of a building. She is smiling and appears to be the main focus of the image. The woman is wearing a white shirt under her red shirt, and she has her hands in her pockets. The scene is set against a backdrop of a building, which adds to the overall composition of the image, , "
+      ],
+      "color": "#bbc52f",
+      "bgcolor": "#a7b11b"
+    },
+    {
+      "id": 85,
+      "type": "WD14Tagger|pysssss",
+      "pos": [
+        651.1823552313953,
+        2300.408826253253
+      ],
+      "size": {
+        "0": 365.18505859375,
+        "1": 320.1911315917969
+      },
+      "flags": {},
+      "order": 17,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 160,
+          "slot_index": 0
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            157,
+            158
+          ],
+          "shape": 6,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "WD14Tagger|pysssss"
+      },
+      "widgets_values": [
+        "wd-v1-4-convnextv2-tagger-v2",
+        0.25,
+        0.85,
+        false,
+        false,
+        "blurry, soft, low quality, watermark",
+        "1girl, solo, looking_at_viewer, smile, short_hair, bangs, brown_hair, shirt, long_sleeves, brown_eyes, standing, white_shirt, cowboy_shot, shorts, teeth, collared_shirt, grin, sweater, lips, parted_bangs, short_shorts, black_shorts, border, freckles, realistic, nose, hands_in_pockets, red_sweater, parted_hair, red_border"
+      ],
+      "color": "#9bc83b",
+      "bgcolor": "#87b427"
+    },
+    {
+      "id": 94,
+      "type": "KSampler (Efficient)",
+      "pos": [
+        1388.1823552313954,
+        2410.408826253253
+      ],
+      "size": {
+        "0": 274.94775390625,
+        "1": 562
+      },
+      "flags": {},
+      "order": 46,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 151
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 152
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 153
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 154
+        },
+        {
+          "name": "optional_vae",
+          "type": "VAE",
+          "link": 155
+        },
+        {
+          "name": "script",
+          "type": "SCRIPT",
+          "link": null
+        },
+        {
+          "name": "seed",
+          "type": "INT",
+          "link": 156,
+          "widget": {
+            "name": "seed"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "CONDITIONING+",
+          "type": "CONDITIONING",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "CONDITIONING-",
+          "type": "CONDITIONING",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "KSampler (Efficient)"
+      },
+      "widgets_values": [
+        546438054606591,
+        null,
+        24,
+        7,
+        "dpmpp_2m",
+        "karras",
+        1,
+        "auto",
+        "true"
+      ],
+      "color": "#233",
+      "bgcolor": "#355",
+      "shape": 1
+    },
+    {
+      "id": 69,
+      "type": "KSampler (Efficient)",
+      "pos": [
+        1404,
+        1353
+      ],
+      "size": {
+        "0": 274.94775390625,
+        "1": 562
+      },
+      "flags": {},
+      "order": 45,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 108
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 126
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 127
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 111
+        },
+        {
+          "name": "optional_vae",
+          "type": "VAE",
+          "link": 112
+        },
+        {
+          "name": "script",
+          "type": "SCRIPT",
+          "link": null
+        },
+        {
+          "name": "seed",
+          "type": "INT",
+          "link": 140,
+          "widget": {
+            "name": "seed"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "CONDITIONING+",
+          "type": "CONDITIONING",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "CONDITIONING-",
+          "type": "CONDITIONING",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "KSampler (Efficient)"
+      },
+      "widgets_values": [
+        546438054606591,
+        null,
+        24,
+        7,
+        "dpmpp_2m",
+        "karras",
+        1,
+        "auto",
+        "true"
+      ],
+      "color": "#233",
+      "bgcolor": "#355",
+      "shape": 1
+    },
+    {
+      "id": 103,
+      "type": "CLIPTextEncode",
+      "pos": [
+        1110,
+        3557.555616590712
+      ],
+      "size": {
+        "0": 210,
+        "1": 54
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 41,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 164,
+          "slot_index": 0
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 165,
+          "widget": {
+            "name": "text"
+          },
+          "slot_index": 1
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            173
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        ""
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 104,
+      "type": "CLIPTextEncode",
+      "pos": [
+        1120,
+        3507.555616590712
+      ],
+      "size": {
+        "0": 210,
+        "1": 54.30058288574219
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 42,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 166,
+          "slot_index": 0
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 167,
+          "widget": {
+            "name": "text"
+          },
+          "slot_index": 1
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            172
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "Женщина на мотоцикле"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 105,
+      "type": "SDXLPromptStyler",
+      "pos": [
+        1020,
+        3227.555616590712
+      ],
+      "size": {
+        "0": 311.4126281738281,
+        "1": 235.03724670410156
+      },
+      "flags": {},
+      "order": 26,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text_positive",
+          "type": "STRING",
+          "link": 180,
+          "widget": {
+            "name": "text_positive"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text_positive",
+          "type": "STRING",
+          "links": [
+            167
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "text_negative",
+          "type": "STRING",
+          "links": [
+            165
+          ],
+          "shape": 3,
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SDXLPromptStyler"
+      },
+      "widgets_values": [
+        "",
+        "",
+        "base",
+        true,
+        true,
+        true
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 108,
+      "type": "KSampler (Efficient)",
+      "pos": [
+        1370,
+        3337.555616590712
+      ],
+      "size": {
+        "0": 274.94775390625,
+        "1": 562
+      },
+      "flags": {},
+      "order": 47,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 171
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 172
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 173
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 174
+        },
+        {
+          "name": "optional_vae",
+          "type": "VAE",
+          "link": 175
+        },
+        {
+          "name": "script",
+          "type": "SCRIPT",
+          "link": null
+        },
+        {
+          "name": "seed",
+          "type": "INT",
+          "link": 176,
+          "widget": {
+            "name": "seed"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "CONDITIONING+",
+          "type": "CONDITIONING",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "CONDITIONING-",
+          "type": "CONDITIONING",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "KSampler (Efficient)"
+      },
+      "widgets_values": [
+        546438054606591,
+        null,
+        24,
+        7,
+        "dpmpp_2m",
+        "karras",
+        1,
+        "auto",
+        "true"
+      ],
+      "color": "#233",
+      "bgcolor": "#355",
+      "shape": 1
+    },
+    {
+      "id": 109,
+      "type": "Pipe from any [Crystools]",
+      "pos": [
+        1360,
+        3127.555616590712
+      ],
+      "size": {
+        "0": 216.59999084472656,
+        "1": 146
+      },
+      "flags": {},
+      "order": 31,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "CPipeAny",
+          "type": "CPipeAny",
+          "link": 179
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CPipeAny",
+          "type": "CPipeAny",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "any_1",
+          "type": "*",
+          "links": [
+            171
+          ],
+          "shape": 3,
+          "label": "MODEL",
+          "slot_index": 1
+        },
+        {
+          "name": "any_2",
+          "type": "*",
+          "links": [
+            164,
+            166
+          ],
+          "shape": 3,
+          "label": "CLIP",
+          "slot_index": 2
+        },
+        {
+          "name": "any_3",
+          "type": "*",
+          "links": [
+            175
+          ],
+          "shape": 3,
+          "label": "VAE",
+          "slot_index": 3
+        },
+        {
+          "name": "any_4",
+          "type": "*",
+          "links": [],
+          "shape": 3,
+          "label": "POS",
+          "slot_index": 4
+        },
+        {
+          "name": "any_5",
+          "type": "*",
+          "links": [],
+          "shape": 3,
+          "label": "NEG",
+          "slot_index": 5
+        },
+        {
+          "name": "any_6",
+          "type": "*",
+          "links": [
+            174
+          ],
+          "shape": 3,
+          "label": "Latent",
+          "slot_index": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Pipe from any [Crystools]"
+      },
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 106,
+      "type": "GoogleTranslateTextNode",
+      "pos": [
+        640,
+        3617.555616590712
+      ],
+      "size": {
+        "0": 220,
+        "1": 142
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 25,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 177,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            170
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GoogleTranslateTextNode"
+      },
+      "widgets_values": [
+        "en",
+        "ru",
+        false,
+        "Manual Trasnlate",
+        "женщина на мотоцикле"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 102,
+      "type": "LoadImage",
+      "pos": [
+        270,
+        3227.555616590712
+      ],
+      "size": {
+        "0": 297.68634033203125,
+        "1": 336.1735534667969
+      },
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            178
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "ComfyUI_temp_eritt_00001_ (6).png",
+        "image"
+      ]
+    },
+    {
+      "id": 84,
+      "type": "Seed (rgthree)",
+      "pos": {
+        "0": 1147,
+        "1": 1633,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "size": {
+        "0": 210,
+        "1": 130
+      },
+      "flags": {},
+      "order": 7,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "SEED",
+          "type": "INT",
+          "links": [
+            140
+          ],
+          "shape": 3,
+          "dir": 4,
+          "slot_index": 0
+        }
+      ],
+      "properties": {},
+      "widgets_values": [
+        307124744925130,
+        null,
+        null,
+        null
+      ],
+      "color": "#332922",
+      "bgcolor": "#593930"
+    },
+    {
+      "id": 111,
+      "type": "Seed (rgthree)",
+      "pos": {
+        "0": 1120,
+        "1": 3627.5556640625,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "size": {
+        "0": 210,
+        "1": 130
+      },
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "SEED",
+          "type": "INT",
+          "links": [
+            176
+          ],
+          "shape": 3,
+          "dir": 4,
+          "slot_index": 0
+        }
+      ],
+      "properties": {},
+      "widgets_values": [
+        307124744925136,
+        null,
+        null,
+        null
+      ],
+      "color": "#332922",
+      "bgcolor": "#593930"
+    },
+    {
+      "id": 118,
+      "type": "CLIPTextEncode",
+      "pos": [
+        1100,
+        4500
+      ],
+      "size": {
+        "0": 210,
+        "1": 54
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 43,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 185,
+          "slot_index": 0
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 186,
+          "widget": {
+            "name": "text"
+          },
+          "slot_index": 1
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            194
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        ""
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 119,
+      "type": "CLIPTextEncode",
+      "pos": [
+        1110,
+        4450
+      ],
+      "size": {
+        "0": 210,
+        "1": 54.30058288574219
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 44,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 187,
+          "slot_index": 0
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 188,
+          "widget": {
+            "name": "text"
+          },
+          "slot_index": 1
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            193
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "Женщина на мотоцикле"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 120,
+      "type": "SDXLPromptStyler",
+      "pos": [
+        1010,
+        4170
+      ],
+      "size": {
+        "0": 311.4126281738281,
+        "1": 235.03724670410156
+      },
+      "flags": {},
+      "order": 27,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "text_positive",
+          "type": "STRING",
+          "link": 199,
+          "widget": {
+            "name": "text_positive"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text_positive",
+          "type": "STRING",
+          "links": [
+            188
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "text_negative",
+          "type": "STRING",
+          "links": [
+            186
+          ],
+          "shape": 3,
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SDXLPromptStyler"
+      },
+      "widgets_values": [
+        "",
+        "",
+        "base",
+        true,
+        true,
+        true
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 123,
+      "type": "KSampler (Efficient)",
+      "pos": [
+        1360,
+        4280
+      ],
+      "size": {
+        "0": 274.94775390625,
+        "1": 562
+      },
+      "flags": {},
+      "order": 48,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 192
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 193
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 194
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 195
+        },
+        {
+          "name": "optional_vae",
+          "type": "VAE",
+          "link": 196
+        },
+        {
+          "name": "script",
+          "type": "SCRIPT",
+          "link": null
+        },
+        {
+          "name": "seed",
+          "type": "INT",
+          "link": 197,
+          "widget": {
+            "name": "seed"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "CONDITIONING+",
+          "type": "CONDITIONING",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "CONDITIONING-",
+          "type": "CONDITIONING",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "KSampler (Efficient)"
+      },
+      "widgets_values": [
+        546438054606591,
+        null,
+        24,
+        7,
+        "dpmpp_2m",
+        "karras",
+        1,
+        "auto",
+        "true"
+      ],
+      "color": "#233",
+      "bgcolor": "#355",
+      "shape": 1
+    },
+    {
+      "id": 124,
+      "type": "Pipe from any [Crystools]",
+      "pos": [
+        1350,
+        4070
+      ],
+      "size": {
+        "0": 216.59999084472656,
+        "1": 146
+      },
+      "flags": {},
+      "order": 32,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "CPipeAny",
+          "type": "CPipeAny",
+          "link": 198
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CPipeAny",
+          "type": "CPipeAny",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "any_1",
+          "type": "*",
+          "links": [
+            192
+          ],
+          "shape": 3,
+          "label": "MODEL",
+          "slot_index": 1
+        },
+        {
+          "name": "any_2",
+          "type": "*",
+          "links": [
+            185,
+            187
+          ],
+          "shape": 3,
+          "label": "CLIP",
+          "slot_index": 2
+        },
+        {
+          "name": "any_3",
+          "type": "*",
+          "links": [
+            196
+          ],
+          "shape": 3,
+          "label": "VAE",
+          "slot_index": 3
+        },
+        {
+          "name": "any_4",
+          "type": "*",
+          "links": [],
+          "shape": 3,
+          "label": "POS",
+          "slot_index": 4
+        },
+        {
+          "name": "any_5",
+          "type": "*",
+          "links": [],
+          "shape": 3,
+          "label": "NEG",
+          "slot_index": 5
+        },
+        {
+          "name": "any_6",
+          "type": "*",
+          "links": [
+            195
+          ],
+          "shape": 3,
+          "label": "Latent",
+          "slot_index": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Pipe from any [Crystools]"
+      },
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 126,
+      "type": "Seed (rgthree)",
+      "pos": {
+        "0": 1110,
+        "1": 4570,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "size": {
+        "0": 210,
+        "1": 130
+      },
+      "flags": {},
+      "order": 9,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "SEED",
+          "type": "INT",
+          "links": [
+            197
+          ],
+          "shape": 3,
+          "dir": 4,
+          "slot_index": 0
+        }
+      ],
+      "properties": {},
+      "widgets_values": [
+        307124744925136,
+        null,
+        null,
+        null
+      ],
+      "color": "#332922",
+      "bgcolor": "#593930"
+    },
+    {
+      "id": 78,
+      "type": "Pipe to/edit any [Crystools]",
+      "pos": [
+        845,
+        889
+      ],
+      "size": {
+        "0": 216.59999084472656,
+        "1": 146
+      },
+      "flags": {},
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "CPipeAny",
+          "type": "CPipeAny",
+          "link": null
+        },
+        {
+          "name": "any_1",
+          "type": "*",
+          "link": 138,
+          "label": "MODEL"
+        },
+        {
+          "name": "any_2",
+          "type": "*",
+          "link": 139,
+          "label": "CLIP"
+        },
+        {
+          "name": "any_3",
+          "type": "*",
+          "link": 120,
+          "label": "VAE"
+        },
+        {
+          "name": "any_4",
+          "type": "*",
+          "link": null,
+          "label": "POS"
+        },
+        {
+          "name": "any_5",
+          "type": "*",
+          "link": null,
+          "label": "NEG"
+        },
+        {
+          "name": "any_6",
+          "type": "*",
+          "link": 115,
+          "label": "Latent"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CPipeAny",
+          "type": "CPipeAny",
+          "links": [
+            131,
+            159,
+            179,
+            198
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Pipe to/edit any [Crystools]"
+      },
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 121,
+      "type": "GoogleTranslateTextNode",
+      "pos": [
+        630,
+        4560
+      ],
+      "size": {
+        "0": 220,
+        "1": 142
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 28,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 201,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            202
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GoogleTranslateTextNode"
+      },
+      "widgets_values": [
+        "en",
+        "ru",
+        false,
+        "Manual Trasnlate",
+        "женщина на мотоцикле"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 117,
+      "type": "LoadImage",
+      "pos": [
+        260,
+        4170
+      ],
+      "size": {
+        "0": 297.68634033203125,
+        "1": 336.1735534667969
+      },
+      "flags": {},
+      "order": 10,
+      "mode": 4,
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            204
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "00007-3346033706-dancing beautiful girl 12 yo dressed in magical fairy clothes, (Beautiful face_1.3),_beautiful fairytale forest, moss, fireflies (1).png",
+        "image"
+      ]
+    },
+    {
+      "id": 98,
+      "type": "BLIPCaption",
+      "pos": [
+        615,
+        3174
+      ],
+      "size": {
+        "0": 361.1421203613281,
+        "1": 198
+      },
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 178,
+          "slot_index": 0
+        },
+        {
+          "name": "blip_model",
+          "type": "BLIP_MODEL",
+          "link": null,
+          "slot_index": 1
+        }
+      ],
+      "outputs": [
+        {
+          "name": "caption",
+          "type": "STRING",
+          "links": [
+            177,
+            180
+          ],
+          "shape": 6,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BLIPCaption"
+      },
+      "widgets_values": [
+        24,
+        72,
+        "AUTO",
+        "",
+        "",
+        true
+      ],
+      "color": "#7d9a2d",
+      "bgcolor": "#698619"
+    },
+    {
+      "id": 107,
+      "type": "ShowText|pysssss",
+      "pos": [
+        620,
+        3668
+      ],
+      "size": {
+        "0": 460.8156433105469,
+        "1": 227.04019165039062
+      },
+      "flags": {},
+      "order": 35,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 170,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "Картина женщины в красной рубашке и синие шорты с ее руками на бедрах и руками на бедрах"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 122,
+      "type": "ShowText|pysssss",
+      "pos": [
+        610,
+        4610
+      ],
+      "size": {
+        "0": 460.8156433105469,
+        "1": 227.04019165039062
+      },
+      "flags": {},
+      "order": 36,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 202,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "Трюки деревьев и ветви со светом, проходящим через них через них и зажжены от подсвечников и свечерных огней и огней"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 114,
+      "type": "BLIP Model Loader",
+      "pos": [
+        600,
+        4100
+      ],
+      "size": {
+        "0": 382.41094970703125,
+        "1": 106
+      },
+      "flags": {},
+      "order": 11,
+      "mode": 4,
+      "outputs": [
+        {
+          "name": "BLIP_MODEL",
+          "type": "BLIP_MODEL",
+          "links": [
+            181
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BLIP Model Loader"
+      },
+      "widgets_values": [
+        "Salesforce/blip-image-captioning-base",
+        "Salesforce/blip-vqa-base",
+        "cuda"
+      ],
+      "color": "#8cb436",
+      "bgcolor": "#78a022"
+    },
+    {
+      "id": 112,
+      "type": "BLIP Analyze Image",
+      "pos": [
+        590,
+        4270
+      ],
+      "size": {
+        "0": 400,
+        "1": 240.00021362304688
+      },
+      "flags": {},
+      "order": 19,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 204
+        },
+        {
+          "name": "blip_model",
+          "type": "BLIP_MODEL",
+          "link": 181,
+          "slot_index": 1
+        },
+        {
+          "name": "question",
+          "type": "STRING",
+          "link": 203,
+          "widget": {
+            "name": "question"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            199,
+            201
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BLIP Analyze Image"
+      },
+      "widgets_values": [
+        "interrogate",
+        "Describe the weather",
+        24,
+        150,
+        5,
+        3,
+        false
+      ],
+      "color": "#8cb436",
+      "bgcolor": "#78a022"
+    },
+    {
+      "id": 125,
+      "type": "GoogleTranslateTextNode",
+      "pos": [
+        260,
+        4560
+      ],
+      "size": {
+        "0": 298.9293518066406,
+        "1": 292.8707275390625
+      },
+      "flags": {},
+      "order": 12,
+      "mode": 4,
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            203
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GoogleTranslateTextNode"
+      },
+      "widgets_values": [
+        "auto",
+        "en",
+        false,
+        "Manual Trasnlate",
+        "Что ты видишь на фоне"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 127,
+      "type": "Fast Groups Bypasser (rgthree)",
+      "pos": {
+        "0": 1362,
+        "1": 822,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "size": [
+        414.6055051407661,
+        200.44235003250196
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "matchColors": "",
+        "matchTitle": "stabledif",
+        "showNav": true,
+        "sort": "position",
+        "customSortAlphabet": "",
+        "toggleRestriction": "always one"
+      },
+      "color": "#38c1ef",
+      "bgcolor": "#24addb"
+    },
+    {
+      "id": 100,
+      "type": "BLIPLoader",
+      "pos": [
+        614,
+        3423
+      ],
+      "size": {
+        "0": 363.1380310058594,
+        "1": 61.12998580932617
+      },
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "BLIP_MODEL",
+          "type": "BLIP_MODEL",
+          "links": [],
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BLIPLoader"
+      },
+      "widgets_values": [
+        "model_base_caption_capfilt_large.pth"
+      ],
+      "color": "#7d9a2d",
+      "bgcolor": "#698619"
+    }
+  ],
+  "links": [
+    [
+      1,
+      2,
+      0,
+      1,
+      0,
+      "IMAGE"
+    ],
+    [
+      40,
+      1,
+      0,
+      20,
+      0,
+      "STRING"
+    ],
+    [
+      81,
+      58,
+      0,
+      60,
+      0,
+      "STRING"
+    ],
+    [
+      94,
+      1,
+      0,
+      58,
+      0,
+      "STRING"
+    ],
+    [
+      108,
+      71,
+      1,
+      69,
+      0,
+      "MODEL"
+    ],
+    [
+      111,
+      71,
+      6,
+      69,
+      3,
+      "LATENT"
+    ],
+    [
+      112,
+      71,
+      3,
+      69,
+      4,
+      "VAE"
+    ],
+    [
+      115,
+      76,
+      0,
+      78,
+      6,
+      "*"
+    ],
+    [
+      120,
+      72,
+      2,
+      78,
+      3,
+      "*"
+    ],
+    [
+      122,
+      71,
+      2,
+      18,
+      0,
+      "CLIP"
+    ],
+    [
+      126,
+      18,
+      0,
+      69,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      127,
+      16,
+      0,
+      69,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      131,
+      78,
+      0,
+      71,
+      0,
+      "CPipeAny"
+    ],
+    [
+      132,
+      20,
+      0,
+      18,
+      1,
+      "STRING"
+    ],
+    [
+      133,
+      20,
+      1,
+      16,
+      1,
+      "STRING"
+    ],
+    [
+      134,
+      71,
+      2,
+      16,
+      0,
+      "CLIP"
+    ],
+    [
+      135,
+      80,
+      0,
+      1,
+      1,
+      "STRING"
+    ],
+    [
+      136,
+      72,
+      0,
+      83,
+      0,
+      "MODEL"
+    ],
+    [
+      137,
+      72,
+      1,
+      83,
+      1,
+      "CLIP"
+    ],
+    [
+      138,
+      83,
+      0,
+      78,
+      1,
+      "*"
+    ],
+    [
+      139,
+      83,
+      1,
+      78,
+      2,
+      "*"
+    ],
+    [
+      140,
+      84,
+      0,
+      69,
+      6,
+      "INT"
+    ],
+    [
+      144,
+      95,
+      2,
+      89,
+      0,
+      "CLIP"
+    ],
+    [
+      145,
+      91,
+      1,
+      89,
+      1,
+      "STRING"
+    ],
+    [
+      146,
+      95,
+      2,
+      90,
+      0,
+      "CLIP"
+    ],
+    [
+      147,
+      91,
+      0,
+      90,
+      1,
+      "STRING"
+    ],
+    [
+      150,
+      92,
+      0,
+      93,
+      0,
+      "STRING"
+    ],
+    [
+      151,
+      95,
+      1,
+      94,
+      0,
+      "MODEL"
+    ],
+    [
+      152,
+      90,
+      0,
+      94,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      153,
+      89,
+      0,
+      94,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      154,
+      95,
+      6,
+      94,
+      3,
+      "LATENT"
+    ],
+    [
+      155,
+      95,
+      3,
+      94,
+      4,
+      "VAE"
+    ],
+    [
+      156,
+      97,
+      0,
+      94,
+      6,
+      "INT"
+    ],
+    [
+      157,
+      85,
+      0,
+      92,
+      0,
+      "STRING"
+    ],
+    [
+      158,
+      85,
+      0,
+      91,
+      0,
+      "STRING"
+    ],
+    [
+      159,
+      78,
+      0,
+      95,
+      0,
+      "CPipeAny"
+    ],
+    [
+      160,
+      88,
+      0,
+      85,
+      0,
+      "IMAGE"
+    ],
+    [
+      164,
+      109,
+      2,
+      103,
+      0,
+      "CLIP"
+    ],
+    [
+      165,
+      105,
+      1,
+      103,
+      1,
+      "STRING"
+    ],
+    [
+      166,
+      109,
+      2,
+      104,
+      0,
+      "CLIP"
+    ],
+    [
+      167,
+      105,
+      0,
+      104,
+      1,
+      "STRING"
+    ],
+    [
+      170,
+      106,
+      0,
+      107,
+      0,
+      "STRING"
+    ],
+    [
+      171,
+      109,
+      1,
+      108,
+      0,
+      "MODEL"
+    ],
+    [
+      172,
+      104,
+      0,
+      108,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      173,
+      103,
+      0,
+      108,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      174,
+      109,
+      6,
+      108,
+      3,
+      "LATENT"
+    ],
+    [
+      175,
+      109,
+      3,
+      108,
+      4,
+      "VAE"
+    ],
+    [
+      176,
+      111,
+      0,
+      108,
+      6,
+      "INT"
+    ],
+    [
+      177,
+      98,
+      0,
+      106,
+      0,
+      "STRING"
+    ],
+    [
+      178,
+      102,
+      0,
+      98,
+      0,
+      "IMAGE"
+    ],
+    [
+      179,
+      78,
+      0,
+      109,
+      0,
+      "CPipeAny"
+    ],
+    [
+      180,
+      98,
+      0,
+      105,
+      0,
+      "STRING"
+    ],
+    [
+      181,
+      114,
+      0,
+      112,
+      1,
+      "BLIP_MODEL"
+    ],
+    [
+      185,
+      124,
+      2,
+      118,
+      0,
+      "CLIP"
+    ],
+    [
+      186,
+      120,
+      1,
+      118,
+      1,
+      "STRING"
+    ],
+    [
+      187,
+      124,
+      2,
+      119,
+      0,
+      "CLIP"
+    ],
+    [
+      188,
+      120,
+      0,
+      119,
+      1,
+      "STRING"
+    ],
+    [
+      192,
+      124,
+      1,
+      123,
+      0,
+      "MODEL"
+    ],
+    [
+      193,
+      119,
+      0,
+      123,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      194,
+      118,
+      0,
+      123,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      195,
+      124,
+      6,
+      123,
+      3,
+      "LATENT"
+    ],
+    [
+      196,
+      124,
+      3,
+      123,
+      4,
+      "VAE"
+    ],
+    [
+      197,
+      126,
+      0,
+      123,
+      6,
+      "INT"
+    ],
+    [
+      198,
+      78,
+      0,
+      124,
+      0,
+      "CPipeAny"
+    ],
+    [
+      199,
+      112,
+      0,
+      120,
+      0,
+      "STRING"
+    ],
+    [
+      201,
+      112,
+      0,
+      121,
+      0,
+      "STRING"
+    ],
+    [
+      202,
+      121,
+      0,
+      122,
+      0,
+      "STRING"
+    ],
+    [
+      203,
+      125,
+      0,
+      112,
+      2,
+      "STRING"
+    ],
+    [
+      204,
+      117,
+      0,
+      112,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [
+    {
+      "title": "Group",
+      "bounding": [
+        302,
+        600,
+        738,
+        462
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "locked": false
+    },
+    {
+      "title": "Auto Caption - LLAVA (stabledif.ru)",
+      "bounding": [
+        279,
+        1159,
+        1440,
+        895
+      ],
+      "color": "#8AA",
+      "font_size": 24,
+      "locked": false
+    },
+    {
+      "title": "WD14 - (stabledif.ru)",
+      "bounding": [
+        278,
+        2126,
+        1395,
+        867
+      ],
+      "color": "#8AA",
+      "font_size": 24,
+      "locked": false
+    },
+    {
+      "title": "Blip Caption Simple (stabledif.ru)",
+      "bounding": [
+        260,
+        3054,
+        1395,
+        867
+      ],
+      "color": "#8AA",
+      "font_size": 24,
+      "locked": false
+    },
+    {
+      "title": "Blip Caption С ЗАПРОСОМ (stabledif.ru)",
+      "bounding": [
+        250,
+        3996,
+        1395,
+        867
+      ],
+      "color": "#8AA",
+      "font_size": 24,
+      "locked": false
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.1464100000000071,
+      "offset": {
+        "0": 4193.876953588346,
+        "1": 294.658585191421
+      }
+    }
+  },
+  "version": 0.4
+}
