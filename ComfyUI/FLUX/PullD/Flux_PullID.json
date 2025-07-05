@@ -1,0 +1,1941 @@
+{
+  "last_node_id": 154,
+  "last_link_id": 323,
+  "nodes": [
+    {
+      "id": 127,
+      "type": "PulidFluxModelLoader",
+      "pos": [
+        364.65936279296875,
+        2178.345703125
+      ],
+      "size": [
+        315,
+        58
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "PULIDFLUX",
+          "type": "PULIDFLUX",
+          "links": [
+            261,
+            295
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PulidFluxModelLoader",
+        "ttNbgOverride": {
+          "color": "#432",
+          "bgcolor": "#653",
+          "groupcolor": "#b58b2a"
+        }
+      },
+      "widgets_values": [
+        "pulid_flux_v0.9.0.safetensors"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 128,
+      "type": "PulidFluxEvaClipLoader",
+      "pos": [
+        363.65924072265625,
+        2306.34375
+      ],
+      "size": [
+        327.5999755859375,
+        26
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "EVA_CLIP",
+          "type": "EVA_CLIP",
+          "links": [
+            262,
+            296
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PulidFluxEvaClipLoader",
+        "ttNbgOverride": {
+          "color": "#432",
+          "bgcolor": "#653",
+          "groupcolor": "#b58b2a"
+        }
+      },
+      "widgets_values": [],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 129,
+      "type": "PulidFluxInsightFaceLoader",
+      "pos": [
+        333.65911865234375,
+        2408.34375
+      ],
+      "size": [
+        365.4000244140625,
+        58
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "FACEANALYSIS",
+          "type": "FACEANALYSIS",
+          "links": [
+            263,
+            297
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PulidFluxInsightFaceLoader",
+        "ttNbgOverride": {
+          "color": "#432",
+          "bgcolor": "#653",
+          "groupcolor": "#b58b2a"
+        }
+      },
+      "widgets_values": [
+        "CUDA"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 136,
+      "type": "Reroute",
+      "pos": {
+        "0": 628.0379638671875,
+        "1": 2054.7666015625
+      },
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 22,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 309
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "MODEL",
+          "links": [
+            277
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false,
+        "ttNbgOverride": {
+          "color": "#432",
+          "bgcolor": "#653",
+          "groupcolor": "#b58b2a"
+        }
+      },
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 130,
+      "type": "LoadImage",
+      "pos": {
+        "0": -45.340641021728516,
+        "1": 2163.345703125
+      },
+      "size": {
+        "0": 326.10986328125,
+        "1": 333.1552429199219
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            266,
+            298
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "IMAGE"
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3,
+          "label": "MASK"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "ttNbgOverride": {
+          "color": "#432",
+          "bgcolor": "#653",
+          "groupcolor": "#b58b2a"
+        }
+      },
+      "widgets_values": [
+        "Вострецов Ю.С..jpg",
+        "image"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 126,
+      "type": "ApplyPulidFlux",
+      "pos": [
+        755.0379638671875,
+        2196.7666015625
+      ],
+      "size": [
+        315,
+        206
+      ],
+      "flags": {},
+      "order": 25,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 277
+        },
+        {
+          "name": "pulid_flux",
+          "type": "PULIDFLUX",
+          "link": 261
+        },
+        {
+          "name": "eva_clip",
+          "type": "EVA_CLIP",
+          "link": 262
+        },
+        {
+          "name": "face_analysis",
+          "type": "FACEANALYSIS",
+          "link": 263
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 266
+        },
+        {
+          "name": "attn_mask",
+          "type": "MASK",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            300
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ApplyPulidFlux",
+        "ttNbgOverride": {
+          "color": "#432",
+          "bgcolor": "#653",
+          "groupcolor": "#b58b2a"
+        }
+      },
+      "widgets_values": [
+        0.7000000000000001,
+        0,
+        0.5
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 143,
+      "type": "ApplyPulidFlux",
+      "pos": [
+        1226.0374755859375,
+        2217.7666015625
+      ],
+      "size": [
+        315,
+        206
+      ],
+      "flags": {},
+      "order": 26,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 300
+        },
+        {
+          "name": "pulid_flux",
+          "type": "PULIDFLUX",
+          "link": 295
+        },
+        {
+          "name": "eva_clip",
+          "type": "EVA_CLIP",
+          "link": 296
+        },
+        {
+          "name": "face_analysis",
+          "type": "FACEANALYSIS",
+          "link": 297
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 298
+        },
+        {
+          "name": "attn_mask",
+          "type": "MASK",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            316
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ApplyPulidFlux",
+        "ttNbgOverride": {
+          "color": "#432",
+          "bgcolor": "#653",
+          "groupcolor": "#b58b2a"
+        }
+      },
+      "widgets_values": [
+        1,
+        0.4,
+        1
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 104,
+      "type": "SaveImage",
+      "pos": {
+        "0": 1796,
+        "1": 926
+      },
+      "size": {
+        "0": 797.7642822265625,
+        "1": 798.4401245117188
+      },
+      "flags": {},
+      "order": 28,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 321
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "ttNbgOverride": {
+          "color": "#432",
+          "bgcolor": "#653",
+          "groupcolor": "#b58b2a"
+        }
+      },
+      "widgets_values": [
+        "ComfyUI"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 99,
+      "type": "Florence2Run",
+      "pos": {
+        "0": 609,
+        "1": 433
+      },
+      "size": {
+        "0": 400,
+        "1": 352
+      },
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 190
+        },
+        {
+          "name": "florence2_model",
+          "type": "FL2MODEL",
+          "link": 189
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "caption",
+          "type": "STRING",
+          "links": [
+            240
+          ],
+          "slot_index": 2,
+          "shape": 3
+        },
+        {
+          "name": "data",
+          "type": "JSON",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Florence2Run",
+        "ttNbgOverride": {
+          "color": "#432",
+          "bgcolor": "#653",
+          "groupcolor": "#b58b2a"
+        }
+      },
+      "widgets_values": [
+        "",
+        "more_detailed_caption",
+        false,
+        false,
+        1024,
+        5,
+        true,
+        "",
+        152961699243920,
+        "randomize"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 100,
+      "type": "Florence2ModelLoader",
+      "pos": {
+        "0": 604,
+        "1": 264
+      },
+      "size": {
+        "0": 315,
+        "1": 106
+      },
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "lora",
+          "type": "PEFTLORA",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "florence2_model",
+          "type": "FL2MODEL",
+          "links": [
+            189
+          ],
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Florence2ModelLoader",
+        "ttNbgOverride": {
+          "color": "#432",
+          "bgcolor": "#653",
+          "groupcolor": "#b58b2a"
+        }
+      },
+      "widgets_values": [
+        "Florence-2-large",
+        "fp16",
+        "sdpa"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 119,
+      "type": "CLIPTextEncodeFlux",
+      "pos": {
+        "0": 974,
+        "1": 348
+      },
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 24,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 310
+        },
+        {
+          "name": "clip_l",
+          "type": "STRING",
+          "link": 259,
+          "widget": {
+            "name": "clip_l"
+          }
+        },
+        {
+          "name": "t5xxl",
+          "type": "STRING",
+          "link": 252,
+          "widget": {
+            "name": "t5xxl"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            317
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncodeFlux"
+      },
+      "widgets_values": [
+        "",
+        "",
+        3
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 120,
+      "type": "CLIPTextEncodeFlux",
+      "pos": {
+        "0": 1210,
+        "1": 350
+      },
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 23,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 311
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            318
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncodeFlux"
+      },
+      "widgets_values": [
+        "",
+        "",
+        3.5
+      ],
+      "color": "#332922",
+      "bgcolor": "#593930"
+    },
+    {
+      "id": 150,
+      "type": "ModelSamplingFlux",
+      "pos": {
+        "0": 1079,
+        "1": 482
+      },
+      "size": {
+        "0": 315,
+        "1": 130
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 315
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            314
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ModelSamplingFlux",
+        "ttNbgOverride": {
+          "color": "#432",
+          "bgcolor": "#653",
+          "groupcolor": "#b58b2a"
+        }
+      },
+      "widgets_values": [
+        1.15,
+        0.5,
+        1024,
+        1024
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 148,
+      "type": "VAELoader",
+      "pos": {
+        "0": 1444,
+        "1": 347
+      },
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            320
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAELoader",
+        "ttNbgOverride": {
+          "color": "#432",
+          "bgcolor": "#653",
+          "groupcolor": "#b58b2a"
+        }
+      },
+      "widgets_values": [
+        "FLUX_VAE.safetensors"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 144,
+      "type": "ShowText|pysssss",
+      "pos": [
+        2109,
+        287
+      ],
+      "size": [
+        499.316268808534,
+        551.3147202563247
+      ],
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 303,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss",
+        "ttNbgOverride": {
+          "color": "#432",
+          "bgcolor": "#653",
+          "groupcolor": "#b58b2a"
+        }
+      },
+      "widgets_values": [
+        [
+          "a highly detailed cgi (computer-generated imagery) rendering depicting a surreal, anthropomorphic creature with exaggerated features, the creature has a large, round, pink nose, large, expressive green eyes, and long, brown hair that cascades down its back, it wears black-rimmed glasses and a black, sleeveless dress with a floral pattern, the character's face is light-skinned with a slight blush on her cheeks, giving it a playful and mischievous expression, in the center of the image, an apple is cut in half, revealing a bright red apple with a yellow center and a slightly wrinkled texture, inside the apple, a small, green, segmented caterpillar is visible, crawling along the edge of the apple's surface, the background is a blurred, greenish-blue gradient, suggesting an outdoor setting with a rustic, weathered surface, possibly a wooden table or countertop, the texture of the wooden surface is smooth and polished, adding to the realism of the scene, the overall style is hyper-realistic, with a focus on detailed textures and lighting effects, enhancing the surreal and fantastical nature of the creature, the image exudes a sense of whimsy and innocence, blending elements of fantasy and surrealism\r\n\r\n \\(creature\\), 1girl, solo, looking at viewer, smile, short hair, open mouth, food, glasses, blurry, no humans, fruit, realistic, black-framed eyewear, apple, appleThe image is a close-up of a small orange kitten with its mouth wide open, showing its teeth. The kitten is sitting on a wooden surface and appears to be yawning. Its eyes are closed and its mouth is slightly open, as if it is enjoying the moment. The background is blurred, but it seems to be an outdoor setting with trees and foliage. There are a few small red objects scattered around the kitten, possibly food or treats. The overall mood of the image is playful and mischievous.Disney 3D style"
+        ]
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 152,
+      "type": "Tiled Upscaler Script",
+      "pos": {
+        "0": 1417,
+        "1": 432
+      },
+      "size": {
+        "0": 325,
+        "1": 250
+      },
+      "flags": {},
+      "order": 6,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "script",
+          "type": "SCRIPT",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "SCRIPT",
+          "type": "SCRIPT",
+          "links": [
+            322
+          ],
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Tiled Upscaler Script"
+      },
+      "widgets_values": [
+        1.25,
+        768,
+        "random",
+        8,
+        485333822125671,
+        "randomize",
+        0.33,
+        false,
+        "FaceID 1.5--\\ip-adapter-faceid-plus_sd15.bin",
+        1,
+        null
+      ],
+      "color": "#332222",
+      "bgcolor": "#553333",
+      "shape": 1
+    },
+    {
+      "id": 74,
+      "type": "LoadImage",
+      "pos": {
+        "0": -45,
+        "1": 264
+      },
+      "size": {
+        "0": 600,
+        "1": 680
+      },
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            190
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "IMAGE"
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3,
+          "label": "MASK"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "ttNbgOverride": {
+          "color": "#432",
+          "bgcolor": "#653",
+          "groupcolor": "#b58b2a"
+        }
+      },
+      "widgets_values": [
+        "00020-3404669377.png",
+        "image"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 151,
+      "type": "KSampler (Efficient)",
+      "pos": {
+        "0": 1761,
+        "1": 281
+      },
+      "size": {
+        "0": 325,
+        "1": 586
+      },
+      "flags": {},
+      "order": 27,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 316
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 317
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 318
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 319
+        },
+        {
+          "name": "optional_vae",
+          "type": "VAE",
+          "link": 320
+        },
+        {
+          "name": "script",
+          "type": "SCRIPT",
+          "link": 322
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "CONDITIONING+",
+          "type": "CONDITIONING",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "CONDITIONING-",
+          "type": "CONDITIONING",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            321
+          ],
+          "slot_index": 5,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "KSampler (Efficient)"
+      },
+      "widgets_values": [
+        658005632217653,
+        "randomize",
+        20,
+        1,
+        "dpmpp_2m",
+        "simple",
+        1,
+        "auto",
+        "true",
+        null
+      ],
+      "color": "#2a363b",
+      "bgcolor": "#3f5159",
+      "shape": 1
+    },
+    {
+      "id": 112,
+      "type": "Text Concatenate (JPS)",
+      "pos": [
+        1067,
+        418
+      ],
+      "size": [
+        315,
+        178
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text1",
+          "type": "STRING",
+          "link": 235,
+          "widget": {
+            "name": "text1"
+          }
+        },
+        {
+          "name": "text2",
+          "type": "STRING",
+          "link": 240,
+          "widget": {
+            "name": "text2"
+          }
+        },
+        {
+          "name": "text3",
+          "type": "STRING",
+          "link": 323,
+          "widget": {
+            "name": "text3"
+          }
+        },
+        {
+          "name": "text4",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "text4"
+          }
+        },
+        {
+          "name": "text5",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "text5"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            252,
+            258,
+            303
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Text Concatenate (JPS)",
+        "ttNbgOverride": {
+          "color": "#432",
+          "bgcolor": "#653",
+          "groupcolor": "#b58b2a"
+        }
+      },
+      "widgets_values": [
+        "none",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 118,
+      "type": "LoadImage",
+      "pos": {
+        "0": -49,
+        "1": 1014
+      },
+      "size": {
+        "0": 600,
+        "1": 680
+      },
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            242
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "IMAGE"
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3,
+          "label": "MASK"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "ttNbgOverride": {
+          "color": "#432",
+          "bgcolor": "#653",
+          "groupcolor": "#b58b2a"
+        }
+      },
+      "widgets_values": [
+        "00008-3129776895.png",
+        "image"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 108,
+      "type": "Florence2Run",
+      "pos": {
+        "0": 652,
+        "1": 1574
+      },
+      "size": {
+        "0": 400,
+        "1": 372
+      },
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 242
+        },
+        {
+          "name": "florence2_model",
+          "type": "FL2MODEL",
+          "link": 209
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "links": null,
+          "slot_index": 1,
+          "shape": 3
+        },
+        {
+          "name": "caption",
+          "type": "STRING",
+          "links": [
+            235
+          ],
+          "slot_index": 2,
+          "shape": 3
+        },
+        {
+          "name": "data",
+          "type": "JSON",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Florence2Run",
+        "ttNbgOverride": {
+          "color": "#432",
+          "bgcolor": "#653",
+          "groupcolor": "#b58b2a"
+        }
+      },
+      "widgets_values": [
+        "",
+        "prompt_gen_mixed_caption",
+        false,
+        false,
+        1024,
+        5,
+        true,
+        "",
+        323893015987257,
+        "randomize"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 109,
+      "type": "DownloadAndLoadFlorence2Model",
+      "pos": {
+        "0": 664,
+        "1": 1375
+      },
+      "size": {
+        "0": 365.4000244140625,
+        "1": 106
+      },
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "lora",
+          "type": "PEFTLORA",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "florence2_model",
+          "type": "FL2MODEL",
+          "links": [
+            209
+          ],
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "DownloadAndLoadFlorence2Model",
+        "ttNbgOverride": {
+          "color": "#432",
+          "bgcolor": "#653",
+          "groupcolor": "#b58b2a"
+        }
+      },
+      "widgets_values": [
+        "MiaoshouAI/Florence-2-large-PromptGen-v1.5",
+        "fp16",
+        "sdpa"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 147,
+      "type": "DualCLIPLoader",
+      "pos": {
+        "0": 637,
+        "1": 1135
+      },
+      "size": {
+        "0": 315,
+        "1": 106
+      },
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            313
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "DualCLIPLoader",
+        "ttNbgOverride": {
+          "color": "#432",
+          "bgcolor": "#653",
+          "groupcolor": "#b58b2a"
+        }
+      },
+      "widgets_values": [
+        "ViT-L-14-BEST-smooth-GmP-HF-format.safetensors",
+        "t5xxl_fp8_e4m3fn.safetensors",
+        "flux"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 146,
+      "type": "UNETLoader",
+      "pos": {
+        "0": 640,
+        "1": 971
+      },
+      "size": {
+        "0": 315,
+        "1": 82
+      },
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            315
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "UNETLoader",
+        "ttNbgOverride": {
+          "color": "#432",
+          "bgcolor": "#653",
+          "groupcolor": "#b58b2a"
+        }
+      },
+      "widgets_values": [
+        "flux1--\\flux1-dev-fp8.safetensors",
+        "fp8_e5m2"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 27,
+      "type": "EmptySD3LatentImage",
+      "pos": {
+        "0": 1163,
+        "1": 1777
+      },
+      "size": {
+        "0": 210,
+        "1": 101.42618560791016
+      },
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "width",
+          "type": "INT",
+          "link": 198,
+          "widget": {
+            "name": "width"
+          },
+          "label": "width"
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "link": 199,
+          "widget": {
+            "name": "height"
+          },
+          "label": "height"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            319
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "LATENT"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "EmptySD3LatentImage"
+      },
+      "widgets_values": [
+        1024,
+        1024,
+        2
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 103,
+      "type": "FluxResolutionNode",
+      "pos": [
+        1425,
+        1695
+      ],
+      "size": [
+        327.5999755859375,
+        170
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "width",
+          "type": "INT",
+          "links": [
+            198
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": [
+            199
+          ],
+          "slot_index": 1,
+          "shape": 3
+        },
+        {
+          "name": "resolution",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "FluxResolutionNode",
+        "ttNbgOverride": {
+          "color": "#432",
+          "bgcolor": "#653",
+          "groupcolor": "#b58b2a"
+        }
+      },
+      "widgets_values": [
+        "1.0",
+        "5:7 (Balanced Portrait)",
+        false,
+        "1:1"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 124,
+      "type": "easy stylesSelector",
+      "pos": {
+        "0": 1188,
+        "1": 1046
+      },
+      "size": {
+        "0": 507.6033630371094,
+        "1": 545.0946044921875
+      },
+      "flags": {},
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "positive",
+          "type": "STRING",
+          "link": 258,
+          "widget": {
+            "name": "positive"
+          }
+        },
+        {
+          "name": "negative",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "negative"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "positive",
+          "type": "STRING",
+          "links": [
+            259
+          ],
+          "shape": 3
+        },
+        {
+          "name": "negative",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "easy stylesSelector",
+        "values": [
+          "Photographic"
+        ]
+      },
+      "widgets_values": [
+        "sdxl_styles",
+        "",
+        "",
+        "Photographic"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 149,
+      "type": "Lora Loader Stack (rgthree)",
+      "pos": {
+        "0": 1043,
+        "1": 702
+      },
+      "size": {
+        "0": 340.20001220703125,
+        "1": 246
+      },
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 314
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 313
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            309
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            310,
+            311
+          ],
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Lora Loader Stack (rgthree)",
+        "ttNbgOverride": {
+          "color": "#432",
+          "bgcolor": "#653",
+          "groupcolor": "#b58b2a"
+        }
+      },
+      "widgets_values": [
+        "None",
+        1,
+        "None",
+        1.18,
+        "None",
+        1.51,
+        "None",
+        1
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 153,
+      "type": "String Literal",
+      "pos": [
+        -43,
+        1744
+      ],
+      "size": [
+        637.168288925995,
+        213.00913663508345
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            323
+          ],
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "String Literal",
+        "ttNbgOverride": {
+          "color": "#432",
+          "bgcolor": "#653",
+          "groupcolor": "#b58b2a"
+        }
+      },
+      "widgets_values": [
+        "Disney 3D style"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    }
+  ],
+  "links": [
+    [
+      189,
+      100,
+      0,
+      99,
+      1,
+      "FL2MODEL"
+    ],
+    [
+      190,
+      74,
+      0,
+      99,
+      0,
+      "IMAGE"
+    ],
+    [
+      198,
+      103,
+      0,
+      27,
+      0,
+      "INT"
+    ],
+    [
+      199,
+      103,
+      1,
+      27,
+      1,
+      "INT"
+    ],
+    [
+      209,
+      109,
+      0,
+      108,
+      1,
+      "FL2MODEL"
+    ],
+    [
+      235,
+      108,
+      2,
+      112,
+      0,
+      "STRING"
+    ],
+    [
+      240,
+      99,
+      2,
+      112,
+      1,
+      "STRING"
+    ],
+    [
+      242,
+      118,
+      0,
+      108,
+      0,
+      "IMAGE"
+    ],
+    [
+      252,
+      112,
+      0,
+      119,
+      2,
+      "STRING"
+    ],
+    [
+      258,
+      112,
+      0,
+      124,
+      0,
+      "STRING"
+    ],
+    [
+      259,
+      124,
+      0,
+      119,
+      1,
+      "STRING"
+    ],
+    [
+      261,
+      127,
+      0,
+      126,
+      1,
+      "PULIDFLUX"
+    ],
+    [
+      262,
+      128,
+      0,
+      126,
+      2,
+      "EVA_CLIP"
+    ],
+    [
+      263,
+      129,
+      0,
+      126,
+      3,
+      "FACEANALYSIS"
+    ],
+    [
+      266,
+      130,
+      0,
+      126,
+      4,
+      "IMAGE"
+    ],
+    [
+      277,
+      136,
+      0,
+      126,
+      0,
+      "MODEL"
+    ],
+    [
+      295,
+      127,
+      0,
+      143,
+      1,
+      "PULIDFLUX"
+    ],
+    [
+      296,
+      128,
+      0,
+      143,
+      2,
+      "EVA_CLIP"
+    ],
+    [
+      297,
+      129,
+      0,
+      143,
+      3,
+      "FACEANALYSIS"
+    ],
+    [
+      298,
+      130,
+      0,
+      143,
+      4,
+      "IMAGE"
+    ],
+    [
+      300,
+      126,
+      0,
+      143,
+      0,
+      "MODEL"
+    ],
+    [
+      303,
+      112,
+      0,
+      144,
+      0,
+      "STRING"
+    ],
+    [
+      309,
+      149,
+      0,
+      136,
+      0,
+      "*"
+    ],
+    [
+      310,
+      149,
+      1,
+      119,
+      0,
+      "CLIP"
+    ],
+    [
+      311,
+      149,
+      1,
+      120,
+      0,
+      "CLIP"
+    ],
+    [
+      313,
+      147,
+      0,
+      149,
+      1,
+      "CLIP"
+    ],
+    [
+      314,
+      150,
+      0,
+      149,
+      0,
+      "MODEL"
+    ],
+    [
+      315,
+      146,
+      0,
+      150,
+      0,
+      "MODEL"
+    ],
+    [
+      316,
+      143,
+      0,
+      151,
+      0,
+      "MODEL"
+    ],
+    [
+      317,
+      119,
+      0,
+      151,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      318,
+      120,
+      0,
+      151,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      319,
+      27,
+      0,
+      151,
+      3,
+      "LATENT"
+    ],
+    [
+      320,
+      148,
+      0,
+      151,
+      4,
+      "VAE"
+    ],
+    [
+      321,
+      151,
+      5,
+      104,
+      0,
+      "IMAGE"
+    ],
+    [
+      322,
+      152,
+      0,
+      151,
+      5,
+      "SCRIPT"
+    ],
+    [
+      323,
+      153,
+      0,
+      112,
+      2,
+      "STRING"
+    ]
+  ],
+  "groups": [
+    {
+      "title": "PuLID_Flux",
+      "bounding": [
+        -134,
+        2003,
+        1751,
+        540
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "title": "Совмещение двух артов",
+      "bounding": [
+        -125,
+        164,
+        2760,
+        1811
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.6115909044841773,
+      "offset": [
+        997.4694269487512,
+        -801.7362285964019
+      ]
+    }
+  },
+  "version": 0.4
+}
