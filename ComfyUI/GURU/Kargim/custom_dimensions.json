@@ -1,0 +1,10 @@
+[
+{"label":"2:3 V","value":"512x768"},{"label":"2:3 V","value":"640x960"},{"label":"2:3 V","value":"768x1152"},{"label":"2:3 V","value":"896x1344"},{"label":"2:3 V","value":"1024x1536"},{"label":"2:3 V","value":"1152x1728"},{"label":"2:3 V","value":"1280x1920"},
+{"label":"3:2 H","value":"512x336"},{"label":"3:2 H","value":"640x424"},{"label":"3:2 H","value":"768x512"},{"label":"3:2 H","value":"896x592"},{"label":"3:2 H","value":"1024x680"},{"label":"3:2 H","value":"1152x768"},{"label":"3:2 H","value":"1280x848"},
+{"label":"3:4 V","value":"512x680"},{"label":"3:4 V","value":"640x848"},{"label":"3:4 V","value":"768x1024"},{"label":"3:4 V","value":"896x1192"},{"label":"3:4 V","value":"1024x1360"},{"label":"3:4 V","value":"1152x1536"},{"label":"3:4 V","value":"1280x1704"},
+{"label":"4:3 H","value":"512x384"},{"label":"4:3 H","value":"640x480"},{"label":"4:3 H","value":"768x576"},{"label":"4:3 H","value":"896x672"},{"label":"4:3 H","value":"1024x768"},{"label":"4:3 H","value":"1152x864"},{"label":"4:3 H","value":"1280x960"},
+{"label":"9:16 V","value":"512x904"},{"label":"9:16 V","value":"640x1136"},{"label":"9:16 V","value":"768x1360"},{"label":"9:16 V","value":"896x1592"},{"label":"9:16 V","value":"1024x1816"},{"label":"9:16 V","value":"1152x2048"},{"label":"9:16 V","value":"1280x2272"},
+{"label":"16:9 H","value":"512x288"},{"label":"16:9 H","value":"640x360"},{"label":"16:9 H","value":"768x432"},{"label":"16:9 H","value":"896x504"},{"label":"16:9 H","value":"1024x576"},{"label":"16:9 H","value":"1152x648"},{"label":"16:9 H","value":"1280x720"},
+{"label":"9:21 V","value":"512x1192"},{"label":"9:21 V","value":"640x1488"},{"label":"9:21 V","value":"768x1792"},{"label":"9:21 V","value":"896x2088"},{"label":"9:21 V","value":"1024x2384"},{"label":"9:21 V","value":"1152x2688"},{"label":"9:21 V","value":"1280x2984"},
+{"label":"21:9 H","value":"512x216"},{"label":"21:9 H","value":"640x272"},{"label":"21:9 H","value":"768x328"},{"label":"21:9 H","value":"896x384"},{"label":"21:9 H","value":"1024x432"},{"label":"21:9 H","value":"1152x488"},{"label":"21:9 H","value":"1280x544"}
+]
