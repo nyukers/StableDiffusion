@@ -1,0 +1,16 @@
+{
+  "path_checkpoints": "D:\\Models\\checkpoints\\",
+  "path_diffusers": "D:/models/diffusers/",
+  "path_diffusers_cache": "D:/models/diffusers_cache/",
+  "path_loras": "D:/Models/lora/",
+  "path_controlnet": "D:/models/controlnet/",
+  "path_vae_approx": "D:/Models/vae_approx/",
+  "path_vae": "D:/Models/vae/",
+  "path_preview": "../preview.jpg",
+  "path_faceswap": "D:/Models/faceswap/",
+  "path_upscalers": "D:/Models/upscale_models",
+  "path_outputs": "D:\\Outputs\\Fooocus\\",
+  "path_clip": "D:/Models/clip/",
+  "path_wildcards": "D:\\Addon\\wildcards",
+  "path_cache": "D:/tmp/cache/"
+}
