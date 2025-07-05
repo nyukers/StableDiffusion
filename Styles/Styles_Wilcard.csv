@@ -1,0 +1,40 @@
+﻿name,prompt,negative_prompt
+*** SDVN styles by cards ***, stablediffusion.vn v1.8.22
+
+>>>>>>>> SDVN BASE <<<<<<<<,,
+BasePrompt,"(masterpiece,best quality:1.5)","(worst quality, low quality,nsfw,nipple, pussy:1.5)"
+BasePromptXL,"(masterpiece,best quality,realistic,RAW photo,detailed skin,dslr,high quality),","(worst quality, low quality)"
+RealQuality,"ultra realistic,32k,RAW photo,(high detailed skin:1.2), 8k uhd, dslr, soft lighting, high quality, film grain",
+RealNegative,,"(deformed iris, deformed pupils, semi-realistic, cgi, 3d, render, sketch, cartoon, drawing, anime:1.4), text, close up, cropped, out of frame, worst quality, low quality, jpeg artifacts, ugly, duplicate, morbid, mutilated, extra fingers, mutated hands, poorly drawn hands, poorly drawn face, mutation, deformed, blurry, dehydrated, bad anatomy, bad proportions, extra limbs, cloned face, disfigured, gross proportions, malformed limbs, missing arms, missing legs, extra arms, extra legs, fused fingers, too many fingers, long neck"
+NegativeText,,"watermark,text, logo,contact, error, blurry, cropped, username, artist name, monochrome,"
+NegativeBody,,"((bad anatomy)), ((extra limbs)),big face, big body, big eyes, short girl,hand, finger, dude,open mouth,(pussy:1.2)"
+NegativeTextual,,"EasyNegative, Deepnegative, BadHands, BadImage, BadArtist, BadArtistAnime, BadPrompt"
+
+>>>>>>>> SDVN OBJECT <<<<<<<<,,
+Light,"{1-3$$ soft lighting,gorgeous light and shadow | stunning environment |vibrant colors}",
+Acssessory,{1-4$$ earrings | bracelets | necklace | jewelry | __*/accessories__},
+Hair,__/Hair/*__,
+Wear,__/Wear/*__,
+Location,__/Location/*__,
+Item,__/Items/*__,
+View,__/View/*__,
+Time,__/Time/*__,
+Characters,__/Characters/*__,
+CameraLight,"__*/cameras__ , __*/lighting__, __*/lenses__, __*/focus__, __*/quality__",
+StyleBy,"style by __/Style/*__",
+StyleMix,({1-4$$ style of __*/styleof__ | style of __*/styleof__ | style of __*/styleof__ | style of __*/styleof__}:1.4),
+
+>>>>>>>> SDVN RANDOM <<<<<<<<,,
+R_Full,__/Random__,"watermark,text, logo,contact, error, blurry, cropped, username, artist name, (worst quality, low quality,nsfw,nipple, pussy:1.5)"
+R_Fashion,__/RandomFashion__,"watermark,text, logo,contact, error, blurry, cropped, username, artist name, (worst quality, low quality,nsfw,nipple, pussy:1.5)"
+R_AllStyle,"{ (ultra realistic,32k,RAW photo,high detailed skin:1.1) | 2:: (style of __*/styleof__:1.3) } (masterpiece,best quality:1.5), __*/outfits__, __/Location/*__, __/Time/*__, __/Characters/*__","(worst quality, low quality,nsfw,nipple, pussy:1.5)"
+R_PortraitLadyArt,"(masterpiece,best quality:1.5), ({1-4$$ style of __*/styleof__ | style of __*/styleof__ | style of __*/styleof__ | style of __*/styleof__}:1.5) BREAK
+( {short hair | long hair}, __*/haircolor__ hair:1.1),portrait, BREAK
+(lady:1.2), __*/colors__ __/Wear/*__, __/Time/*__, brown eyes, __*/emojis__","(worst quality, low quality,nsfw,nipple, pussy:1.5),text, close up, cropped, out of frame, worst quality, low quality, jpeg artifacts, ugly, duplicate, morbid, mutilated, extra fingers, mutated hands, poorly drawn hands, poorly drawn face, mutation, deformed, blurry, dehydrated, bad anatomy, bad proportions, extra limbs, cloned face, disfigured, gross proportions, malformed limbs, missing arms, missing legs, extra arms, extra legs, fused fingers, too many fingers, long neck,hand"
+R_PortraitLadyReal,"(masterpiece,best quality:1.5), ({1-4$$ style of __*/styleof__ | style of __*/styleof__ | style of __*/styleof__ | style of __*/styleof__}), BREAK
+( {short hair | long hair}, __*/haircolor__ hair:1.1),portrait, BREAK
+(lady:1.2), __*/colors__ __/Wear/*__, __/Time/*__, brown eyes, __*/emojis__,, ultra realistic,32k,RAW photo,(high detailed skin:1.2), 8k uhd, dslr, soft lighting, high quality, film grain, __*/cameras__ , __*/lighting__,__*/lenses__,__*/focus__","(worst quality, low quality,nsfw,nipple, pussy:1.5),text, close up, cropped, out of frame, worst quality, low quality, jpeg artifacts, ugly, duplicate, morbid, mutilated, extra fingers, mutated hands, poorly drawn hands, poorly drawn face, mutation, deformed, blurry, dehydrated, bad anatomy, bad proportions, extra limbs, cloned face, disfigured, gross proportions, malformed limbs, missing arms, missing legs, extra arms, extra legs, fused fingers, too many fingers, long neck,hand, (deformed iris, deformed pupils, semi-realistic, cgi, 3d, render, sketch, cartoon, drawing, anime:1.4), text, close up, cropped, out of frame, worst quality, low quality, jpeg artifacts, ugly, duplicate, morbid, mutilated, extra fingers, mutated hands, poorly drawn hands, poorly drawn face, mutation, deformed, blurry, dehydrated, bad anatomy, bad proportions, extra limbs, cloned face, disfigured, gross proportions, malformed limbs, missing arms, missing legs, extra arms, extra legs, fused fingers, too many fingers, long neck"
+R_PortraitCharArt,"(masterpiece,best quality:1.5), ({1-4$$ style of __*/styleof__ | style of __*/styleof__ | style of __*/styleof__ | style of __*/styleof__}:1.5) BREAK
+portrait, (__/Characters/*__:1.2)","(worst quality, low quality,nsfw,nipple, pussy:1.5),text, close up, cropped, out of frame, worst quality, low quality, jpeg artifacts, ugly, duplicate, morbid, mutilated, extra fingers, mutated hands, poorly drawn hands, poorly drawn face, mutation, deformed, blurry, dehydrated, bad anatomy, bad proportions, extra limbs, cloned face, disfigured, gross proportions, malformed limbs, missing arms, missing legs, extra arms, extra legs, fused fingers, too many fingers, long neck,hand"
+R_PortraitCharReal,"(masterpiece,best quality:1.5), ({1-4$$ style of __*/styleof__ | style of __*/styleof__ | style of __*/styleof__ | style of __*/styleof__}), BREAK
+portrait, (__/Characters/*__:1.2) , __*/emojis__, ultra realistic,32k,RAW photo,(high detailed skin:1.2), 8k uhd, dslr, soft lighting, high quality, film grain, __*/cameras__ , __*/lighting__,__*/lenses__,__*/focus__","(worst quality, low quality,nsfw,nipple, pussy:1.5),text, close up, cropped, out of frame, worst quality, low quality, jpeg artifacts, ugly, duplicate, morbid, mutilated, extra fingers, mutated hands, poorly drawn hands, poorly drawn face, mutation, deformed, blurry, dehydrated, bad anatomy, bad proportions, extra limbs, cloned face, disfigured, gross proportions, malformed limbs, missing arms, missing legs, extra arms, extra legs, fused fingers, too many fingers, long neck,hand, (deformed iris, deformed pupils, semi-realistic, cgi, 3d, render, sketch, cartoon, drawing, anime:1.4), text, close up, cropped, out of frame, worst quality, low quality, jpeg artifacts, ugly, duplicate, morbid, mutilated, extra fingers, mutated hands, poorly drawn hands, poorly drawn face, mutation, deformed, blurry, dehydrated, bad anatomy, bad proportions, extra limbs, cloned face, disfigured, gross proportions, malformed limbs, missing arms, missing legs, extra arms, extra legs, fused fingers, too many fingers, long neck"

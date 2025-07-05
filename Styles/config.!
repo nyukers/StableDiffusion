@@ -1,0 +1,5 @@
+Get only from wildcard "accessories":
+__*/accessories__
+
+Get from any wildcards in "Hair" folder:
+__/Hair/*__

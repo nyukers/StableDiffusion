@@ -1,0 +1,100 @@
+name,prompt,negative_prompt
+,,
+>>>>>>> DYNAMIC pose + DYNAMIC prompt <<<<<<<,,                                              
+
+NA-Dynamic Char pose 1,"{standing confidently | striking a pose | sitting casually | flirting playfully | looking away thoughtfully | standing with back turned | looking over shoulder}",
+NA-Dynamic Char pose 2,"{standing confidently:1 | striking a pose:1.2 | sitting casually:0.8 | flirting playfully:1.1 | looking away thoughtfully:0.9 | standing with back turned:1 | looking over shoulder:1.1}",
+NA-Dynamic Char pose 3,"(high quality, detailed, beautiful lighting), fit body full shot of a character, dynamic pose, 
+{standing confidently | striking a pose | sitting casually | flirting playfully | looking away thoughtfully | standing with back turned | looking over shoulder}, 
+(photorealistic:1.2), (hyperdetailed:1.3), 4k, vibrant colors, intricate details, (cinematic lighting:1.1), (sharp focus:1.2), (studio photography:1.1)",
+
+NA-Dynamic studio photo,"(masterpiece, best quality, highly detailed), fit body portrait of a charismatic character,
+{elegant contrapposto stance | confident power pose | graceful S-curve pose | dynamic walking pose | 
+pensive seated pose | playful jumping action | dramatic over-the-shoulder glance | 
+alluring reclined pose | mysterious profile view | bold hands-on-hips stance | contemplative leaning pose | candid laughing expression | 
+seductive hip pop pose | regal straight-backed posture | casual cross-legged sitting | 
+intense direct eye contact | whimsical twirling motion | thoughtful chin-on-hand pose | 
+energetic arms-raised celebration}, {prompt}
+(professional photography:1.3), (studio lighting:1.2), (high fashion:1.1), 
+(bokeh:0.8), (shallow depth of field:0.7), 8k resolution, 
+(natural skin texture:1.2), (expressive eyes:1.1), (flattering angles:1.2)",
+
+NA-Dynamic photo shoot pose 1,"(masterpiece, best quality, highly detailed), full view of body portrait of a charismatic character,
+{elegant contrapposto stance | confident power pose | graceful S-curve pose | dynamic walking pose | 
+pensive seated pose | playful jumping action | dramatic over-the-shoulder glance | 
+alluring reclined pose | mysterious profile view | bold hands-on-hips stance | 
+ethereal dancer's arabesque | contemplative leaning pose | candid laughing expression | 
+seductive hip pop pose | regal straight-backed posture | casual cross-legged sitting | 
+intense direct eye contact | whimsical twirling motion | thoughtful chin-on-hand pose | 
+energetic arms-raised celebration}, {prompt}
+(professional photography:1.3), (studio lighting:1.2), (high fashion:1.1), 
+(bokeh:0.8), (shallow depth of field:0.7), 8k resolution, 
+(natural skin texture:1.2), (expressive eyes:1.1), (flattering angles:1.2)",
+
+NA-Dynamic photo shoot pose 2,"(masterpiece, best quality, highly detailed), full view of body portrait of a charismatic character,
+{confident power stance | seductive hip sway | playful wink and finger gun | flirtatious hair flip | 
+coy over-the-shoulder glance | alluring stretched pose | cheeky tongue-out expression | 
+teasing peek-a-boo stance | sensual arched back | inviting come-hither gesture | 
+flirty leg pop pose | mischievous raised eyebrow look | tempting bite-lip expression | 
+provocative slow walk | playful jump with arms spread | sassy hand-on-hip stance | 
+alluring sprawled on floor pose | seductive crawling position | enticing lounging pose | 
+flirtatious leaning against wall}, {prompt}
+(professional photography:1.3), (studio lighting:1.2), (high fashion:1.1), 
+(bokeh:0.8), (shallow depth of field:0.7), 8k resolution, 
+(natural skin texture:1.2), (expressive eyes:1.1), (flattering angles:1.2)",
+
+NA-Dynamic photo shoot pose 3,"(masterpiece, best quality, highly detailed), full view of body portrait of a charismatic character,
+{confident power stance | seductive hip sway | playful wink and finger gun | flirtatious hair flip | 
+coy over-the-shoulder glance | alluring stretched pose | cheeky tongue-out expression | 
+teasing peek-a-boo stance | sensual arched back | inviting come-hither gesture | 
+flirty leg pop pose | mischievous raised eyebrow look | tempting bite-lip expression | 
+provocative slow walk | playful jump with arms spread | sassy hand-on-hip stance | 
+alluring sprawled on floor pose | seductive crawling position | enticing lounging pose | 
+flirtatious leaning against wall | mysterious side profile with head turned | 
+intriguing glance from behind curtain of hair | sultry look with chin over shoulder | 
+captivating gaze with head slightly tilted | enigmatic stare with body turned away | 
+alluring peek from behind with eyes locked on camera | teasing look with head cocked to side}, {prompt}
+(professional photography:1.3), (studio lighting:1.2), (high fashion:1.1), 
+(bokeh:0.8), (shallow depth of field:0.7), 8k resolution, 
+(natural skin texture:1.2), (expressive eyes:1.1), (flattering angles:1.2)",
+
+NA-Dynamic photo shoot pose 4,"(masterpiece, best quality, highly detailed), full view of body portrait of a charismatic character,
+{close-up: flirtatious wink with playful smile | 
+medium shot: seductive pose leaning against wall, one leg bent | 
+full view body: alluring contrapposto stance with hand on hip | 
+from above: lying on back, inviting gaze directly at camera | 
+from below: sitting on high stool, legs crossed, teasing smile | 
+side view: standing, arched back, looking over shoulder coyly | 
+3/4 view: kneeling, hands running through hair, biting lip | 
+from behind: glancing back with sultry expression, finger on lips | 
+low angle: standing tall, confident stance, flirty head tilt | 
+high angle: sprawled on floor, playful cat-like pose | 
+extreme close-up: mysterious eyes peeking through fingers | 
+wide shot: slow, seductive walk towards camera | 
+dutch angle: sitting on chair backwards, arms draped over back, mischievous grin | 
+over-the-shoulder: standing, turning back to camera, giving a come-hither look | 
+silhouette: stretching sensually against backlight}, {prompt}
+(professional photography:1.3), (studio lighting:1.2), (high fashion:1.1), 
+(bokeh:0.8), (shallow depth of field:0.7), 8k resolution, 
+(natural skin texture:1.2), (expressive eyes:1.1), (flattering angles:1.2)",
+
+NA-Dynamic flirting poses photo shoot,"(masterpiece, best quality, highly detailed), full view of body portrait of a glamorous celebrity-like character,
+{close-up: pouty lips selfie with peace sign | 
+medium shot: casual mirror selfie in luxurious bathroom | 
+full view body: red carpet pose with hand on hip, leg out | 
+from above: lounging by infinity pool, sunglasses on | 
+from below: sitting on yacht railing, looking at horizon | 
+side view: profile shot with wind-blown hair on beach | 
+3/4 view: laughing while holding designer coffee cup | 
+from behind: walking away, looking back over shoulder | 
+low angle: stepping out of luxury car, paparazzi style | 
+high angle: lying on oversized bed, surrounded by designer shopping bags | 
+extreme close-up: showing off new manicure or jewelry | 
+wide shot: yoga pose on mountain top at sunset | 
+dutch angle: candid laugh at exclusive rooftop party | 
+over-the-shoulder: trying on outfits in high-end boutique | 
+silhouette: dramatic pose against city skyline at night}, {prompt}
+(professional photography:1.3), (studio lighting:1.2), (high fashion:1.1), 
+(bokeh:0.8), (shallow depth of field:0.7), 8k resolution, 
+(natural skin texture:1.2), (expressive eyes:1.1), (flattering angles:1.2),
+(Instagram filter:0.8), (golden hour lighting:1.1), (luxury lifestyle:1.2)",
