@@ -11,7 +11,7 @@
       "PackageName": "ComfyUI",
       "Version": {
         "InstalledBranch": "master",
-        "InstalledCommitSha": "67758f50f3d6ba9e275cdbcd62d1c7785b2bf27e",
+        "InstalledCommitSha": "312d511630db4907c3bed04dee297b28f61941a8",
         "IsPrerelease": false
       },
       "LibraryPath": "Packages\\ComfyUI",
@@ -53,7 +53,7 @@
           "OptionValue": ""
         }
       ],
-      "LastUpdateCheck": "2024-12-31T20:23:14.1890246+02:00",
+      "LastUpdateCheck": "2025-06-02T14:22:45.2473662+03:00",
       "UpdateAvailable": false,
       "DontCheckForUpdates": false,
       "PreferredTorchIndex": "Cuda",
@@ -67,13 +67,13 @@
       "PackageName": "StableSwarmUI",
       "Version": {
         "InstalledBranch": "master",
-        "InstalledCommitSha": "227a1c0873341a80a18f78865fc1b080f4526aa7",
+        "InstalledCommitSha": "b572f24e2dff26c5c06ed2792e0d7e8fc2aa7bec",
         "IsPrerelease": false
       },
       "LibraryPath": "Packages\\SwarmUI",
       "LaunchCommand": "",
       "LaunchArgs": [],
-      "LastUpdateCheck": "2024-12-31T20:23:14.8446662+02:00",
+      "LastUpdateCheck": "2025-06-02T14:22:45.3451914+03:00",
       "UpdateAvailable": true,
       "DontCheckForUpdates": false,
       "PreferredTorchIndex": "Cuda",
@@ -87,7 +87,7 @@
       "PackageName": "Fooocus",
       "Version": {
         "InstalledBranch": "main",
-        "InstalledCommitSha": "d7439b2d6004d50a0fda19108603a8d1941a185e",
+        "InstalledCommitSha": "59f183ab9b8e4a4bbf0fb8bc43886e19e8dfdfae",
         "IsPrerelease": false
       },
       "LibraryPath": "Packages\\Fooocus",
@@ -129,7 +129,7 @@
           "OptionValue": "--theme=dark"
         }
       ],
-      "LastUpdateCheck": "2024-12-31T20:23:14.548081+02:00",
+      "LastUpdateCheck": "2025-06-02T14:22:45.2452402+03:00",
       "UpdateAvailable": false,
       "DontCheckForUpdates": false,
       "PreferredTorchIndex": "Cuda",
@@ -170,7 +170,7 @@
           "OptionValue": false
         }
       ],
-      "LastUpdateCheck": "2024-12-31T20:23:14.5476131+02:00",
+      "LastUpdateCheck": "2025-06-02T14:22:45.343543+03:00",
       "UpdateAvailable": true,
       "DontCheckForUpdates": false,
       "PreferredTorchIndex": "Cuda",
@@ -190,31 +190,12 @@
       "LibraryPath": "Packages\\SDFX",
       "LaunchCommand": "setup.py",
       "LaunchArgs": [],
-      "LastUpdateCheck": "2024-12-31T20:23:14.5461607+02:00",
-      "UpdateAvailable": false,
+      "LastUpdateCheck": "2025-06-02T14:22:45.3429966+03:00",
+      "UpdateAvailable": true,
       "DontCheckForUpdates": false,
       "PreferredTorchIndex": "Cuda",
       "PreferredTorchVersion": "Cuda",
       "PreferredSharedFolderMethod": "Configuration",
-      "UseSharedOutputFolder": true
-    },
-    {
-      "Id": "9cc95ffb-e972-4e93-bc14-d751a38d28ee",
-      "DisplayName": "FluxGym",
-      "PackageName": "FluxGym",
-      "Version": {
-        "InstalledBranch": "main",
-        "InstalledCommitSha": "eda201b61816c33365c12223f27e8c3e5fee6d0d",
-        "IsPrerelease": false
-      },
-      "LibraryPath": "Packages\\FluxGym",
-      "LaunchCommand": "app.py",
-      "LaunchArgs": [],
-      "LastUpdateCheck": "2024-12-31T20:23:14.1922268+02:00",
-      "UpdateAvailable": false,
-      "DontCheckForUpdates": false,
-      "PreferredTorchIndex": "Cuda",
-      "PreferredSharedFolderMethod": "Symlink",
       "UseSharedOutputFolder": true
     },
     {
@@ -223,33 +204,50 @@
       "PackageName": "Cogstudio",
       "Version": {
         "InstalledBranch": "main",
-        "InstalledCommitSha": "a6e611e3542e87695cf5f77b3209ef5164da4357",
+        "InstalledCommitSha": "bbe909d7f73d3cee166653f867a824c1b2151402",
         "IsPrerelease": false
       },
       "LibraryPath": "Packages\\Cogstudio",
       "LaunchCommand": "inference/gradio_composite_demo/cogstudio.py",
       "LaunchArgs": [],
-      "LastUpdateCheck": "2024-12-31T20:23:14.5485155+02:00",
-      "UpdateAvailable": false,
+      "LastUpdateCheck": "2025-06-02T14:22:45.3432841+03:00",
+      "UpdateAvailable": true,
       "DontCheckForUpdates": false,
       "PreferredTorchIndex": "Cuda",
       "PreferredSharedFolderMethod": "None",
       "UseSharedOutputFolder": true
+    },
+    {
+      "Id": "9057bbf3-d78f-41dc-a37f-d844c22f2564",
+      "DisplayName": "InvokeAI",
+      "PackageName": "InvokeAI",
+      "Version": {
+        "InstalledReleaseVersion": "v5.12.0",
+        "IsPrerelease": false
+      },
+      "LibraryPath": "Packages\\InvokeAI",
+      "LaunchCommand": "invokeai-web",
+      "LaunchArgs": [],
+      "LastUpdateCheck": "2025-06-02T14:22:47.2768872+03:00",
+      "UpdateAvailable": false,
+      "DontCheckForUpdates": false,
+      "PreferredTorchIndex": "Cuda",
+      "PreferredSharedFolderMethod": "Configuration",
+      "UseSharedOutputFolder": true
     }
   ],
-  "ActiveInstalledPackage": "561245b3-66e8-4911-8974-9cf733fcde96",
+  "ActiveInstalledPackage": "9057bbf3-d78f-41dc-a37f-d844c22f2564",
   "HasSeenWelcomeNotification": false,
   "PreferredUpdateChannel": "Stable",
   "CheckForUpdates": true,
-  "LastSeenUpdateVersion": "2.13.0",
+  "LastSeenUpdateVersion": "2.14.2",
   "ModelBrowserNsfwEnabled": false,
   "IsNavExpanded": false,
   "IsImportAsConnected": false,
   "ShowConnectedModelImages": false,
-  "SharedFolderVisibleCategories": "StableDiffusion, Lora, LyCORIS",
   "WindowSettings": {
-    "Width": 1600,
-    "Height": 860,
+    "Width": 1920,
+    "Height": 1040,
     "X": 0,
     "Y": 0,
     "IsMaximized": true
@@ -278,7 +276,8 @@
   "SeenTeachingTips": [
     "InferencePromptHelpButtonTip",
     "WebUiButtonMovedTip",
-    "PackageExtensionsInstallNotice"
+    "PackageExtensionsInstallNotice",
+    "SharedFolderMigrationTip"
   ],
   "NotificationOptions": {},
   "SelectedBaseModels": [
@@ -300,6 +299,7 @@
     "Stable Cascade",
     "Other"
   ],
+  "SelectedCivitBaseModels": [],
   "InferenceImageSize": {
     "Width": 150,
     "Height": 190
@@ -332,14 +332,18 @@
   "OutputsPageResizeFactor": 1,
   "CivitBrowserResizeFactor": 1,
   "HideEarlyAccessModels": false,
+  "CivitUseDiscoveryApi": false,
   "PreferredGpu": {
     "Index": 0,
-    "Name": "NVIDIA GeForce GTX 1080 Ti",
-    "MemoryBytes": 11811160064,
+    "Name": "NVIDIA GeForce RTX 4060 Ti",
+    "MemoryBytes": 17175674880,
+    "ComputeCapability": "8.9",
+    "ComputeCapabilityValue": 8.9,
     "MemoryLevel": 3,
     "IsNvidia": true,
     "IsAmd": false,
     "IsIntel": false
   },
-  "MaxConcurrentDownloads": 0
+  "MaxConcurrentDownloads": 0,
+  "FilterExtraNetworksByBaseModel": true
 }
