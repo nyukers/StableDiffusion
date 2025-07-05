@@ -1,0 +1,1235 @@
+{
+    "vae/sdxl_vae.safetensors": {
+        "size": 334641164,
+        "hash": "",
+        "file": [
+            "D:\\models\\vae\\sdxl_vae.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "vae/vae-ft-mse-840000-ema-pruned.safetensors": {
+        "size": 334641190,
+        "hash": "",
+        "file": [
+            "D:\\models\\vae\\vae-ft-mse-840000-ema-pruned.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "unet/iclight_sd15_fc_unet_ldm.safetensors": {
+        "size": 1719144856,
+        "hash": "9f91f1fc8ad2a2073c5a605fcd70cc70b2e7d2321b30aadca2a247d6490cd780",
+        "file": [
+            "D:\\models\\unet\\iclight_sd15_fc_unet_ldm.safetensors"
+        ],
+        "muid": "f220618ed6",
+        "url": ""
+    },
+    "llms/superprompt-v1/model.safetensors": {
+        "size": 307867048,
+        "hash": "4f31e59c0582d4a74aac96ffb4ea9f5d64b268564ae5d1f68e8620dc940127d7",
+        "file": [
+            "D:\\models\\llms\\superprompt-v1\\model.safetensors"
+        ],
+        "muid": "ac31ee526b",
+        "url": ""
+    },
+    "vae/ae.safetensors": {
+        "size": 335304388,
+        "hash": "afc8e28272cd15db3919bacdb6918ce9c1ed22e96cb12c4d5ed0fba823529e38",
+        "file": [
+            "D:\\models\\vae\\ae.safetensors"
+        ],
+        "muid": "ddec9c299f",
+        "url": ""
+    },
+    "vae/sdxl_fp16.vae.safetensors": {
+        "size": 167335342,
+        "hash": "bcb60880a46b63dea58e9bc591abe15f8350bde47b405f9c38f4be70c6161e68",
+        "file": [
+            "D:\\models\\vae\\sdxl_fp16.vae.safetensors"
+        ],
+        "muid": "345f7343ee",
+        "url": ""
+    },
+    "vae/clip_l.safetensors": {
+        "size": 246144152,
+        "hash": "",
+        "file": [
+            "D:\\models\\vae\\clip_l.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "vae/t5xxl_fp8_e4m3fn.safetensors": {
+        "size": 4893934904,
+        "hash": "",
+        "file": [
+            "D:\\models\\vae\\t5xxl_fp8_e4m3fn.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "loras/LCM/Hyper-SDXL-8steps-lora.safetensors": {
+        "size": 787359648,
+        "hash": "",
+        "file": [
+            "D:\\models\\lora\\SDXL\\LCM\\Hyper-SDXL-8steps-lora.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "loras/LCM/sdxl_hyper_sd_4step_lora.safetensors": {
+        "size": 787359648,
+        "hash": "",
+        "file": [
+            "D:\\models\\lora\\SDXL\\LCM\\sdxl_hyper_sd_4step_lora.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "loras/LCM/sdxl_lcm_lora.safetensors": {
+        "size": 393854624,
+        "hash": "",
+        "file": [
+            "D:\\models\\lora\\SDXL\\LCM\\sdxl_lcm_lora.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "loras/LCM/sdxl_lightning_8step_lora.safetensors": {
+        "size": 393854592,
+        "hash": "",
+        "file": [
+            "D:\\models\\lora\\SDXL\\LCM\\sdxl_lightning_8step_lora.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "loras/add-detail-xl.safetensors": {
+        "size": 228452344,
+        "hash": "",
+        "file": [
+            "D:\\models\\lora\\SDXL\\add-detail-xl.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "loras/blacklight_makeup_v2.safetensors": {
+        "size": 278333580,
+        "hash": "",
+        "file": [
+            "D:\\models\\lora\\SDXL\\blacklight_makeup_v2.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "loras/Caricatures_V2-000007.safetensors": {
+        "size": 456498244,
+        "hash": "",
+        "file": [
+            "D:\\models\\lora\\SDXL\\Caricatures_V2-000007.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "loras/Concept Art Ultimatum Style LoRA_Pony XL v6.safetensors": {
+        "size": 228448052,
+        "hash": "",
+        "file": [
+            "D:\\models\\lora\\SDXL\\Concept Art Ultimatum Style LoRA_Pony XL v6.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "loras/Deep_depth_of_field.safetensors": {
+        "size": 228456556,
+        "hash": "",
+        "file": [
+            "D:\\models\\lora\\SDXL\\Deep_depth_of_field.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "loras/Double_Exposure.safetensors": {
+        "size": 228454940,
+        "hash": "",
+        "file": [
+            "D:\\models\\lora\\SDXL\\Double_Exposure.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "loras/flat childrenXX.safetensors": {
+        "size": 114445988,
+        "hash": "",
+        "file": [
+            "D:\\models\\lora\\SDXL\\flat childrenXX.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "loras/Hyper-SDXL-4steps-lora.safetensors": {
+        "size": 787359648,
+        "hash": "",
+        "file": [
+            "D:\\models\\lora\\SDXL\\Hyper-SDXL-4steps-lora.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "loras/Hyper-SDXL-8steps-lora.safetensors": {
+        "size": 787359648,
+        "hash": "ca689190e8c46038550384b5675488526cfe5a40d35f82b27acb75c100f417c1",
+        "file": [
+            "D:\\models\\lora\\SDXL\\Hyper-SDXL-8steps-lora.safetensors"
+        ],
+        "muid": "4f494295ed",
+        "url": ""
+    },
+    "loras/lcm-lora-sdxl.safetensors": {
+        "size": 393854624,
+        "hash": "",
+        "file": [
+            "D:\\models\\lora\\SDXL\\lcm-lora-sdxl.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "loras/LogoRedmondV2-Logo-LogoRedmAF.safetensors": {
+        "size": 170540028,
+        "hash": "",
+        "file": [
+            "D:\\models\\lora\\SDXL\\LogoRedmondV2-Logo-LogoRedmAF.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "loras/MJv52.safetensors": {
+        "size": 2280805228,
+        "hash": "",
+        "file": [
+            "D:\\models\\lora\\SDXL\\MJv52.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "loras/MJv6.safetensors": {
+        "size": 228452948,
+        "hash": "",
+        "file": [
+            "D:\\models\\lora\\SDXL\\MJv6.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "loras/ral-dissolve-sdxl.safetensors": {
+        "size": 228453276,
+        "hash": "",
+        "file": [
+            "D:\\models\\lora\\SDXL\\ral-dissolve-sdxl.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "loras/ral-lava-sdxl.safetensors": {
+        "size": 228452916,
+        "hash": "",
+        "file": [
+            "D:\\models\\lora\\SDXL\\ral-lava-sdxl.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "loras/RoundLogo_XL_E10R16.safetensors": {
+        "size": 38928636,
+        "hash": "",
+        "file": [
+            "D:\\models\\lora\\SDXL\\RoundLogo_XL_E10R16.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "loras/sd_xl_dpo_lora.safetensors": {
+        "size": 787342200,
+        "hash": "",
+        "file": [
+            "D:\\models\\lora\\SDXL\\sd_xl_dpo_lora.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "loras/sd_xl_offset_example-lora_1.0.safetensors": {
+        "size": 49553604,
+        "hash": "4852686128f953d0277d0793e2f0335352f96a919c9c16a09787d77f55cbdf6f",
+        "file": [
+            "D:\\models\\lora\\SDXL\\sd_xl_offset_example-lora_1.0.safetensors"
+        ],
+        "muid": "8e3e833226b3",
+        "url": ""
+    },
+    "loras/sd_xl_spo_lora.safetensors": {
+        "size": 371758976,
+        "hash": "",
+        "file": [
+            "D:\\models\\lora\\SDXL\\sd_xl_spo_lora.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "loras/SDXL_FILM_PHOTOGRAPHY_STYLE_V1.safetensors": {
+        "size": 912593164,
+        "hash": "9e2a98e1f27dbdbb0bda11523dee3444df099599bff7471c6e557f6ad55f27eb",
+        "file": [
+            "D:\\models\\lora\\SDXL\\SDXL_FILM_PHOTOGRAPHY_STYLE_V1.safetensors"
+        ],
+        "muid": "b39d197db0",
+        "url": ""
+    },
+    "loras/sdxl_hyper_sd_4step_lora.safetensors": {
+        "size": 787359648,
+        "hash": "12f81a27d00a751a40d68fd15597091896c5a90f3bd632fb6c475607cbdad76e",
+        "file": [
+            "D:\\models\\lora\\SDXL\\sdxl_hyper_sd_4step_lora.safetensors"
+        ],
+        "muid": "1c88f7295856",
+        "url": ""
+    },
+    "loras/sdxl_lcm_lora.safetensors": {
+        "size": 393854624,
+        "hash": "",
+        "file": [
+            "D:\\models\\lora\\SDXL\\sdxl_lcm_lora.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "loras/sdxl_lightning_4step_lora.safetensors": {
+        "size": 393854592,
+        "hash": "bf56cf2657efb15e465d81402ed481d1e11c4677e4bcce1bc11fe71ad8506b79",
+        "file": [
+            "D:\\models\\lora\\SDXL\\sdxl_lightning_4step_lora.safetensors"
+        ],
+        "muid": "1c32bdb07a7c",
+        "url": ""
+    },
+    "loras/SDXLrender_v2.0.safetensors": {
+        "size": 181064196,
+        "hash": "",
+        "file": [
+            "D:\\models\\lora\\SDXL\\SDXLrender_v2.0.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "loras/sinfully_stylish_PONY_0.2.safetensors": {
+        "size": 228458500,
+        "hash": "",
+        "file": [
+            "D:\\models\\lora\\SDXL\\sinfully_stylish_PONY_0.2.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "loras/WatercolorStyle.safetensors": {
+        "size": 153320496,
+        "hash": "",
+        "file": [
+            "D:\\models\\lora\\SDXL\\WatercolorStyle.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "embeddings/SD15/EasyNegative.safetensors": {
+        "size": 24655,
+        "hash": "",
+        "file": [
+            "D:\\models\\embeddings\\SD15\\EasyNegative.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "embeddings/SDXL_minus/ac_neg1.safetensors": {
+        "size": 426136,
+        "hash": "",
+        "file": [
+            "D:\\models\\embeddings\\SDXL_minus\\ac_neg1.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "embeddings/SDXL_minus/FastNegative.safetensors": {
+        "size": 264200,
+        "hash": "",
+        "file": [
+            "D:\\models\\embeddings\\SDXL_minus\\FastNegative.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "embeddings/SDXL_minus/ImgFixerPre0.3.safetensors": {
+        "size": 41464,
+        "hash": "",
+        "file": [
+            "D:\\models\\embeddings\\SDXL_minus\\ImgFixerPre0.3.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "embeddings/SDXL_minus/negativeXL_D.safetensors": {
+        "size": 131224,
+        "hash": "",
+        "file": [
+            "D:\\models\\embeddings\\SDXL_minus\\negativeXL_D.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "embeddings/SDXL_plus/SK_ANALOGFILM.safetensors": {
+        "size": 311448,
+        "hash": "",
+        "file": [
+            "D:\\models\\embeddings\\SDXL_plus\\SK_ANALOGFILM.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "embeddings/SDXL_plus/SK_ANIME.safetensors": {
+        "size": 139416,
+        "hash": "",
+        "file": [
+            "D:\\models\\embeddings\\SDXL_plus\\SK_ANIME.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "embeddings/SDXL_plus/SK_CINEMATIC.safetensors": {
+        "size": 286872,
+        "hash": "",
+        "file": [
+            "D:\\models\\embeddings\\SDXL_plus\\SK_CINEMATIC.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "embeddings/SDXL_plus/SK_COMIC.safetensors": {
+        "size": 139416,
+        "hash": "",
+        "file": [
+            "D:\\models\\embeddings\\SDXL_plus\\SK_COMIC.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "embeddings/SDXL_plus/SK_DIGITALART.safetensors": {
+        "size": 163992,
+        "hash": "",
+        "file": [
+            "D:\\models\\embeddings\\SDXL_plus\\SK_DIGITALART.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "embeddings/SDXL_plus/SK_Fantasy.safetensors": {
+        "size": 245912,
+        "hash": "",
+        "file": [
+            "D:\\models\\embeddings\\SDXL_plus\\SK_Fantasy.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "embeddings/SDXL_plus/SK_VECTORART.safetensors": {
+        "size": 532632,
+        "hash": "",
+        "file": [
+            "D:\\models\\embeddings\\SDXL_plus\\SK_VECTORART.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "embeddings/unaestheticXLv31.safetensors": {
+        "size": 33296,
+        "hash": "75fa9a0423a19c56ccaaea3b985b4999408b530585eca3f6108685c0007e5b2e",
+        "file": [
+            "D:\\models\\embeddings\\unaestheticXLv31.safetensors"
+        ],
+        "muid": "a20bca3b2146",
+        "url": ""
+    },
+    "diffusers/Kolors/unet/diffusion_pytorch_model.fp16.safetensors": {
+        "size": 5159140240,
+        "hash": "425ff1dcbe3a70ac13d3afdd69bd4e3176b0c3260722527c80b210f11d2d966c",
+        "file": [
+            "D:\\models\\diffusers\\Kolors\\unet\\diffusion_pytorch_model.fp16.safetensors"
+        ],
+        "muid": "9c8f088e4c",
+        "url": ""
+    },
+    "diffusers/models--briaai--RMBG-1.4/snapshots/22532afbdabdc36b2d30a334076720ac72a06f83/model.safetensors": {
+        "size": 176381984,
+        "hash": "",
+        "file": [
+            "D:\\models\\diffusers\\models--briaai--RMBG-1.4\\snapshots\\22532afbdabdc36b2d30a334076720ac72a06f83\\model.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "diffusers/models--monster-labs--control_v1p_sd15_qrcode_monster/snapshots/560fb7b15d0badb409f8cd578a2bfe63bd4b8046/diffusion_pytorch_model.safetensors": {
+        "size": 1445157120,
+        "hash": "",
+        "file": [
+            "D:\\models\\diffusers\\models--monster-labs--control_v1p_sd15_qrcode_monster\\snapshots\\560fb7b15d0badb409f8cd578a2bfe63bd4b8046\\diffusion_pytorch_model.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "diffusers/models--SG161222--Realistic_Vision_V5.1_noVAE/snapshots/c073febe0ec7ac20ab410dba7c90f10bce84caf6/text_encoder/model.safetensors": {
+        "size": 492265880,
+        "hash": "",
+        "file": [
+            "D:\\models\\diffusers\\models--SG161222--Realistic_Vision_V5.1_noVAE\\snapshots\\c073febe0ec7ac20ab410dba7c90f10bce84caf6\\text_encoder\\model.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "diffusers/models--SG161222--Realistic_Vision_V5.1_noVAE/snapshots/c073febe0ec7ac20ab410dba7c90f10bce84caf6/unet/diffusion_pytorch_model.safetensors": {
+        "size": 3438167536,
+        "hash": "",
+        "file": [
+            "D:\\models\\diffusers\\models--SG161222--Realistic_Vision_V5.1_noVAE\\snapshots\\c073febe0ec7ac20ab410dba7c90f10bce84caf6\\unet\\diffusion_pytorch_model.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "diffusers/models--SG161222--RealVisXL_V4.0/snapshots/26dfe44930964cd70d0a817b6d1cc945c130e38d/text_encoder/model.fp16.safetensors": {
+        "size": 246144864,
+        "hash": "",
+        "file": [
+            "D:\\models\\diffusers\\models--SG161222--RealVisXL_V4.0\\snapshots\\26dfe44930964cd70d0a817b6d1cc945c130e38d\\text_encoder\\model.fp16.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "diffusers/models--SG161222--RealVisXL_V4.0/snapshots/26dfe44930964cd70d0a817b6d1cc945c130e38d/text_encoder_2/model.fp16.safetensors": {
+        "size": 1389382880,
+        "hash": "",
+        "file": [
+            "D:\\models\\diffusers\\models--SG161222--RealVisXL_V4.0\\snapshots\\26dfe44930964cd70d0a817b6d1cc945c130e38d\\text_encoder_2\\model.fp16.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "diffusers/models--SG161222--RealVisXL_V4.0/snapshots/26dfe44930964cd70d0a817b6d1cc945c130e38d/unet/diffusion_pytorch_model.fp16.safetensors": {
+        "size": 5135149760,
+        "hash": "",
+        "file": [
+            "D:\\models\\diffusers\\models--SG161222--RealVisXL_V4.0\\snapshots\\26dfe44930964cd70d0a817b6d1cc945c130e38d\\unet\\diffusion_pytorch_model.fp16.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "diffusers/models--SG161222--RealVisXL_V4.0/snapshots/26dfe44930964cd70d0a817b6d1cc945c130e38d/vae/diffusion_pytorch_model.fp16.safetensors": {
+        "size": 167335342,
+        "hash": "",
+        "file": [
+            "D:\\models\\diffusers\\models--SG161222--RealVisXL_V4.0\\snapshots\\26dfe44930964cd70d0a817b6d1cc945c130e38d\\vae\\diffusion_pytorch_model.fp16.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "diffusers/models--SG161222--RealVisXL_V4.0/snapshots/49740684ab2d8f4f5dcf6c644df2b33388a8ba85/text_encoder/model.fp16.safetensors": {
+        "size": 246144864,
+        "hash": "",
+        "file": [
+            "D:\\models\\diffusers\\models--SG161222--RealVisXL_V4.0\\snapshots\\49740684ab2d8f4f5dcf6c644df2b33388a8ba85\\text_encoder\\model.fp16.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "diffusers/models--SG161222--RealVisXL_V4.0/snapshots/49740684ab2d8f4f5dcf6c644df2b33388a8ba85/text_encoder_2/model.fp16.safetensors": {
+        "size": 1389382880,
+        "hash": "",
+        "file": [
+            "D:\\models\\diffusers\\models--SG161222--RealVisXL_V4.0\\snapshots\\49740684ab2d8f4f5dcf6c644df2b33388a8ba85\\text_encoder_2\\model.fp16.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "diffusers/models--SG161222--RealVisXL_V4.0/snapshots/49740684ab2d8f4f5dcf6c644df2b33388a8ba85/unet/diffusion_pytorch_model.fp16.safetensors": {
+        "size": 5135149760,
+        "hash": "",
+        "file": [
+            "D:\\models\\diffusers\\models--SG161222--RealVisXL_V4.0\\snapshots\\49740684ab2d8f4f5dcf6c644df2b33388a8ba85\\unet\\diffusion_pytorch_model.fp16.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "diffusers/models--SG161222--RealVisXL_V4.0/snapshots/49740684ab2d8f4f5dcf6c644df2b33388a8ba85/vae/diffusion_pytorch_model.fp16.safetensors": {
+        "size": 167335342,
+        "hash": "",
+        "file": [
+            "D:\\models\\diffusers\\models--SG161222--RealVisXL_V4.0\\snapshots\\49740684ab2d8f4f5dcf6c644df2b33388a8ba85\\vae\\diffusion_pytorch_model.fp16.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "diffusers/models--stabilityai--sd-vae-ft-mse/snapshots/31f26fdeee1355a5c34592e401dd41e45d25a493/diffusion_pytorch_model.safetensors": {
+        "size": 334643276,
+        "hash": "",
+        "file": [
+            "D:\\models\\diffusers\\models--stabilityai--sd-vae-ft-mse\\snapshots\\31f26fdeee1355a5c34592e401dd41e45d25a493\\diffusion_pytorch_model.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "diffusers/models--stablediffusionapi--realistic-vision-v51/snapshots/19e3643d7d963c156d01537188ec08f0b79a514a/unet/diffusion_pytorch_model.safetensors": {
+        "size": 1719125304,
+        "hash": "",
+        "file": [
+            "D:\\models\\diffusers\\models--stablediffusionapi--realistic-vision-v51\\snapshots\\19e3643d7d963c156d01537188ec08f0b79a514a\\unet\\diffusion_pytorch_model.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "diffusers/models--stablediffusionapi--realistic-vision-v51/snapshots/19e3643d7d963c156d01537188ec08f0b79a514a/vae/diffusion_pytorch_model.safetensors": {
+        "size": 167335342,
+        "hash": "",
+        "file": [
+            "D:\\models\\diffusers\\models--stablediffusionapi--realistic-vision-v51\\snapshots\\19e3643d7d963c156d01537188ec08f0b79a514a\\vae\\diffusion_pytorch_model.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "diffusers/models--TencentARC--PhotoMaker-V2/snapshots/f5a1e5155dc02166253fa7e29d13519f5ba22eac/photomaker-v2.bin": {
+        "size": 1799993138,
+        "hash": "",
+        "file": [
+            "D:\\models\\diffusers\\models--TencentARC--PhotoMaker-V2\\snapshots\\f5a1e5155dc02166253fa7e29d13519f5ba22eac\\photomaker-v2.bin"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "diffusers/models--TencentARC--t2i-adapter-sketch-sdxl-1.0/snapshots/cc3c4e3362296c6825c370b83838306723ece983/diffusion_pytorch_model.fp16.safetensors": {
+        "size": 158060440,
+        "hash": "",
+        "file": [
+            "D:\\models\\diffusers\\models--TencentARC--t2i-adapter-sketch-sdxl-1.0\\snapshots\\cc3c4e3362296c6825c370b83838306723ece983\\diffusion_pytorch_model.fp16.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "diffusers/models--yisol--IDM-VTON/.no_exist/585a32e74aee241cbc0d0cc3ab21392ca58c916a/unet/diffusion_pytorch_model.safetensors": {
+        "size": 0,
+        "hash": "",
+        "file": [
+            "D:\\models\\diffusers\\models--yisol--IDM-VTON\\.no_exist\\585a32e74aee241cbc0d0cc3ab21392ca58c916a\\unet\\diffusion_pytorch_model.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "diffusers/models--yisol--IDM-VTON/snapshots/585a32e74aee241cbc0d0cc3ab21392ca58c916a/unet/diffusion_pytorch_model.bin": {
+        "size": 11965769774,
+        "hash": "",
+        "file": [
+            "D:\\models\\diffusers\\models--yisol--IDM-VTON\\snapshots\\585a32e74aee241cbc0d0cc3ab21392ca58c916a\\unet\\diffusion_pytorch_model.bin"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "diffusers/models--yisol--IDM-VTON/snapshots/585a32e74aee241cbc0d0cc3ab21392ca58c916a/unet_encoder/diffusion_pytorch_model.safetensors": {
+        "size": 10270077736,
+        "hash": "",
+        "file": [
+            "D:\\models\\diffusers\\models--yisol--IDM-VTON\\snapshots\\585a32e74aee241cbc0d0cc3ab21392ca58c916a\\unet_encoder\\diffusion_pytorch_model.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "diffusers/models--yisol--IDM-VTON/snapshots/585a32e74aee241cbc0d0cc3ab21392ca58c916a/vae/diffusion_pytorch_model.safetensors": {
+        "size": 334643268,
+        "hash": "",
+        "file": [
+            "D:\\models\\diffusers\\models--yisol--IDM-VTON\\snapshots\\585a32e74aee241cbc0d0cc3ab21392ca58c916a\\vae\\diffusion_pytorch_model.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "diffusers/stable-video-diffusion-img2vid-xt-1-1/image_encoder/model.fp16.safetensors": {
+        "size": 1264217240,
+        "hash": "",
+        "file": [
+            "D:\\models\\diffusers\\stable-video-diffusion-img2vid-xt-1-1\\image_encoder\\model.fp16.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "diffusers/stable-video-diffusion-img2vid-xt-1-1/vae/diffusion_pytorch_model.fp16.safetensors": {
+        "size": 195531910,
+        "hash": "",
+        "file": [
+            "D:\\models\\diffusers\\stable-video-diffusion-img2vid-xt-1-1\\vae\\diffusion_pytorch_model.fp16.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "DIFFUSERS/.locks": {
+        "size": 0,
+        "hash": "",
+        "file": [
+            "D:\\models\\diffusers\\.locks"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "DIFFUSERS/Kolors": {
+        "size": 427,
+        "hash": "",
+        "file": [
+            "D:\\models\\diffusers\\Kolors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "DIFFUSERS/models--Bingsu--adetailer": {
+        "size": 0,
+        "hash": "",
+        "file": [
+            "D:\\models\\diffusers\\models--Bingsu--adetailer"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "DIFFUSERS/models--Bingsu--yolo-world-mirror": {
+        "size": 0,
+        "hash": "",
+        "file": [
+            "D:\\models\\diffusers\\models--Bingsu--yolo-world-mirror"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "DIFFUSERS/models--briaai--RMBG-1.4": {
+        "size": 0,
+        "hash": "",
+        "file": [
+            "D:\\models\\diffusers\\models--briaai--RMBG-1.4"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "DIFFUSERS/models--monster-labs--control_v1p_sd15_qrcode_monster": {
+        "size": 0,
+        "hash": "",
+        "file": [
+            "D:\\models\\diffusers\\models--monster-labs--control_v1p_sd15_qrcode_monster"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "DIFFUSERS/models--SG161222--Realistic_Vision_V5.1_noVAE": {
+        "size": 0,
+        "hash": "",
+        "file": [
+            "D:\\models\\diffusers\\models--SG161222--Realistic_Vision_V5.1_noVAE"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "DIFFUSERS/models--SG161222--RealVisXL_V4.0": {
+        "size": 0,
+        "hash": "",
+        "file": [
+            "D:\\models\\diffusers\\models--SG161222--RealVisXL_V4.0"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "DIFFUSERS/models--stabilityai--sd-vae-ft-mse": {
+        "size": 0,
+        "hash": "",
+        "file": [
+            "D:\\models\\diffusers\\models--stabilityai--sd-vae-ft-mse"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "DIFFUSERS/models--stablediffusionapi--realistic-vision-v51": {
+        "size": 0,
+        "hash": "",
+        "file": [
+            "D:\\models\\diffusers\\models--stablediffusionapi--realistic-vision-v51"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "DIFFUSERS/models--TencentARC--PhotoMaker-V2": {
+        "size": 0,
+        "hash": "",
+        "file": [
+            "D:\\models\\diffusers\\models--TencentARC--PhotoMaker-V2"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "DIFFUSERS/models--TencentARC--t2i-adapter-sketch-sdxl-1.0": {
+        "size": 0,
+        "hash": "",
+        "file": [
+            "D:\\models\\diffusers\\models--TencentARC--t2i-adapter-sketch-sdxl-1.0"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "DIFFUSERS/models--yisol--IDM-VTON": {
+        "size": 0,
+        "hash": "",
+        "file": [
+            "D:\\models\\diffusers\\models--yisol--IDM-VTON"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "DIFFUSERS/modules": {
+        "size": 0,
+        "hash": "",
+        "file": [
+            "D:\\models\\diffusers\\modules"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "DIFFUSERS/stable-video-diffusion-img2vid-xt-1-1": {
+        "size": 496,
+        "hash": "",
+        "file": [
+            "D:\\models\\diffusers\\stable-video-diffusion-img2vid-xt-1-1"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "controlnet/control-lora-canny-rank128.safetensors": {
+        "size": 395733680,
+        "hash": "56389dbb245ca44de91d662529bd4298abc55ce2318f60bc19454fb72ff68247",
+        "file": [
+            "D:\\models\\controlnet\\SDXL\\control-lora-canny-rank128.safetensors"
+        ],
+        "muid": "44f83205f6",
+        "url": ""
+    },
+    "controlnet/detection_Resnet50_Final.pth": {
+        "size": 109497761,
+        "hash": "6d1de9c2944f2ccddca5f5e010ea5ae64a39845a86311af6fdf30841b0a5a16d",
+        "file": [
+            "D:\\models\\controlnet\\SDXL\\detection_Resnet50_Final.pth"
+        ],
+        "muid": "6d1de9c294",
+        "url": ""
+    },
+    "controlnet/fooocus_ip_negative.safetensors": {
+        "size": 65616,
+        "hash": "d7caedfb46780825895718c7c8e9ee077e675c935ddfcf272f1c01a4fc8ea72d",
+        "file": [
+            "D:\\models\\controlnet\\SDXL\\fooocus_ip_negative.safetensors"
+        ],
+        "muid": "4682603510",
+        "url": ""
+    },
+    "controlnet/fooocus_xl_cpds_128.safetensors": {
+        "size": 395706528,
+        "hash": "eec3fd8209a65b41341ea9f415de66909c97b30fb4d20965b3304e8e5251c2f1",
+        "file": [
+            "D:\\models\\controlnet\\SDXL\\fooocus_xl_cpds_128.safetensors"
+        ],
+        "muid": "aa82117d38",
+        "url": ""
+    },
+    "controlnet/ip-adapter-plus-face_sdxl_vit-h.bin": {
+        "size": 1013454761,
+        "hash": "50e886d82940b3c5873d80c2b06d8a4b0d0fccec70bc44fd53f16ac3cfd7fc36",
+        "file": [
+            "D:\\models\\controlnet\\SDXL\\ip-adapter-plus-face_sdxl_vit-h.bin"
+        ],
+        "muid": "50e886d829",
+        "url": ""
+    },
+    "controlnet/ip-adapter-plus-face_sdxl_vit-h.pth": {
+        "size": 1013454761,
+        "hash": "",
+        "file": [
+            "D:\\models\\controlnet\\SDXL\\ip-adapter-plus-face_sdxl_vit-h.pth"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "controlnet/ip-adapter-plus_sdxl_vit-h.bin": {
+        "size": 1013454427,
+        "hash": "ec70edb7cc8e769c9388d94eeaea3e4526352c9fae793a608782d1d8951fde90",
+        "file": [
+            "D:\\models\\controlnet\\SDXL\\ip-adapter-plus_sdxl_vit-h.bin"
+        ],
+        "muid": "ec70edb7cc",
+        "url": ""
+    },
+    "controlnet/ip-adapter-plus_sdxl_vit-h.pth": {
+        "size": 1013454427,
+        "hash": "",
+        "file": [
+            "D:\\models\\controlnet\\SDXL\\ip-adapter-plus_sdxl_vit-h.pth"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "controlnet/ip-adapter_xl.pth": {
+        "size": 702585021,
+        "hash": "",
+        "file": [
+            "D:\\models\\controlnet\\SDXL\\ip-adapter_xl.pth"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "controlnet/parsing_parsenet.pth": {
+        "size": 85331193,
+        "hash": "3d558d8d0e42c20224f13cf5a29c79eba2d59913419f945545d8cf7b72920de2",
+        "file": [
+            "D:\\models\\controlnet\\SDXL\\parsing_parsenet.pth"
+        ],
+        "muid": "3d558d8d0e",
+        "url": ""
+    },
+    "controlnet/sai_xl_canny_256lora.safetensors": {
+        "size": 774423040,
+        "hash": "",
+        "file": [
+            "D:\\models\\controlnet\\SDXL\\sai_xl_canny_256lora.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "controlnet/sai_xl_depth_256lora.safetensors": {
+        "size": 774423040,
+        "hash": "",
+        "file": [
+            "D:\\models\\controlnet\\SDXL\\sai_xl_depth_256lora.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "controlnet/t2i-adapter_xl_sketch.safetensors": {
+        "size": 155110672,
+        "hash": "",
+        "file": [
+            "D:\\models\\controlnet\\SDXL\\t2i-adapter_xl_sketch.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "controlnet/thibaud_xl_openpose_256lora.safetensors": {
+        "size": 774423040,
+        "hash": "",
+        "file": [
+            "D:\\models\\controlnet\\SDXL\\thibaud_xl_openpose_256lora.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "vae/cosmos_cv8x8x8_1.0.safetensors": {
+        "size": 211344924,
+        "hash": "",
+        "file": [
+            "D:\\models\\vae\\cosmos_cv8x8x8_1.0.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "vae/flux_vae.safetensors": {
+        "size": 335304388,
+        "hash": "",
+        "file": [
+            "D:\\models\\vae\\flux_vae.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "vae/hunyuan_video_vae_bf16.safetensors": {
+        "size": 492986478,
+        "hash": "",
+        "file": [
+            "D:\\models\\vae\\hunyuan_video_vae_bf16.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "vae/ponyDiffusionV6XL_vae.safetensors": {
+        "size": 334641162,
+        "hash": "235745af8d86bf4a4c1b5b4f529868b37019a10f7c0b2e79ad0abca3a22bc6e1",
+        "file": [
+            "D:\\models\\vae\\ponyDiffusionV6XL_vae.safetensors"
+        ],
+        "muid": "55f20a1016",
+        "url": ""
+    },
+    "vae/vae-ft-mse-840000-ema-pruned.ckpt": {
+        "size": 334695179,
+        "hash": "",
+        "file": [
+            "D:\\models\\vae\\vae-ft-mse-840000-ema-pruned.ckpt"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "checkpoints/_ANIME_/animaPencilXL_v100.safetensors": {
+        "size": 6938040682,
+        "hash": "",
+        "file": [
+            "D:\\models\\Stable-Diffusion\\SDXL\\_ANIME_\\animaPencilXL_v100.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "checkpoints/_ART_/dreamArtFusion_v11.safetensors": {
+        "size": 6939220250,
+        "hash": "",
+        "file": [
+            "D:\\models\\Stable-Diffusion\\SDXL\\_ART_\\dreamArtFusion_v11.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "checkpoints/_ART_/dreamshaperXL_v2TurboDpmppSDE.safetensors": {
+        "size": 6939220250,
+        "hash": "",
+        "file": [
+            "D:\\models\\Stable-Diffusion\\SDXL\\_ART_\\dreamshaperXL_v2TurboDpmppSDE.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "checkpoints/_ART_/journeyToFantasy_v10.safetensors": {
+        "size": 6939220250,
+        "hash": "",
+        "file": [
+            "D:\\models\\Stable-Diffusion\\SDXL\\_ART_\\journeyToFantasy_v10.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "checkpoints/_REAL_/nightvisionXLPhotorealisticPortrait_v0791Bakedvae.safetensors": {
+        "size": 6938042114,
+        "hash": "",
+        "file": [
+            "D:\\models\\Stable-Diffusion\\SDXL\\_REAL_\\nightvisionXLPhotorealisticPortrait_v0791Bakedvae.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "checkpoints/_REAL_/realisticStockPhoto_v20.safetensors": {
+        "size": 6938054242,
+        "hash": "",
+        "file": [
+            "D:\\models\\Stable-Diffusion\\SDXL\\_REAL_\\realisticStockPhoto_v20.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "checkpoints/_REAL_/realvisxlV40_v30Bakedvae.safetensors": {
+        "size": 6938040706,
+        "hash": "",
+        "file": [
+            "D:\\models\\Stable-Diffusion\\SDXL\\_REAL_\\realvisxlV40_v30Bakedvae.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "checkpoints/_REAL_/realvisxlV50_v40Bakedvae.safetensors": {
+        "size": 6938040706,
+        "hash": "",
+        "file": [
+            "D:\\models\\Stable-Diffusion\\SDXL\\_REAL_\\realvisxlV50_v40Bakedvae.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "checkpoints/brightprotonukeBPNNo_bpn13.safetensors": {
+        "size": 6939238362,
+        "hash": "",
+        "file": [
+            "D:\\models\\Stable-Diffusion\\SDXL\\brightprotonukeBPNNo_bpn13.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "checkpoints/fenrisxl_V164fp16.safetensors": {
+        "size": 7108651914,
+        "hash": "",
+        "file": [
+            "D:\\models\\Stable-Diffusion\\SDXL\\fenrisxl_V164fp16.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "checkpoints/FluentlyXL-v4.safetensors": {
+        "size": 7105347928,
+        "hash": "",
+        "file": [
+            "D:\\models\\Stable-Diffusion\\SDXL\\FluentlyXL-v4.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "checkpoints/juggernaut-X-RunDiffusion-NSFW.safetensors": {
+        "size": 7105348672,
+        "hash": "d91d35736d8f2be038f760a9b0009a771ecf0a417e9b38c244a84ea4cb9c0c45",
+        "file": [
+            "D:\\models\\Stable-Diffusion\\SDXL\\juggernaut-X-RunDiffusion-NSFW.safetensors"
+        ],
+        "muid": "039986f26f01",
+        "url": ""
+    },
+    "checkpoints/juggernautXL_v8Rundiffusion.safetensors": {
+        "size": 7105348592,
+        "hash": "aeb7e9e6897a1e58b10494bd989d001e3d4bc9b634633cd7b559838f612c2867",
+        "file": [
+            "D:\\models\\Stable-Diffusion\\SDXL\\juggernautXL_v8Rundiffusion.safetensors"
+        ],
+        "muid": "f84d1c1e05d4",
+        "url": ""
+    },
+    "checkpoints/playground-v2.5-1024px-aesthetic.fp16.safetensors": {
+        "size": 6938040576,
+        "hash": "",
+        "file": [
+            "D:\\models\\Stable-Diffusion\\SDXL\\playground-v2.5-1024px-aesthetic.fp16.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "checkpoints/ponyDiffusionV6XL.safetensors": {
+        "size": 6938041050,
+        "hash": "67ab2fd8ec439a89b3fedb15cc65f54336af163c7eb5e4f2acc98f090a29b0b3",
+        "file": [
+            "D:\\models\\Stable-Diffusion\\SDXL\\ponyDiffusionV6XL.safetensors"
+        ],
+        "muid": "e023c14343",
+        "url": ""
+    },
+    "checkpoints/sd_xl_base_1.0_0.9vae.safetensors": {
+        "size": 7105348592,
+        "hash": "",
+        "file": [
+            "D:\\models\\Stable-Diffusion\\SDXL\\sd_xl_base_1.0_0.9vae.safetensors"
+        ],
+        "muid": "",
+        "url": ""
+    },
+    "inpaint/fooocus_inpaint_head.pth": {
+        "size": 52602,
+        "hash": "32f7f838e0c6d8f13437ba8411e77a4688d77a2e34df8857e4ef4d51f6b97692",
+        "file": [
+            "D:\\models\\inpaint\\fooocus_inpaint_head.pth"
+        ],
+        "muid": "32f7f838e0",
+        "url": ""
+    },
+    "inpaint/groundingdino_swint_ogc.pth": {
+        "size": 693997677,
+        "hash": "3b3ca2563c77c69f651d7bd133e97139c186df06231157a64c507099c52bc799",
+        "file": [
+            "D:\\models\\inpaint\\groundingdino_swint_ogc.pth"
+        ],
+        "muid": "3b3ca2563c",
+        "url": ""
+    },
+    "diffusers/Kolors/text_encoder/pytorch_model-00001-of-00007.bin": {
+        "size": 1827781090,
+        "hash": "b6a6388dae55b598efe76c704e7f017bd84e6f6213466b7686a8f8326f78ab05",
+        "file": [
+            "D:\\models\\diffusers\\Kolors\\text_encoder\\pytorch_model-00001-of-00007.bin"
+        ],
+        "muid": "b6a6388dae",
+        "url": ""
+    },
+    "diffusers/Kolors/text_encoder/pytorch_model-00002-of-00007.bin": {
+        "size": 1968299480,
+        "hash": "2f96bef324acb5c3fe06b7a80f84272fe064d0327cbf14eddfae7af0d665a6ac",
+        "file": [
+            "D:\\models\\diffusers\\Kolors\\text_encoder\\pytorch_model-00002-of-00007.bin"
+        ],
+        "muid": "2f96bef324",
+        "url": ""
+    },
+    "diffusers/Kolors/text_encoder/pytorch_model-00003-of-00007.bin": {
+        "size": 1927415036,
+        "hash": "2400101255213250d9df716f778b7d2325f2fa4a8acaedee788338fceee5b27e",
+        "file": [
+            "D:\\models\\diffusers\\Kolors\\text_encoder\\pytorch_model-00003-of-00007.bin"
+        ],
+        "muid": "2400101255",
+        "url": ""
+    },
+    "diffusers/Kolors/text_encoder/pytorch_model-00004-of-00007.bin": {
+        "size": 1815225998,
+        "hash": "472567c1b0e448a19171fbb5b3dab5670426d0a5dfdfd2c3a87a60bb1f96037d",
+        "file": [
+            "D:\\models\\diffusers\\Kolors\\text_encoder\\pytorch_model-00004-of-00007.bin"
+        ],
+        "muid": "472567c1b0",
+        "url": ""
+    },
+    "diffusers/Kolors/text_encoder/pytorch_model-00005-of-00007.bin": {
+        "size": 1968299544,
+        "hash": "ef2aea78fa386168958e5ba42ecf09cbb567ed3e77ce2be990d556b84081e2b9",
+        "file": [
+            "D:\\models\\diffusers\\Kolors\\text_encoder\\pytorch_model-00005-of-00007.bin"
+        ],
+        "muid": "ef2aea78fa",
+        "url": ""
+    },
+    "diffusers/Kolors/text_encoder/pytorch_model-00006-of-00007.bin": {
+        "size": 1927415036,
+        "hash": "35191adf21a1ab632c2b175fcbb6c27601150026cb1ed5d602938d825954526f",
+        "file": [
+            "D:\\models\\diffusers\\Kolors\\text_encoder\\pytorch_model-00006-of-00007.bin"
+        ],
+        "muid": "35191adf21",
+        "url": ""
+    },
+    "diffusers/Kolors/text_encoder/pytorch_model-00007-of-00007.bin": {
+        "size": 1052808542,
+        "hash": "b7cdaa9b8ed183284905c49d19bf42360037fdf2f95acb3093039d3c3a459261",
+        "file": [
+            "D:\\models\\diffusers\\Kolors\\text_encoder\\pytorch_model-00007-of-00007.bin"
+        ],
+        "muid": "b7cdaa9b8e",
+        "url": ""
+    },
+    "diffusers/Kolors/vae/diffusion_pytorch_model.fp16.safetensors": {
+        "size": 167335342,
+        "hash": "bcb60880a46b63dea58e9bc591abe15f8350bde47b405f9c38f4be70c6161e68",
+        "file": [
+            "D:\\models\\diffusers\\Kolors\\vae\\diffusion_pytorch_model.fp16.safetensors"
+        ],
+        "muid": "345f7343ee",
+        "url": ""
+    },
+    "unet/iclight_sd15_fbc_unet_ldm.safetensors": {
+        "size": 1719167896,
+        "hash": "97a662b8076504e0abad3b3a20b0e91d3312f2a5f19ffcef9059dab6d6679700",
+        "file": [
+            "D:\\models\\unet\\iclight_sd15_fbc_unet_ldm.safetensors"
+        ],
+        "muid": "4019c0f83d",
+        "url": ""
+    },
+    "unet/kolors_unet_fp16.safetensors": {
+        "size": 5159140240,
+        "hash": "425ff1dcbe3a70ac13d3afdd69bd4e3176b0c3260722527c80b210f11d2d966c",
+        "file": [
+            "D:\\models\\unet\\kolors_unet_fp16.safetensors"
+        ],
+        "muid": "9c8f088e4c",
+        "url": ""
+    }
+}
