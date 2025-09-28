@@ -4,4 +4,4 @@ GenAI by ComfyUI, Automatic1111, Forge, Fooocus, SDFX, SwarmUI, InvokeAI, Deforu
 - [Images](https://www.instagram.com/nyukersart/)
 - [Videos](https://youtube.com/nyukers/)
 
-I will not add new GenAI tools above because they appear almost every day...
+I will not add new GenAI tools above because they appear almost every day!
