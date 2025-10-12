@@ -1,28 +1,81 @@
-#Rename this to extra_model_paths.yaml and ComfyUI will load it
+comfyui:
+    base_path: D:\\
+    is_default: true
 
-#config for a1111 ui
-#all you have to do is change the base_path to where yours is installed
-a111:
-    base_path: C:/SDPortable/
-
-    checkpoints: |
-               models/Stable-diffusion
-#               D:\SD\Models\Stable-diffusion
-    configs: models/Stable-diffusion
-    vae: models/VAE
-    loras: |
-         models/Lora
-         models/LyCORIS
-    upscale_models: |
-                  models/ESRGAN
-                  models/RealESRGAN
-                  models/SwinIR
-    embeddings: embeddings
-    hypernetworks: models/hypernetworks
-    controlnet: models/ControlNet
-
-#other_ui:
-#    base_path: path/to/ui
-#    checkpoints: models/checkpoints
-#    gligen: models/gligen
-#    custom_nodes: path/custom_nodes
+    adetailer: models\adetailer\
+    animatediff_models: models\animatediff_models\
+    animatediff_motion_lora: models\animatediff_motion_lora\
+    blip: models\blip\
+    checkpoints: models\checkpoints\
+    clip: models\clip\
+    clip_vision: models\clip_vision\
+    Codeformer: models\Codeformer\
+    CogVideo: models\CogVideo\
+    configs: models\configs\
+    controlnet: models\controlnet\
+    ControlNetPreprocessor: models\ControlNetPreprocessor\
+    Dat: models\Dat\
+    deepbooru: models\deepbooru\
+    diffusers: models\diffusers\
+    diffusers_cache: models\diffusers_cache\
+    diffusion_models: |
+                 models\checkpoints\diffusion_models\
+                 models\unet\
+    embeddings: models\embeddings\
+    ESRGAN: models\ESRGAN\
+    facedetection: models\facedetection\
+    facerestore_models: models\facerestore_models\
+    faceswap: models\faceswap\
+    GFPGAN: models\GFPGAN\
+    gligen: models\gligen\
+    hypernetworks: models\hypernetworks\
+    ic-light: models\ic-light\
+    inpaint: models\inpaint\
+    insightface: models\insightface\
+    instaswap: models\instaswap\
+    ipadapter: models\ipadapter\
+    ipadapters: models\ipadapters\
+    karlo: models\karlo\
+    layerdiffuse: models\layerdiffuse\
+    layer_model: models\layer_model\
+    liveportrait: models\liveportrait\
+    LLM: models\LLM\
+    llms: models\llms\
+    Lora: models\Lora\
+    loras: models\lora\
+    mimicmotion: models\mimicmotion\
+    mmdets: models\mmdets\
+    models: models\models\
+    model_patches: models\model_patches\
+    OmniGen: models\OmniGen\
+    onnx: models\onnx\
+    photomaker: models\photomaker\
+    prompt_expansion: models\prompt_expansion\
+    pulid: models\pulid\
+    reactor: models\reactor\
+    rembg: models\rembg\
+    roop: models\roop\
+    Ruyi: models\Ruyi\
+    safety_checker: models\safety_checker\
+    sam: models\sam\
+    sams: models\sams\
+    sonic: models\sonic\
+    Stable-diffusion: models\Stable-diffusion\
+    style_models: models\style_models\
+    svd: models\svd\
+    t5: models\t5\
+    temp: models\temp\
+    text_encoder: models\text_encoder\
+    text_encoders: models\text_encoders\
+    torch_deepdanbooru: models\torch_deepdanbooru\
+    tts: models\tts\
+    u2net: models\u2net\
+    ultralytics: models\ultralytics\
+    unet: models\unet\
+    upscale_models: models\upscale_models\
+    vae: models\vae\
+    VAE-approx: models\VAE-approx\
+    vae_approx: models\vae_approx\
+    wav2vec2: models\wav2vec2\
+    xlabs: models\xlabs\
+    z123: models\z123\

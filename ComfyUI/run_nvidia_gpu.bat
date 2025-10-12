@@ -1,12 +1,23 @@
-del comfyui.old /Q
-rename comfyui.log comfyui.old
-::set path
-
+::log file is here \SDComfyUI\ComfyUI\user\comfyui.log
 nvidia-smi
-:.\python_embeded\Scripts\comfycli.exe --version
 
-.\python_embeded\python.exe -s ComfyUI\main.py --windows-standalone-build --force-fp16
+@echo off
+set Extra=D:\Addon\ExtraModel\extra_model_paths.yaml
 
-:: default port 8188, you can change this by param as "--port 8189"
-:: --force-fp16 for GPU RAM optimal usage 
+for /f %%i in ('powershell -command "Get-Date -Format yyyy-MM-dd"') do set Folder=%%i
+echo Today is %Folder%
+md D:\outputs\ComfyUI\%Folder%
+set Output=D:\outputs\ComfyUI\%Folder%
+@echo ...
+
+.\python_embeded\python.exe -s ComfyUI\main.py --windows-standalone-build --output-directory %Output% --extra-model-paths-config %Extra%
+
+::%date:yyyy-MM-dd%/Comfyui
+::.\python_embeded\python.exe -s ComfyUI\main.py --disable-smart-memory --auto-launch
+
+:: --listen, share webserver ComfyUI to LAN
+:: --port 8189, change port to 8189 (8188 default)
+:: --force-fp16, for VRAM optimal usage 
+:: --disable-smart-memory, for VRAM agressive reusage 
 :pause
+
