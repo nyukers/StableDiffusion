@@ -6,5 +6,3 @@ GenAI:
 ## My GenAI Creativity:
 - [Images](https://www.instagram.com/nyukersart/)
 - [Videos](https://youtube.com/nyukers/)
-
-I will not add new GenAI tools above later because they appear everyday!:)
