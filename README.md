@@ -1,4 +1,4 @@
-<div align="center">
+<div align="left">
 <img width="825" height="690" alt="Nyukers(C) GenAI Hub" src="https://github.com/nyukers/MyBook/blob/main/win2022.jpg" />
 </div>
 
