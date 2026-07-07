@@ -5,7 +5,8 @@
 # Stable Diffusion, Nyukers(C) GenAI Hub, 2022..2050 years
 Mastering by:
 - full stack workflows by ComfyUI, Forge, SwarmUI, Fooocus, LCM, SVD, LTXV, CN etc
-- video handling by VisoMaster, FaceFusion, LivePortrait, FramePackStudio, Wan2GP
+- video handling offline by VisoMaster, FaceFusion, LivePortrait, FramePackStudio, Wan2GP
+- video handling online by Veo/Omni and Grok
 - image handling by Hunyuan3D, InstantID, OmniGen2, Omost, SUPIR.
 ## My GenAI Creativity here:
 - [Image](https://www.instagram.com/nyukersart/)
