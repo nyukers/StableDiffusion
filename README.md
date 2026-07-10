@@ -4,10 +4,10 @@
 
 # GenAI Hub, Nyukers(C), 2022..2050 years
 It's my experience with:
-- full stack workflows by ComfyUI, Forge, SwarmUI, Fooocus, LCM, SVD, LTXV, CN etc
+- full stack by ComfyUI, Forge, SwarmUI, Fooocus, LCM, SVD, LTXV, CN etc
 - video handling offline by VisoMaster, FaceFusion, LivePortrait, FramePackStudio, Wan2GP
-- video handling online by Veo/Omni and Grok
-- image handling by Hunyuan3D, InstantID, OmniGen2, Omost, SUPIR.
+- video handling online by Veo/Omni, Grok, Kling
+- media handling by Hunyuan3D, InstantID, OmniGen2, Omost, SUPIR.
 ## My GenAI Creativity here:
 - [Image](https://www.instagram.com/nyukersart/)
 - [Video](https://youtube.com/nyukers/)
