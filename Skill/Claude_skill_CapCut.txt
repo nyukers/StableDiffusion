@@ -1,0 +1,312 @@
+﻿CLAUDE-МОНТАЖЁР — навык и промпт из урока «Нейросеть смонтировала ролик в CapCut»
+Канал «Цифровой Джедай»: youtube.com/@YBTraffic · t.me/jedaiit
+
+══════════ КАК УСТАНОВИТЬ (2 минуты) ══════════
+Нужно: Claude с подпиской на компьютере (приложение Claude с Claude Code или Claude Code в терминале/VS Code), CapCut для ПК, Python 3 и ffmpeg (Claude поставит сам, если попросишь).
+
+1. Открой Claude Code.
+2. Прикрепи этот файл (скрепка 📎) и напиши:
+   «Установи навык capcut-montazh из этого файла: создай папку ~/.claude/skills/capcut-montazh и разложи файлы по путям, указанным в блоках ФАЙЛ. Поставь Python-пакеты pillow и faster-whisper и проверь, что есть ffmpeg.»
+3. Перезапусти Claude — навык подхватится сам.
+
+══════════ ПРОМПТ СБОРКИ (как в уроке) ══════════
+Подготовь проект: CapCut → Новый проект → импорт голоса и картинок (01.jpg, 02.jpg…) → положи на таймлайн ОДНУ картинку и голос (образец) → переименуй проект → ЗАКРОЙ CapCut полностью.
+Потом напиши Claude:
+
+Проект «НАЗВАНИЕ». Синхронизируй картинки с голосом, добавь лёгкие наезды, музыку и надписи, чтобы помещались в кадр. Не используй управление компьютером и не открывай CapCut. Собери таймлайн, записывая файлы проекта напрямую.
+
+Дальше: открой CapCut → проект готов. Что-то не понравилось — поправь руками, закрой CapCut и напиши: «Пересмотри проект "НАЗВАНИЕ" и запомни мои правки».
+
+Нет времени разбираться? Соберу твой ролик: Telegram @Pintraffic.
+
+══════════ ФАЙЛЫ НАВЫКА ══════════
+
+━━━━━━━━ ФАЙЛ: ~/.claude/skills/capcut-montazh/SKILL.md ━━━━━━━━
+---
+name: capcut-montazh
+description: Монтаж ролика в CapCut без открытия CapCut — Claude сам собирает таймлайн в файлах проекта: картинки строго под фразы голоса, мягкие наезды, надписи в пределах кадра, музыка под голосом. Используй, когда просят «смонтируй в CapCut», «собери таймлайн в проекте …», «синхронизируй картинки с голосом», «ролик без лица из картинок и озвучки».
+---
+# Claude-монтажёр: таймлайн CapCut из картинок и голоса
+
+Автор навыка — канал «Цифровой Джедай» (YouTube @YBTraffic, Telegram t.me/jedaiit).
+Результат — **настоящий проект CapCut**, а не готовый файл: каждую дорожку можно двигать руками.
+
+## Главные правила (без них проект сломается)
+1. **CapCut полностью закрыт** во время сборки (и в трее). Открытый CapCut перезапишет работу. Проверяй сам: `tasklist | findstr /i capcut` (Windows) или `ps -A | grep -i capcut` (Mac).
+2. **Копия проекта перед каждой записью** — build_capcut.py делает её сам (папка `<проект>_бэкап_<время>`).
+3. **Свободное место на диске — от 1 ГБ.** Если место кончается, CapCut может падать при каждом запуске (не может докачать обновление).
+4. Никакого управления компьютером: не открывать CapCut, не кликать мышкой. Только чтение и запись файлов проекта.
+5. Кусок на таймлайне никогда не длиннее своего файла — даже на доли миллисекунды (иначе CapCut падает при запуске). Скрипт это соблюдает.
+
+## Где лежат проекты CapCut
+- Windows: `%LOCALAPPDATA%\CapCut\User Data\Projects\com.lveditor.draft\<имя проекта>`
+- Mac: `~/Movies/CapCut/User Data/Projects/com.lveditor.draft/<имя проекта>`
+- Портативная версия: `<папка CapCut>\Data\User Data\Projects\com.lveditor.draft\<имя>`
+Если не нашёл — попроси пользователя открыть CapCut → Настройки → «Место сохранения черновиков» и прислать путь, потом закрыть CapCut.
+Главный файл — `draft_content.json`. Если он не открывается как текст (зашифрован), скажи пользователю, что нужна версия CapCut, где файл проекта читается Блокнотом.
+
+## Что должен сделать пользователь (один раз на ролик)
+1. CapCut → «Новый проект» → импорт голоса и всех картинок (картинки называть по порядку: 01.jpg, 02.jpg…).
+2. Положить на таймлайн **одну любую картинку и голос** — это образец устройства дорожек для его версии CapCut.
+3. Переименовать проект понятным именем и **закрыть CapCut**.
+
+## Порядок работы Claude
+1. Найди папку проекта по имени, проверь, что CapCut закрыт.
+2. **Таймкоды фраз голоса.** Распознай голос с таймкодами (whisper / faster-whisper: `pip install faster-whisper`). Сохрани `timings.json`: `[{"start": 0.0, "end": 7.1, "text": "…"}, …]`. Одна фраза = одна картинка; если картинок меньше, чем фраз, — объединяй соседние короткие фразы, а не растягивай.
+3. **Надписи (по желанию)** — `captions.json`: `[{"phrase": 1, "text": "1931 · Хаддон Сандблом"}, …]`.
+   - Текст только из голоса: даты, имена, цифры. Ничего не придумывать.
+   - До 6 слов, одна мысль. Надпись живёт внутри своего кадра: появляется через 0,35 с после склейки, уходит за 0,2 с до следующей (скрипт так и ставит).
+4. **Музыка (по желанию)** — громкость под голосом тихая: `--music-vol 0.08…0.12` (≈ на 16 дБ тише голоса). Лучше измерить: голос ≈ −18 LUFS, музыка ≈ −34 LUFS.
+5. Запусти сборку:
+   `python build_capcut.py --project "<папка проекта>" --images "<папка картинок>" --voice "<голос>" --timings timings.json [--captions captions.json] [--music music.mp3 --music-vol 0.1]`
+6. **Проверь себя до выдачи:** собери пробное видео тем же монтажом (ffmpeg: картинки по таймкодам + голос), распознай в нём голос и сверь — каждая фраза на своей секунде, надписи не на склейках, громкость в норме. Только потом скажи пользователю «открывай».
+7. Отчёт пользователю: где проект, сколько кадров/надписей, где копия для отката.
+
+## Правки и обучение
+Если пользователь поправил что-то руками в CapCut и пишет «пересмотри проект и запомни мои правки» — прочитай `draft_content.json`, найди, что изменилось относительно твоей сборки (громкость, длительности, позиции), и **допиши правило в этот файл** (раздел «Мои правки»), чтобы следующий ролик сразу собирался так.
+
+## Мои правки
+(сюда Claude дописывает правила пользователя)
+━━━━━━━━ КОНЕЦ ФАЙЛА SKILL.md ━━━━━━━━
+
+━━━━━━━━ ФАЙЛ: ~/.claude/skills/capcut-montazh/build_capcut.py ━━━━━━━━
+"""Сборка таймлайна CapCut напрямую в файлах проекта: картинки строго под фразы голоса + мягкий наезд,
+голос, музыка (по желанию), надписи (по желанию). CapCut при этом ДОЛЖЕН БЫТЬ ЗАКРЫТ.
+
+Подготовка в CapCut (один раз на проект):
+  1) Новый проект → импорт голоса и картинок.
+  2) Положить на таймлайн ОДНУ любую картинку и голос (это образец устройства дорожек для вашей версии CapCut).
+  3) Закрыть CapCut полностью.
+
+Запуск:
+  python build_capcut.py --project "<папка проекта CapCut>" --images "<папка с картинками 01.jpg, 02.jpg…>"
+                         --voice "<голос.mp3>" --timings timings.json [--music music.mp3 --music-vol 0.1]
+                         [--captions captions.json]
+timings.json  — список фраз: [{"start": 0.0, "end": 7.1, "text": "…"}, …] (картинка N = фраза N)
+captions.json — надписи: [{"phrase": 1, "text": "1931 · Хаддон Сандблом"}, …] (номер фразы с 1)
+Перед записью делается копия проекта рядом: <проект>_бэкап_<время>.
+"""
+import argparse
+import copy
+import json
+import platform
+import shutil
+import subprocess
+import sys
+import time
+import uuid
+from pathlib import Path
+
+US = 1_000_000
+IMG_EXT = {".jpg", ".jpeg", ".png", ".webp"}
+
+
+def uid():
+    return str(uuid.uuid4()).upper()
+
+
+def us(t):
+    return int(round(t * US))
+
+
+def capcut_running():
+    try:
+        if platform.system() == "Windows":
+            out = subprocess.run(["tasklist"], capture_output=True, text=True, errors="ignore").stdout
+        else:
+            out = subprocess.run(["ps", "-A"], capture_output=True, text=True, errors="ignore").stdout
+        return "capcut" in out.lower()
+    except Exception:
+        return False
+
+
+def probe(path):
+    out = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(path)],
+                         capture_output=True, text=True).stdout
+    return float(out.strip())
+
+
+def image_size(path):
+    try:
+        from PIL import Image
+        with Image.open(path) as im:
+            return im.size
+    except Exception:
+        return 1920, 1080
+
+
+def kf(prop, points):
+    return {"id": uid(), "material_id": "", "property_type": prop, "keyframe_list": [
+        {"curveType": "Line", "graphID": "", "id": uid(), "left_control": {"x": 0.0, "y": 0.0},
+         "right_control": {"x": 0.0, "y": 0.0}, "time_offset": us(t), "values": [v]} for t, v in points]}
+
+
+def caption_png(text, out, w=1920, h=1080):
+    """Надпись внизу слева: тёмная плашка, белый текст. Шрифт — системный."""
+    from PIL import Image, ImageDraw, ImageFont
+    font = None
+    for f in ("C:/Windows/Fonts/segoeuib.ttf", "C:/Windows/Fonts/arialbd.ttf", "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+              "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"):
+        if Path(f).exists():
+            font = ImageFont.truetype(f, 54)
+            break
+    font = font or ImageFont.load_default()
+    img = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+    d = ImageDraw.Draw(img)
+    tw = d.textlength(text, font=font)
+    x0, y1 = 120, h - 120
+    box = (x0, y1 - 100, x0 + tw + 70, y1)
+    if box[2] > w - 100:
+        raise SystemExit(f"надпись не влезает в кадр, сократите: «{text}»")
+    d.rounded_rectangle(box, 20, fill=(10, 14, 30, 210))
+    d.rounded_rectangle((box[0], box[1], box[0] + 8, box[3]), 4, fill=(246, 200, 92, 255))
+    d.text((x0 + 38, y1 - 82), text, font=font, fill=(255, 255, 255, 255))
+    img.save(out)
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--project", required=True)
+    ap.add_argument("--images", required=True)
+    ap.add_argument("--voice", required=True)
+    ap.add_argument("--timings", required=True)
+    ap.add_argument("--music")
+    ap.add_argument("--music-vol", type=float, default=0.1)
+    ap.add_argument("--captions")
+    ap.add_argument("--tail", type=float, default=2.0, help="сколько секунд держать последний кадр после голоса")
+    a = ap.parse_args()
+
+    if capcut_running():
+        raise SystemExit("CapCut запущен — закройте его полностью (и в трее) и повторите. Иначе он перезапишет работу.")
+    proj = Path(a.project)
+    draft = proj / "draft_content.json"
+    if not draft.exists():
+        raise SystemExit(f"не найден {draft} — проверьте путь к папке проекта CapCut")
+    try:
+        d = json.loads(draft.read_text(encoding="utf-8-sig"))
+    except Exception:
+        raise SystemExit("draft_content.json не читается как текст — похоже, эта версия CapCut шифрует проекты. "
+                         "Нужна версия CapCut, где файл проекта открывается Блокнотом.")
+    M = d["materials"]
+    vtr = next((t for t in d.get("tracks", []) if t["type"] == "video" and t["segments"]), None)
+    atr = next((t for t in d.get("tracks", []) if t["type"] == "audio" and t["segments"]), None)
+    if not vtr or not atr:
+        raise SystemExit("в проекте нет образца: положите на таймлайн одну картинку и голос, сохраните, закройте CapCut и повторите")
+    vseg_tpl, aseg_tpl = copy.deepcopy(vtr["segments"][0]), copy.deepcopy(atr["segments"][0])
+    vmat_tpl = copy.deepcopy(next(m for m in M["videos"] if m["id"] == vseg_tpl["material_id"]))
+    amat_tpl = copy.deepcopy(next(m for m in M["audios"] if m["id"] == aseg_tpl["material_id"]))
+    vtrack_tpl = {k: v for k, v in vtr.items() if k != "segments"}
+    atrack_tpl = {k: v for k, v in atr.items() if k != "segments"}
+
+    phrases = json.loads(Path(a.timings).read_text(encoding="utf-8"))
+    images = sorted(p for p in Path(a.images).iterdir() if p.suffix.lower() in IMG_EXT)
+    if len(images) < len(phrases):
+        raise SystemExit(f"картинок {len(images)}, а фраз {len(phrases)} — нужно по картинке на фразу")
+    vdur = probe(a.voice)
+    total = vdur + a.tail
+
+    def refs(audio=False):
+        sp = {"curve_speed": None, "id": uid(), "mode": 0, "speed": 1.0, "type": "speed"}
+        ch = {"audio_channel_mapping": 0, "id": uid(), "is_config_open": False, "type": ""}
+        M.setdefault("speeds", []).append(sp)
+        M.setdefault("sound_channel_mappings", []).append(ch)
+        if audio:
+            return [sp["id"], ch["id"]]
+        cv = {"album_image": "", "blur": 0.0, "color": "", "id": uid(), "image": "", "image_id": "", "image_name": "",
+              "source_platform": 0, "team_id": "", "type": "canvas_color"}
+        M.setdefault("canvases", []).append(cv)
+        return [sp["id"], cv["id"], ch["id"]]
+
+    def photo(path):
+        w, h = image_size(path)
+        m = copy.deepcopy(vmat_tpl)
+        m.update({"id": uid(), "type": "photo", "path": str(Path(path).resolve()).replace("\\", "/"), "material_name": Path(path).name,
+                  "width": w, "height": h, "duration": 10800000000, "has_audio": False, "local_material_id": str(uuid.uuid4())})
+        M["videos"].append(m)
+        return m["id"]
+
+    def vseg(mid, t0, t1, render, kfs=()):
+        s = copy.deepcopy(vseg_tpl)
+        s.update({"id": uid(), "material_id": mid, "extra_material_refs": refs(), "common_keyframes": list(kfs),
+                  "source_timerange": {"start": 0, "duration": us(t1) - us(t0)},
+                  "target_timerange": {"start": us(t0), "duration": us(t1) - us(t0)},
+                  "render_index": render, "track_render_index": render, "volume": 1.0})
+        s.setdefault("clip", {}).update({"alpha": 1.0, "scale": {"x": 1.0, "y": 1.0}, "transform": {"x": 0.0, "y": 0.0}})
+        return s
+
+    def amat(path):
+        m = copy.deepcopy(amat_tpl)
+        m.update({"id": uid(), "name": Path(path).name, "path": str(Path(path).resolve()).replace("\\", "/"),
+                  "duration": us(probe(path)), "local_material_id": str(uuid.uuid4()), "music_id": str(uuid.uuid4())})
+        M["audios"].append(m)
+        return m
+
+    def aseg(m, t0, dur, vol):
+        dur = min(us(dur), m["duration"])          # кусок не длиннее файла — иначе CapCut падает при запуске
+        s = copy.deepcopy(aseg_tpl)
+        s.update({"id": uid(), "material_id": m["id"], "extra_material_refs": refs(True), "volume": vol, "last_nonzero_volume": vol,
+                  "common_keyframes": [], "source_timerange": {"start": 0, "duration": dur}, "target_timerange": {"start": us(t0), "duration": dur}})
+        return s
+
+    def track(tpl, kind, segs, flag=0):
+        t = copy.deepcopy(tpl)
+        t.update({"id": uid(), "type": kind, "segments": segs, "flag": flag})
+        return t
+
+    # картинки: смена кадра на начале каждой фразы; нечётные — наезд, чётные — отъезд
+    cuts = [0.0] + [max(0.0, p["start"] - 0.06) for p in phrases[1:]]
+    main = []
+    for i, c0 in enumerate(cuts):
+        c1 = cuts[i + 1] if i + 1 < len(cuts) else total
+        z = (1.02, 1.08) if i % 2 == 0 else (1.08, 1.02)
+        main.append(vseg(photo(images[i]), c0, c1, 0, [kf("KFTypeScaleX", [(0, z[0]), (c1 - c0, z[1])])]))
+    tracks = [track(vtrack_tpl, "video", main)]
+
+    if a.captions:
+        caps, cap_dir = [], proj.parent / f"{proj.name}_надписи"
+        cap_dir.mkdir(exist_ok=True)
+        for k, c in enumerate(json.loads(Path(a.captions).read_text(encoding="utf-8"))):
+            i = c["phrase"] - 1
+            c0, c1 = cuts[i], (cuts[i + 1] if i + 1 < len(cuts) else total)
+            s, e = c0 + 0.35, c1 - 0.2                      # не висит на склейке
+            if e - s < 1.2:
+                print(f"пропущена надпись к фразе {c['phrase']}: кадр короче 1,5 с")
+                continue
+            png = cap_dir / f"cap_{k + 1:02d}.png"
+            caption_png(c["text"], png)
+            dur = e - s
+            caps.append(vseg(photo(png), s, e, 1, [kf("KFTypeAlpha", [(0, 0.0), (.3, 1.0), (dur - .3, 1.0), (dur, 0.0)])]))
+        if caps:
+            tracks.append(track(vtrack_tpl, "video", caps, flag=2))
+
+    tracks.append(track(atrack_tpl, "audio", [aseg(amat(a.voice), 0.0, vdur, 1.0)]))
+    if a.music:
+        mm = amat(a.music)
+        tracks.append(track(atrack_tpl, "audio", [aseg(mm, 0.0, total, a.music_vol)]))
+
+    # проверка: на дорожках нет наложений
+    for t in tracks:
+        ss = sorted((s["target_timerange"]["start"], s["target_timerange"]["start"] + s["target_timerange"]["duration"]) for s in t["segments"])
+        if any(b[0] < a_[1] for a_, b in zip(ss, ss[1:])):
+            raise SystemExit("ошибка: наложение кусков на дорожке — ничего не записано")
+
+    d["tracks"] = tracks
+    d["duration"] = us(total)
+    bak = proj.parent / f"{proj.name}_бэкап_{time.strftime('%Y%m%d_%H%M%S')}"
+    shutil.copytree(proj, bak)
+    text = json.dumps(d, ensure_ascii=False, separators=(",", ":"))
+    draft.write_text(text, encoding="utf-8")
+    if (proj / "template-2.tmp").exists():
+        (proj / "template-2.tmp").write_text(text, encoding="utf-8")
+    meta_p = proj / "draft_meta_info.json"
+    if meta_p.exists():
+        meta = json.loads(meta_p.read_text(encoding="utf-8-sig"))
+        meta["tm_duration"] = us(total)
+        meta["tm_draft_modified"] = int(time.time() * US)
+        meta_p.write_text(json.dumps(meta, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    print(f"готово: кадров {len(main)}, дорожек {len(tracks)}, длина {total:.1f} с. Копия проекта: {bak}")
+
+
+if __name__ == "__main__":
+    main()
+━━━━━━━━ КОНЕЦ ФАЙЛА build_capcut.py ━━━━━━━━
